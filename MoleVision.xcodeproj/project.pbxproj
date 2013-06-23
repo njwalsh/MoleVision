@@ -42,20 +42,20 @@
 		ACAA0A3B177770D000C6CFE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACAA0A3D177770D000C6CFE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACAA0A3F177770D000C6CFE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		ACAA0A621777714000C6CFE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/AppDelegate.h"; sourceTree = "<group>"; };
-		ACAA0A631777714000C6CFE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/AppDelegate.m"; sourceTree = "<group>"; };
-		ACAA0A641777714000C6CFE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/ViewController.h"; sourceTree = "<group>"; };
-		ACAA0A651777714000C6CFE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/ViewController.m"; sourceTree = "<group>"; };
-		ACAA0A661777714000C6CFE9 /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListTableViewController.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/ListTableViewController.h"; sourceTree = "<group>"; };
-		ACAA0A671777714000C6CFE9 /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ListTableViewController.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/ListTableViewController.m"; sourceTree = "<group>"; };
-		ACAA0A681777714000C6CFE9 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/CustomCell.h"; sourceTree = "<group>"; };
-		ACAA0A691777714000C6CFE9 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/CustomCell.m"; sourceTree = "<group>"; };
-		ACAA0A6A1777714000C6CFE9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/DetailsViewController.h"; sourceTree = "<group>"; };
-		ACAA0A6B1777714000C6CFE9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/DetailsViewController.m"; sourceTree = "<group>"; };
-		ACAA0A6C1777714000C6CFE9 /* CompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CompareViewController.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/CompareViewController.h"; sourceTree = "<group>"; };
-		ACAA0A6D1777714000C6CFE9 /* CompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CompareViewController.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/CompareViewController.m"; sourceTree = "<group>"; };
-		ACAA0A6E1777714000C6CFE9 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EditViewController.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/EditViewController.h"; sourceTree = "<group>"; };
-		ACAA0A6F1777714000C6CFE9 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EditViewController.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/EditViewController.m"; sourceTree = "<group>"; };
+		ACAA0A621777714000C6CFE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACAA0A631777714000C6CFE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACAA0A641777714000C6CFE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ACAA0A651777714000C6CFE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ACAA0A661777714000C6CFE9 /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		ACAA0A671777714000C6CFE9 /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		ACAA0A681777714000C6CFE9 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		ACAA0A691777714000C6CFE9 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		ACAA0A6A1777714000C6CFE9 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		ACAA0A6B1777714000C6CFE9 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		ACAA0A6C1777714000C6CFE9 /* CompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
+		ACAA0A6D1777714000C6CFE9 /* CompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
+		ACAA0A6E1777714000C6CFE9 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		ACAA0A6F1777714000C6CFE9 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		ACAA0A701777714900C6CFE9 /* ABCDEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDEAppDelegate.h; sourceTree = "<group>"; };
 		ACAA0A711777714900C6CFE9 /* ABCDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDEAppDelegate.m; sourceTree = "<group>"; };
 		ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDEViewController.h; sourceTree = "<group>"; };
@@ -72,13 +72,13 @@
 		ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MelanomaA4.jpg; path = "../../ABCDE Tutorial/ABCDE Tutorial/MelanomaA4.jpg"; sourceTree = "<group>"; };
 		ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ABCDE Tutorial-Info.plist"; path = "../../ABCDE Tutorial/ABCDE Tutorial/ABCDE Tutorial-Info.plist"; sourceTree = "<group>"; };
 		ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ABCDE Tutorial-Prefix.pch"; path = "../../ABCDE Tutorial/ABCDE Tutorial/ABCDE Tutorial-Prefix.pch"; sourceTree = "<group>"; };
-		ACAA0A81177771B300C6CFE9 /* Mole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mole.h; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/Mole.h"; sourceTree = "<group>"; };
-		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Mole.m; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/Mole.m"; sourceTree = "<group>"; };
+		ACAA0A81177771B300C6CFE9 /* Mole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mole.h; sourceTree = "<group>"; };
+		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
 		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
 		ACAA0A86177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
-		ACAA0A87177771B300C6CFE9 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic1.jpg; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/pic1.jpg"; sourceTree = "<group>"; };
-		ACAA0A88177771B300C6CFE9 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic2.jpg; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/pic2.jpg"; sourceTree = "<group>"; };
-		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic3.jpg; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/pic3.jpg"; sourceTree = "<group>"; };
+		ACAA0A87177771B300C6CFE9 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		ACAA0A88177771B300C6CFE9 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
