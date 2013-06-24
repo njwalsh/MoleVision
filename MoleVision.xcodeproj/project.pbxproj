@@ -30,7 +30,7 @@
 		ACAA0A9B177772A600C6CFE9 /* Melanoma6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */; };
 		ACAA0A9C177772A600C6CFE9 /* MelanomaA4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */; };
 		ACAA0A9D177772A600C6CFE9 /* ABCDE Tutorial-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */; };
-		ACAA0A9E177772A600C6CFE9 /* MoleVision-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A741777715B00C6CFE9 /* MoleVision-Info.plist */; };
+		ACAA0A9E177772A600C6CFE9 /* Mole Vision-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */; };
 		ACAA0A9F177772A600C6CFE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A751777715B00C6CFE9 /* InfoPlist.strings */; };
 		ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A791777715B00C6CFE9 /* Default.png */; };
 		ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */; };
@@ -60,18 +60,18 @@
 		ACAA0A711777714900C6CFE9 /* ABCDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDEAppDelegate.m; sourceTree = "<group>"; };
 		ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDEViewController.h; sourceTree = "<group>"; };
 		ACAA0A731777714900C6CFE9 /* ABCDEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDEViewController.m; sourceTree = "<group>"; };
-		ACAA0A741777715B00C6CFE9 /* MoleVision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MoleVision-Info.plist"; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/MoleVision-Info.plist"; sourceTree = "<group>"; };
+		ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mole Vision-Info.plist"; path = "Supporting Files/Mole Vision-Info.plist"; sourceTree = "<group>"; };
 		ACAA0A761777715B00C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		ACAA0A771777715B00C6CFE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ACAA0A781777715B00C6CFE9 /* MoleVision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MoleVision-Prefix.pch"; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/MoleVision-Prefix.pch"; sourceTree = "<group>"; };
-		ACAA0A791777715B00C6CFE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/Default.png"; sourceTree = "<group>"; };
-		ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/Default@2x.png"; sourceTree = "<group>"; };
-		ACAA0A7B1777715B00C6CFE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/Default-568h@2x.png"; sourceTree = "<group>"; };
-		ACAA0A7C1777718C00C6CFE9 /* MelanomaA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MelanomaA.jpg; path = "../../ABCDE Tutorial/ABCDE Tutorial/MelanomaA.jpg"; sourceTree = "<group>"; };
-		ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Melanoma6.jpg; path = "../../ABCDE Tutorial/ABCDE Tutorial/Melanoma6.jpg"; sourceTree = "<group>"; };
-		ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MelanomaA4.jpg; path = "../../ABCDE Tutorial/ABCDE Tutorial/MelanomaA4.jpg"; sourceTree = "<group>"; };
-		ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ABCDE Tutorial-Info.plist"; path = "../../ABCDE Tutorial/ABCDE Tutorial/ABCDE Tutorial-Info.plist"; sourceTree = "<group>"; };
-		ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ABCDE Tutorial-Prefix.pch"; path = "../../ABCDE Tutorial/ABCDE Tutorial/ABCDE Tutorial-Prefix.pch"; sourceTree = "<group>"; };
+		ACAA0A781777715B00C6CFE9 /* Mole Vision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mole Vision-Prefix.pch"; path = "Supporting Files/Mole Vision-Prefix.pch"; sourceTree = "<group>"; };
+		ACAA0A791777715B00C6CFE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		ACAA0A7B1777715B00C6CFE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ACAA0A7C1777718C00C6CFE9 /* MelanomaA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MelanomaA.jpg; path = "Supporting Files/MelanomaA.jpg"; sourceTree = "<group>"; };
+		ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Melanoma6.jpg; path = "Supporting Files/Melanoma6.jpg"; sourceTree = "<group>"; };
+		ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MelanomaA4.jpg; path = "Supporting Files/MelanomaA4.jpg"; sourceTree = "<group>"; };
+		ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ABCDE Tutorial-Info.plist"; path = "Supporting Files/ABCDE Tutorial-Info.plist"; sourceTree = "<group>"; };
+		ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ABCDE Tutorial-Prefix.pch"; path = "Supporting Files/ABCDE Tutorial-Prefix.pch"; sourceTree = "<group>"; };
 		ACAA0A81177771B300C6CFE9 /* Mole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mole.h; sourceTree = "<group>"; };
 		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
 		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
@@ -163,10 +163,10 @@
 				ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */,
 				ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */,
 				ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */,
-				ACAA0A741777715B00C6CFE9 /* MoleVision-Info.plist */,
+				ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */,
 				ACAA0A751777715B00C6CFE9 /* InfoPlist.strings */,
 				ACAA0A771777715B00C6CFE9 /* main.m */,
-				ACAA0A781777715B00C6CFE9 /* MoleVision-Prefix.pch */,
+				ACAA0A781777715B00C6CFE9 /* Mole Vision-Prefix.pch */,
 				ACAA0A791777715B00C6CFE9 /* Default.png */,
 				ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */,
 				ACAA0A7B1777715B00C6CFE9 /* Default-568h@2x.png */,
@@ -234,7 +234,7 @@
 				ACAA0A9B177772A600C6CFE9 /* Melanoma6.jpg in Resources */,
 				ACAA0A9C177772A600C6CFE9 /* MelanomaA4.jpg in Resources */,
 				ACAA0A9D177772A600C6CFE9 /* ABCDE Tutorial-Info.plist in Resources */,
-				ACAA0A9E177772A600C6CFE9 /* MoleVision-Info.plist in Resources */,
+				ACAA0A9E177772A600C6CFE9 /* Mole Vision-Info.plist in Resources */,
 				ACAA0A9F177772A600C6CFE9 /* InfoPlist.strings in Resources */,
 				ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */,
 				ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */,
