@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3033311777E9990038EEBA /* CameraViewController.m */; };
+		AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333517783E380038EEBA /* FirstViewController.m */; };
+		AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333717783E3A0038EEBA /* SignUpViewController.m */; };
+		AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30333817783E680038EEBA /* loginAndProfile-Info.plist */; };
+		AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30333F177841B40038EEBA /* Storyboard.storyboard */; };
 		ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3B177770D000C6CFE9 /* UIKit.framework */; };
 		ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3D177770D000C6CFE9 /* Foundation.framework */; };
 		ACAA0A40177770D000C6CFE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3F177770D000C6CFE9 /* CoreGraphics.framework */; };
@@ -23,8 +28,8 @@
 		ACAA0A941777727800C6CFE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A771777715B00C6CFE9 /* main.m */; };
 		ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone.storyboard */; };
 		ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */; };
-		ACAA0A97177772A600C6CFE9 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A87177771B300C6CFE9 /* pic1.jpg */; };
-		ACAA0A98177772A600C6CFE9 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A88177771B300C6CFE9 /* pic2.jpg */; };
+		ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A87177771B300C6CFE9 /* photo(11).JPG */; };
+		ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */; };
 		ACAA0A99177772A600C6CFE9 /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A89177771B300C6CFE9 /* pic3.jpg */; };
 		ACAA0A9A177772A600C6CFE9 /* MelanomaA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7C1777718C00C6CFE9 /* MelanomaA.jpg */; };
 		ACAA0A9B177772A600C6CFE9 /* Melanoma6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */; };
@@ -38,6 +43,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3033301777E9990038EEBA /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		AC3033311777E9990038EEBA /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		AC30333317783E370038EEBA /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background2.jpg; path = "../../loginAndProfile 2 2/loginAndProfile/background2.jpg"; sourceTree = "<group>"; };
+		AC30333417783E380038EEBA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = "../../loginAndProfile 2 2/loginAndProfile/FirstViewController.h"; sourceTree = "<group>"; };
+		AC30333517783E380038EEBA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = "../../loginAndProfile 2 2/loginAndProfile/FirstViewController.m"; sourceTree = "<group>"; };
+		AC30333617783E390038EEBA /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = "../../loginAndProfile 2 2/loginAndProfile/SignUpViewController.h"; sourceTree = "<group>"; };
+		AC30333717783E3A0038EEBA /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = "../../loginAndProfile 2 2/loginAndProfile/SignUpViewController.m"; sourceTree = "<group>"; };
+		AC30333817783E680038EEBA /* loginAndProfile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "loginAndProfile-Info.plist"; path = "../../loginAndProfile 2 2/loginAndProfile/loginAndProfile-Info.plist"; sourceTree = "<group>"; };
+		AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "loginAndProfile-Prefix.pch"; path = "../../loginAndProfile 2 2/loginAndProfile/loginAndProfile-Prefix.pch"; sourceTree = "<group>"; };
+		AC30333F177841B40038EEBA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = "../../loginAndProfile 2 2/loginAndProfile/Storyboard.storyboard"; sourceTree = "<group>"; };
 		ACAA0A38177770D000C6CFE9 /* MoleVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAA0A3B177770D000C6CFE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACAA0A3D177770D000C6CFE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,8 +91,8 @@
 		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
 		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
 		ACAA0A86177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
-		ACAA0A87177771B300C6CFE9 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
-		ACAA0A88177771B300C6CFE9 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "photo(11).JPG"; path = "../../../Pictures/photo(11).JPG"; sourceTree = "<group>"; };
+		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "photo(12)-1.JPG"; path = "../../../Pictures/photo(12)-1.JPG"; sourceTree = "<group>"; };
 		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,10 +148,18 @@
 				ACAA0A631777714000C6CFE9 /* AppDelegate.m */,
 				ACAA0A641777714000C6CFE9 /* ViewController.h */,
 				ACAA0A651777714000C6CFE9 /* ViewController.m */,
+				AC30333317783E370038EEBA /* background2.jpg */,
+				AC30333417783E380038EEBA /* FirstViewController.h */,
+				AC30333517783E380038EEBA /* FirstViewController.m */,
+				AC30333617783E390038EEBA /* SignUpViewController.h */,
+				AC30333717783E3A0038EEBA /* SignUpViewController.m */,
 				ACAA0A81177771B300C6CFE9 /* Mole.h */,
 				ACAA0A82177771B300C6CFE9 /* Mole.m */,
 				ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone.storyboard */,
+				AC30333F177841B40038EEBA /* Storyboard.storyboard */,
 				ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */,
+				AC3033301777E9990038EEBA /* CameraViewController.h */,
+				AC3033311777E9990038EEBA /* CameraViewController.m */,
 				ACAA0A661777714000C6CFE9 /* ListTableViewController.h */,
 				ACAA0A671777714000C6CFE9 /* ListTableViewController.m */,
 				ACAA0A681777714000C6CFE9 /* CustomCell.h */,
@@ -147,8 +170,8 @@
 				ACAA0A6D1777714000C6CFE9 /* CompareViewController.m */,
 				ACAA0A6E1777714000C6CFE9 /* EditViewController.h */,
 				ACAA0A6F1777714000C6CFE9 /* EditViewController.m */,
-				ACAA0A87177771B300C6CFE9 /* pic1.jpg */,
-				ACAA0A88177771B300C6CFE9 /* pic2.jpg */,
+				ACAA0A87177771B300C6CFE9 /* photo(11).JPG */,
+				ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */,
 				ACAA0A89177771B300C6CFE9 /* pic3.jpg */,
 				ACAA0A42177770D000C6CFE9 /* Supporting Files */,
 			);
@@ -161,6 +184,8 @@
 				ACAA0A7C1777718C00C6CFE9 /* MelanomaA.jpg */,
 				ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */,
 				ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */,
+				AC30333817783E680038EEBA /* loginAndProfile-Info.plist */,
+				AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */,
 				ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */,
 				ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */,
 				ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */,
@@ -225,10 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */,
 				ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */,
-				ACAA0A97177772A600C6CFE9 /* pic1.jpg in Resources */,
-				ACAA0A98177772A600C6CFE9 /* pic2.jpg in Resources */,
+				ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */,
+				ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */,
 				ACAA0A99177772A600C6CFE9 /* pic3.jpg in Resources */,
 				ACAA0A9A177772A600C6CFE9 /* MelanomaA.jpg in Resources */,
 				ACAA0A9B177772A600C6CFE9 /* Melanoma6.jpg in Resources */,
@@ -239,6 +265,7 @@
 				ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */,
 				ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */,
 				ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */,
+				AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */,
+				AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */,
 				ACAA0A941777727800C6CFE9 /* main.m in Sources */,
 				ACAA0A8A1777725F00C6CFE9 /* ABCDEAppDelegate.m in Sources */,
 				ACAA0A8B1777725F00C6CFE9 /* ABCDEViewController.m in Sources */,
@@ -260,6 +289,7 @@
 				ACAA0A911777725F00C6CFE9 /* DetailsViewController.m in Sources */,
 				ACAA0A921777725F00C6CFE9 /* CompareViewController.m in Sources */,
 				ACAA0A931777725F00C6CFE9 /* EditViewController.m in Sources */,
+				AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

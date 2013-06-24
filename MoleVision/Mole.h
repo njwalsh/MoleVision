@@ -10,12 +10,14 @@
 
 @interface Mole : NSObject{
     
+    NSString *name;
     NSMutableArray *imagesArray;
     NSInteger *risk;
     NSString *comments;
     
 }
 
+@property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSMutableArray *imagesArray;
 @property (nonatomic) NSInteger *risk;
 @property (nonatomic, retain) NSString *comments;

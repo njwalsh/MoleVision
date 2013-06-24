@@ -10,4 +10,12 @@
 
 @interface ViewController : UIViewController
 
+/*@property (weak, nonatomic) IBOutlet UITextField *userGenderTextFiled;
+@property (weak, nonatomic) IBOutlet UITextField *userAgeTextFiled;
+@property (weak, nonatomic) IBOutlet UITextField *userSkintypeTextFiled;
+@property (weak, nonatomic) IBOutlet UITextField *userEyeColorTextFiled;
+
+
+- (IBAction)submitProfielButton:(id)sender;*/
+
 @end

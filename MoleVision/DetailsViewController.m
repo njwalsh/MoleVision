@@ -7,6 +7,7 @@
 //
 
 #import "DetailsViewController.h"
+#import "EditViewController.h"
 
 @interface DetailsViewController ()
 
@@ -15,9 +16,9 @@
 @implementation DetailsViewController
 @synthesize label;
 
-@synthesize editMOleBUtton;
+@synthesize editMoleButton;
 
-- (IBAction) doEditMOleButton {
+- (IBAction) doEditMoleButton {
     NSLog(@"edit mole");
 }
 
@@ -50,7 +51,7 @@
     
     //set up and add images
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
-    [imgView setImage:[UIImage imageNamed:@"pic1.jpg"]];
+    [imgView setImage:[UIImage imageNamed:@"photo(11).JPG"]];
     [scroller addSubview:imgView];
     
     //offset view size
@@ -75,5 +76,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"edit"]){
+        EditViewController *evc = segue.destinationViewController;
+        
+        NSIndexPath *indexPath = nil;
+        
+        evc.sendMoleLabel = @"name";
+    }
+}*/
 
 @end

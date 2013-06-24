@@ -8,11 +8,21 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+#import "FirstViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    ///self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    //  self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    // self.window.rootViewController = self.viewController;
+    
+    /*FirstViewController *fvc=[[FirstViewController alloc]init];
+    self.window.rootViewController=fvc;
+    [self.window makeKeyAndVisible];*/
     return YES;
 }
 							

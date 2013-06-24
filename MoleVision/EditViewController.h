@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditViewController : UIViewController
+@interface EditViewController : UIViewController{
+    UITextField *label;
+    NSString *sendMoleLabel;
+    UITextView *comments;
+}
+
+@property (nonatomic, retain) IBOutlet UITextField *label;
+@property (strong, nonatomic) NSString *sendMoleLabel;
+@property (nonatomic, retain) IBOutlet UITextView *comments;
+
 
 @end

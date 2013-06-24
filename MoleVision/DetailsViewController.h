@@ -16,8 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) NSString *sendLabel;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem * editMOleBUtton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem * editMoleButton;
 
-- (IBAction) doEditMOleButton;
+- (IBAction) doEditMoleButton;
 
 @end

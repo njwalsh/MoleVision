@@ -10,11 +10,13 @@
 #import "DetailsViewController.h"
 #import "CustomCell.h"
 #import "Mole.h"
+#import "CameraViewController.h"
 
 @interface ListTableViewController () <UISearchDisplayDelegate>
 
 @property (strong, nonatomic) NSArray *searchResults;
 @property (nonatomic, retain) NSMutableArray *moleArray;
+@property (strong, nonatomic) NSMutableArray *dataArray;
 
 @end
 
@@ -24,14 +26,37 @@
 @synthesize moleArray;
 @synthesize dataArray;
 
+-(IBAction)ChooseExisting{
+    picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    //[imageView setImage:image];
+    [self addMole];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 //add new mole when plus button is pressed
 - (IBAction) doMoleButton {
-    moleArray = [[NSMutableArray alloc] init];
+    
+}
 
+- (void) addMole {
     Mole *mole1 = [[Mole alloc] init];
-    [mole1.imagesArray addObject:[UIImage imageNamed:@"pic1.jpg"]];
+    [mole1.imagesArray addObject:image];
     [moleArray insertObject:mole1 atIndex:0];
-        
+    
+    mole1.name = @"_name_this_mole";
+    [self.dataArray addObject:mole1.name];
+    
     [self.tableView reloadData];
 }
 
@@ -48,7 +73,8 @@
 {
     [super viewDidLoad];
     
-    self.dataArray = [NSArray arrayWithObjects:@"Tomb Raider", nil];
+    self.dataArray = [[NSMutableArray alloc] init];
+    moleArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,11 +122,11 @@
     if (tableView == self.tableView){
         cell.moleLable.text = [self.dataArray objectAtIndex:indexPath.row];
         Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
-        NSLog(@"%@", [moleArray objectAtIndex:0]);
+        NSLog(@"%@", [moleArray objectAtIndex:indexPath.row]);
         cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
     }else{
         cell.moleLable.text = [self.searchResults objectAtIndex:indexPath.row];
-        cell.moleImageView.image = [UIImage imageNamed:@"pic1.jpg"];
+        cell.moleImageView.image = [UIImage imageNamed:@"photo(11).JPG"];
     }
     
     return cell;

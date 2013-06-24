@@ -10,6 +10,7 @@
 
 @implementation Mole
 
+@synthesize name;
 @synthesize imagesArray;
 @synthesize risk;
 @synthesize comments;

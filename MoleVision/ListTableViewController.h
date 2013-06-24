@@ -8,18 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListTableViewController : UITableViewController{
+@class CameraViewController;
+
+@interface ListTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     
     UIBarButtonItem * moleButton;
     NSMutableArray *moleArray;
     NSMutableArray *dataArray;
     
+    UIImagePickerController *picker;
+    UIImage *image;
+    
 }
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * moleButton;
 
-@property (strong, nonatomic) NSArray *dataArray;
-
 - (IBAction) doMoleButton;
+- (void) addMole;
+
+-(IBAction)ChooseExisting;
 
 @end
