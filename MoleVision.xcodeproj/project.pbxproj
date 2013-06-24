@@ -50,8 +50,8 @@
 		AC30333517783E380038EEBA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		AC30333617783E390038EEBA /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		AC30333717783E3A0038EEBA /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		AC30333817783E680038EEBA /* loginAndProfile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "loginAndProfile-Info.plist"; path = "../../loginAndProfile 2 2/loginAndProfile/loginAndProfile-Info.plist"; sourceTree = "<group>"; };
-		AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "loginAndProfile-Prefix.pch"; path = "../../loginAndProfile 2 2/loginAndProfile/loginAndProfile-Prefix.pch"; sourceTree = "<group>"; };
+		AC30333817783E680038EEBA /* loginAndProfile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "loginAndProfile-Info.plist"; sourceTree = "<group>"; };
+		AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loginAndProfile-Prefix.pch"; sourceTree = "<group>"; };
 		AC30333F177841B40038EEBA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		ACAA0A38177770D000C6CFE9 /* MoleVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAA0A3B177770D000C6CFE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -91,8 +91,8 @@
 		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
 		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
 		ACAA0A86177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
-		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "photo(11).JPG"; path = "../../../Pictures/photo(11).JPG"; sourceTree = "<group>"; };
-		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "photo(12)-1.JPG"; path = "../../../Pictures/photo(12)-1.JPG"; sourceTree = "<group>"; };
+		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(11).JPG"; sourceTree = "<group>"; };
+		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(12)-1.JPG"; sourceTree = "<group>"; };
 		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
