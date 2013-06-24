@@ -12,6 +12,7 @@
 		AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333717783E3A0038EEBA /* SignUpViewController.m */; };
 		AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30333817783E680038EEBA /* loginAndProfile-Info.plist */; };
 		AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30333F177841B40038EEBA /* Storyboard.storyboard */; };
+		AC745F6E1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */; };
 		ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3B177770D000C6CFE9 /* UIKit.framework */; };
 		ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3D177770D000C6CFE9 /* Foundation.framework */; };
 		ACAA0A40177770D000C6CFE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3F177770D000C6CFE9 /* CoreGraphics.framework */; };
@@ -26,7 +27,7 @@
 		ACAA0A921777725F00C6CFE9 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A6D1777714000C6CFE9 /* CompareViewController.m */; };
 		ACAA0A931777725F00C6CFE9 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A6F1777714000C6CFE9 /* EditViewController.m */; };
 		ACAA0A941777727800C6CFE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A771777715B00C6CFE9 /* main.m */; };
-		ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone.storyboard */; };
+		ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */; };
 		ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */; };
 		ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A87177771B300C6CFE9 /* photo(11).JPG */; };
 		ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */; };
@@ -53,6 +54,7 @@
 		AC30333817783E680038EEBA /* loginAndProfile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "loginAndProfile-Info.plist"; sourceTree = "<group>"; };
 		AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loginAndProfile-Prefix.pch"; sourceTree = "<group>"; };
 		AC30333F177841B40038EEBA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		ACAA0A38177770D000C6CFE9 /* MoleVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAA0A3B177770D000C6CFE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACAA0A3D177770D000C6CFE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,7 +91,7 @@
 		ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ABCDE Tutorial-Prefix.pch"; path = "Supporting Files/ABCDE Tutorial-Prefix.pch"; sourceTree = "<group>"; };
 		ACAA0A81177771B300C6CFE9 /* Mole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mole.h; sourceTree = "<group>"; };
 		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
-		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
+		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone1.storyboard"; sourceTree = "<group>"; };
 		ACAA0A86177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
 		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(11).JPG"; sourceTree = "<group>"; };
 		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(12)-1.JPG"; sourceTree = "<group>"; };
@@ -155,7 +157,8 @@
 				AC30333717783E3A0038EEBA /* SignUpViewController.m */,
 				ACAA0A81177771B300C6CFE9 /* Mole.h */,
 				ACAA0A82177771B300C6CFE9 /* Mole.m */,
-				ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone.storyboard */,
+				ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */,
+				AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */,
 				AC30333F177841B40038EEBA /* Storyboard.storyboard */,
 				ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */,
 				AC3033301777E9990038EEBA /* CameraViewController.h */,
@@ -251,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */,
-				ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone1.storyboard in Resources */,
 				ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */,
 				ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */,
 				ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */,
@@ -266,6 +269,7 @@
 				ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */,
 				ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */,
 				AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */,
+				AC745F6E1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +308,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone.storyboard */ = {
+		ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ACAA0A84177771B300C6CFE9 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
+			name = MainStoryboard_iPhone1.storyboard;
 			sourceTree = "<group>";
 		};
 		ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */ = {
