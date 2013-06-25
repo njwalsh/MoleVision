@@ -77,15 +77,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"edit"]){
         EditViewController *evc = segue.destinationViewController;
-        
-        NSIndexPath *indexPath = nil;
+        //NSIndexPath *indexPath = nil;
         
         evc.sendMoleLabel = @"name";
     }
-}*/
+}
 
 @end

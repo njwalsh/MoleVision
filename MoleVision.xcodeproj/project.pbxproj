@@ -27,8 +27,6 @@
 		ACAA0A921777725F00C6CFE9 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A6D1777714000C6CFE9 /* CompareViewController.m */; };
 		ACAA0A931777725F00C6CFE9 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A6F1777714000C6CFE9 /* EditViewController.m */; };
 		ACAA0A941777727800C6CFE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA0A771777715B00C6CFE9 /* main.m */; };
-		ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */; };
-		ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */; };
 		ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A87177771B300C6CFE9 /* photo(11).JPG */; };
 		ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */; };
 		ACAA0A99177772A600C6CFE9 /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A89177771B300C6CFE9 /* pic3.jpg */; };
@@ -37,7 +35,6 @@
 		ACAA0A9C177772A600C6CFE9 /* MelanomaA4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */; };
 		ACAA0A9D177772A600C6CFE9 /* ABCDE Tutorial-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */; };
 		ACAA0A9E177772A600C6CFE9 /* Mole Vision-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */; };
-		ACAA0A9F177772A600C6CFE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A751777715B00C6CFE9 /* InfoPlist.strings */; };
 		ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A791777715B00C6CFE9 /* Default.png */; };
 		ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */; };
 		ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7B1777715B00C6CFE9 /* Default-568h@2x.png */; };
@@ -78,7 +75,6 @@
 		ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCDEViewController.h; sourceTree = "<group>"; };
 		ACAA0A731777714900C6CFE9 /* ABCDEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCDEViewController.m; sourceTree = "<group>"; };
 		ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mole Vision-Info.plist"; path = "Supporting Files/Mole Vision-Info.plist"; sourceTree = "<group>"; };
-		ACAA0A761777715B00C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		ACAA0A771777715B00C6CFE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACAA0A781777715B00C6CFE9 /* Mole Vision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mole Vision-Prefix.pch"; path = "Supporting Files/Mole Vision-Prefix.pch"; sourceTree = "<group>"; };
 		ACAA0A791777715B00C6CFE9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -91,8 +87,6 @@
 		ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ABCDE Tutorial-Prefix.pch"; path = "Supporting Files/ABCDE Tutorial-Prefix.pch"; sourceTree = "<group>"; };
 		ACAA0A81177771B300C6CFE9 /* Mole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mole.h; sourceTree = "<group>"; };
 		ACAA0A82177771B300C6CFE9 /* Mole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mole.m; sourceTree = "<group>"; };
-		ACAA0A84177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPhone1.storyboard"; sourceTree = "<group>"; };
-		ACAA0A86177771B300C6CFE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../SearchBarTutorial copy 3/SearchBarTutorial/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
 		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(11).JPG"; sourceTree = "<group>"; };
 		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(12)-1.JPG"; sourceTree = "<group>"; };
 		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
@@ -157,10 +151,8 @@
 				AC30333717783E3A0038EEBA /* SignUpViewController.m */,
 				ACAA0A81177771B300C6CFE9 /* Mole.h */,
 				ACAA0A82177771B300C6CFE9 /* Mole.m */,
-				ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */,
 				AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */,
 				AC30333F177841B40038EEBA /* Storyboard.storyboard */,
-				ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */,
 				AC3033301777E9990038EEBA /* CameraViewController.h */,
 				AC3033311777E9990038EEBA /* CameraViewController.m */,
 				ACAA0A661777714000C6CFE9 /* ListTableViewController.h */,
@@ -192,7 +184,6 @@
 				ACAA0A7F1777718C00C6CFE9 /* ABCDE Tutorial-Info.plist */,
 				ACAA0A801777718C00C6CFE9 /* ABCDE Tutorial-Prefix.pch */,
 				ACAA0A741777715B00C6CFE9 /* Mole Vision-Info.plist */,
-				ACAA0A751777715B00C6CFE9 /* InfoPlist.strings */,
 				ACAA0A771777715B00C6CFE9 /* main.m */,
 				ACAA0A781777715B00C6CFE9 /* Mole Vision-Prefix.pch */,
 				ACAA0A791777715B00C6CFE9 /* Default.png */,
@@ -254,8 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */,
-				ACAA0A95177772A600C6CFE9 /* MainStoryboard_iPhone1.storyboard in Resources */,
-				ACAA0A96177772A600C6CFE9 /* MainStoryboard_iPad.storyboard in Resources */,
 				ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */,
 				ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */,
 				ACAA0A99177772A600C6CFE9 /* pic3.jpg in Resources */,
@@ -264,7 +253,6 @@
 				ACAA0A9C177772A600C6CFE9 /* MelanomaA4.jpg in Resources */,
 				ACAA0A9D177772A600C6CFE9 /* ABCDE Tutorial-Info.plist in Resources */,
 				ACAA0A9E177772A600C6CFE9 /* Mole Vision-Info.plist in Resources */,
-				ACAA0A9F177772A600C6CFE9 /* InfoPlist.strings in Resources */,
 				ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */,
 				ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */,
 				ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */,
@@ -298,33 +286,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ACAA0A751777715B00C6CFE9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACAA0A761777715B00C6CFE9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ACAA0A83177771B300C6CFE9 /* MainStoryboard_iPhone1.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACAA0A84177771B300C6CFE9 /* en */,
-			);
-			name = MainStoryboard_iPhone1.storyboard;
-			sourceTree = "<group>";
-		};
-		ACAA0A85177771B300C6CFE9 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACAA0A86177771B300C6CFE9 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACAA0A5C177770D100C6CFE9 /* Debug */ = {

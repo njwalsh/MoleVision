@@ -233,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="3654" y="643"/>
         </scene>
-        <!--View Controller - Edit-->
+        <!--Edit View Controller - Edit-->
         <scene sceneID="jxO-EQ-0Pr">
             <objects>
-                <viewController id="yTm-6a-Jr7" sceneMemberID="viewController">
+                <viewController id="yTm-6a-Jr7" customClass="EditViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QnO-kx-mhc">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -281,6 +281,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Edit" id="VID-tD-90R"/>
+                    <connections>
+                        <outlet property="comments" destination="3Sv-Wx-B61" id="gAg-ib-mIf"/>
+                        <outlet property="label" destination="7lR-gA-KUg" id="h2M-hx-ILD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lef-sr-9fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -690,6 +694,13 @@
                 <relationship kind="action" name="doEditMoleButton"/>
                 <relationship kind="outlet" name="editMoleButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="comments" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="label" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="ListTableViewController" superclassName="UITableViewController">
