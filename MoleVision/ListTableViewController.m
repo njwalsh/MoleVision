@@ -25,7 +25,6 @@
 @synthesize moleButton;
 @synthesize moleArray;
 @synthesize dataArray;
-@synthesize appDelegate;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -55,8 +54,8 @@
     
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
-    [appDelegate.moleArray insertObject:mole1 atIndex:0];//not working
-    Mole *temp = [appDelegate.moleArray objectAtIndex:0];
+    [moleArray insertObject:mole1 atIndex:0];//not working
+    Mole *temp = [moleArray objectAtIndex:0];
     NSLog(@"%@", temp.name);
     NSLog(@"hello");
     
@@ -82,8 +81,7 @@
     self.dataArray = [[NSMutableArray alloc] init];
     moleArray = [[NSMutableArray alloc] init];
     
-    appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    appDelegate.moleArray = [[NSMutableArray alloc] init];
+    moleArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -130,7 +128,7 @@
     
     if (tableView == self.tableView){
         cell.moleLable.text = [self.dataArray objectAtIndex:indexPath.row];
-        Mole *tempMole = [appDelegate.moleArray objectAtIndex:indexPath.row];
+        Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
         cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
     }else{
         cell.moleLable.text = [self.searchResults objectAtIndex:indexPath.row];

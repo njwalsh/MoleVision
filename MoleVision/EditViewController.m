@@ -8,7 +8,6 @@
 
 #import "EditViewController.h"
 #import "Mole.h"
-#import "AppDelegate.h"
 
 @interface EditViewController ()
 
@@ -36,10 +35,7 @@
     
     label.text = self.sendMoleLabel;
     label.text = @"new Name";
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    Mole *temp = [appDelegate.moleArray objectAtIndex:moleIndex];
-    temp.name = label.text;
-    [appDelegate.moleArray replaceObjectAtIndex:moleIndex withObject:temp];
+    [self.delegate receiveData:label.text];
 }
 
 - (void)didReceiveMemoryWarning

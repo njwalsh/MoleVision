@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EditViewController.h"
 
-@interface DetailsViewController : UIViewController{
+@interface DetailsViewController : UIViewController <MyDataDelegate>{
     
     UIBarButtonItem * editMoleButton;
     
