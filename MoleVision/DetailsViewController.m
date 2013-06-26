@@ -15,6 +15,7 @@
 
 @implementation DetailsViewController
 @synthesize label;
+@synthesize moleRow;
 
 @synthesize editMoleButton;
 
@@ -83,7 +84,8 @@
         EditViewController *evc = segue.destinationViewController;
         //NSIndexPath *indexPath = nil;
         
-        evc.sendMoleLabel = @"name";
+        evc.sendMoleLabel = self.sendLabel;
+        evc.moleIndex = self.moleRow;
     }
 }
 

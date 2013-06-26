@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @class CameraViewController;
 
@@ -19,9 +20,12 @@
     UIImagePickerController *picker;
     UIImage *image;
     
+    AppDelegate *appDelegate;
+    
 }
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * moleButton;
+@property (strong, nonatomic) AppDelegate *appDelegate;
 
 - (IBAction) doMoleButton;
 - (void) addMole;

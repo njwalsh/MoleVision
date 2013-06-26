@@ -25,6 +25,7 @@
 @synthesize moleButton;
 @synthesize moleArray;
 @synthesize dataArray;
+@synthesize appDelegate;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -50,22 +51,19 @@
 }
 
 - (void) addMole {
+    
+    
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
-    [moleArray insertObject:mole1 atIndex:0];
+    [appDelegate.moleArray insertObject:mole1 atIndex:0];//not working
+    Mole *temp = [appDelegate.moleArray objectAtIndex:0];
+    NSLog(@"%@", temp.name);
+    NSLog(@"hello");
     
     mole1.name = @"_name_this_mole";
     [self.dataArray addObject:mole1.name];
     
     [self.tableView reloadData];
-    [self saveMoleData];
-}
-
-- (void) saveMoleData{
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
-    [prefs setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
-    NSLog(@"saved moleArray");
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -83,6 +81,9 @@
     
     self.dataArray = [[NSMutableArray alloc] init];
     moleArray = [[NSMutableArray alloc] init];
+    
+    appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.moleArray = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -129,8 +130,7 @@
     
     if (tableView == self.tableView){
         cell.moleLable.text = [self.dataArray objectAtIndex:indexPath.row];
-        Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
-        NSLog(@"%@", [moleArray objectAtIndex:indexPath.row]);
+        Mole *tempMole = [appDelegate.moleArray objectAtIndex:indexPath.row];
         cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
     }else{
         cell.moleLable.text = [self.searchResults objectAtIndex:indexPath.row];
@@ -150,10 +150,12 @@
         if([self.searchDisplayController isActive]){
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
             dvc.sendLabel = [self.searchResults objectAtIndex:indexPath.row];
+            dvc.moleRow = indexPath.row;
             return;
         }else{
             indexPath = [self.tableView indexPathForSelectedRow];
             dvc.sendLabel = [self.dataArray objectAtIndex:indexPath.row];
+            dvc.moleRow = indexPath.row;
             return;
         }
     }

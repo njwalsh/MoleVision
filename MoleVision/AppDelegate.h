@@ -11,8 +11,10 @@
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+    
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic,retain) NSMutableArray *moleArray;
 
 //@property (strong, nonatomic) ViewController *viewController;
 

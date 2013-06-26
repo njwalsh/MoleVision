@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) NSString *sendLabel;
+@property (nonatomic) NSInteger moleRow;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * editMoleButton;
 
 - (IBAction) doEditMoleButton;

@@ -17,6 +17,7 @@
 @property (nonatomic, retain) IBOutlet UITextField *label;
 @property (strong, nonatomic) NSString *sendMoleLabel;
 @property (nonatomic, retain) IBOutlet UITextView *comments;
+@property (nonatomic) NSInteger moleIndex;
 
 
 @end

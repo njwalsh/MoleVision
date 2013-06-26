@@ -7,6 +7,8 @@
 //
 
 #import "EditViewController.h"
+#import "Mole.h"
+#import "AppDelegate.h"
 
 @interface EditViewController ()
 
@@ -16,6 +18,7 @@
 
 @synthesize label, comments;
 @synthesize sendMoleLabel;
+@synthesize moleIndex;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +35,11 @@
 	// Do any additional setup after loading the view.
     
     label.text = self.sendMoleLabel;
+    label.text = @"new Name";
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    Mole *temp = [appDelegate.moleArray objectAtIndex:moleIndex];
+    temp.name = label.text;
+    [appDelegate.moleArray replaceObjectAtIndex:moleIndex withObject:temp];
 }
 
 - (void)didReceiveMemoryWarning
