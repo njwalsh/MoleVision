@@ -25,6 +25,7 @@
 
 - (IBAction) doMoleButton;
 - (void) addMole;
+- (void) saveMoleData;
 
 -(IBAction)ChooseExisting;
 

@@ -58,6 +58,14 @@
     [self.dataArray addObject:mole1.name];
     
     [self.tableView reloadData];
+    [self saveMoleData];
+}
+
+- (void) saveMoleData{
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
+    [prefs setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+    NSLog(@"saved moleArray");
 }
 
 - (id)initWithStyle:(UITableViewStyle)style

@@ -12,8 +12,9 @@
     
     NSString *name;
     NSMutableArray *imagesArray;
-    NSInteger *risk;
+    //NSInteger *risk;
     NSString *comments;
+    int countOpen;
     
 }
 
@@ -21,5 +22,6 @@
 @property (nonatomic, retain) NSMutableArray *imagesArray;
 @property (nonatomic) NSInteger *risk;
 @property (nonatomic, retain) NSString *comments;
+@property (nonatomic) int countOpen;
 
 @end

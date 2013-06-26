@@ -2,7 +2,7 @@
 //  CameraViewController.m
 //  MoleVision
 //
-//  Created by Dawn Walsh on 2013-06-23.
+//  Created by Nick Walsh on 2013-06-23.
 //  Copyright (c) 2013 Team Up. All rights reserved.
 //
 
