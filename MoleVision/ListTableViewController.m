@@ -54,23 +54,26 @@
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
-    for (Mole *item in decodedArray) {
-        
-        NSLog(@"name=%@",item.name);
-        NSLog(@"commetns=%@",item.comments);
-        NSLog(@"-----------");
-    }
-    
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
-    [moleArray insertObject:mole1 atIndex:0];
+    [moleArray addObject:mole1];
     
-    mole1.name = @"_name_this_mole";
     [self.dataArray addObject:mole1.name];
     
-    if([decodedArray count] != 0){
-        Mole *temp = [decodedArray objectAtIndex:0];
-        [self.dataArray replaceObjectAtIndex:0 withObject:temp.name];
+    for (NSString *str in dataArray){
+        NSLog(@"%@", str);
+    }
+    NSLog(@"decoded Array-----------------");
+    for (Mole *tempMole in decodedArray){
+        NSLog(@"%@", tempMole.name);
+    }
+    NSLog(@"data Array-----------------");
+    
+    for (int i = 0; i < [decodedArray count]; i++) {
+        Mole *temp = [decodedArray objectAtIndex:i];
+        [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
+        
+        [moleArray replaceObjectAtIndex:i withObject:temp];
     }
     
     [self.tableView reloadData];
@@ -146,7 +149,9 @@
     if (tableView == self.tableView){
         cell.moleLable.text = [self.dataArray objectAtIndex:indexPath.row];
         Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
-        cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
+        if([tempMole.imagesArray count] != 0){//throws outofbounds error without
+            cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
+        }
     }else{
         cell.moleLable.text = [self.searchResults objectAtIndex:indexPath.row];
         cell.moleImageView.image = [UIImage imageNamed:@"photo(11).JPG"];
