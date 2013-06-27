@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MyDataDelegate
-
--(void)receiveData:(NSString *)theData;
-
-@end
-
 @interface EditViewController : UIViewController{
     UITextField *label;
     NSString *sendMoleLabel;
@@ -24,8 +18,6 @@
 @property (strong, nonatomic) NSString *sendMoleLabel;
 @property (nonatomic, retain) IBOutlet UITextView *comments;
 @property (nonatomic) NSInteger moleIndex;
-
-@property (nonatomic) id<MyDataDelegate> delegate;
 
 
 @end

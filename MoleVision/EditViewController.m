@@ -35,7 +35,18 @@
     
     label.text = self.sendMoleLabel;
     label.text = @"new Name";
-    [self.delegate receiveData:label.text];
+    
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
+    Mole *tempMole = [[Mole alloc] init];
+    tempMole.name = label.text;
+    [tempArr replaceObjectAtIndex:moleIndex withObject:tempMole];
+    
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
 }
 
 - (void)didReceiveMemoryWarning

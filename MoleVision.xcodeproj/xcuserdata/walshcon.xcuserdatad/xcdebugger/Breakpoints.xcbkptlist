@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MoleVision/ListTableViewController.m"
-         timestampString = "393923783.588916"
+         timestampString = "393969447.485819"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
          landmarkName = "-addMole"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,7 +21,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MoleVision/ListTableViewController.h"
-         timestampString = "393923783.588916"
+         timestampString = "393967562.246418"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "15"
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MoleVision/DetailsViewController.m"
-         timestampString = "393923783.588916"
+         timestampString = "393968331.363759"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "90"
-         endingLineNumber = "90"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MoleVision/DetailsViewController.m"
-         timestampString = "393923783.588916"
+         timestampString = "393968331.363759"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "92"
-         endingLineNumber = "92"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MoleVision/ListTableViewController.m"
-         timestampString = "393923783.588916"
+         timestampString = "393971584.368209"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "151"
-         endingLineNumber = "151"
+         startingLineNumber = "168"
+         endingLineNumber = "168"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>

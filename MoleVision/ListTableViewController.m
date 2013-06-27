@@ -50,19 +50,34 @@
 }
 
 - (void) addMole {
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
+    for (Mole *item in decodedArray) {
+        
+        NSLog(@"name=%@",item.name);
+        NSLog(@"commetns=%@",item.comments);
+        NSLog(@"-----------");
+    }
     
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
-    [moleArray insertObject:mole1 atIndex:0];//not working
-    Mole *temp = [moleArray objectAtIndex:0];
-    NSLog(@"%@", temp.name);
-    NSLog(@"hello");
+    [moleArray insertObject:mole1 atIndex:0];
     
     mole1.name = @"_name_this_mole";
     [self.dataArray addObject:mole1.name];
     
+    if([decodedArray count] != 0){
+        Mole *temp = [decodedArray objectAtIndex:0];
+        [self.dataArray replaceObjectAtIndex:0 withObject:temp.name];
+    }
+    
     [self.tableView reloadData];
+    
+    //save array
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -81,7 +96,9 @@
     self.dataArray = [[NSMutableArray alloc] init];
     moleArray = [[NSMutableArray alloc] init];
     
-    moleArray = [[NSMutableArray alloc] init];
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
 }
 
 - (void)didReceiveMemoryWarning

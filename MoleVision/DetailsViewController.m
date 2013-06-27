@@ -7,7 +7,6 @@
 //
 
 #import "DetailsViewController.h"
-#import "EditViewController.h"
 
 @interface DetailsViewController ()
 
@@ -18,11 +17,6 @@
 @synthesize moleRow;
 
 @synthesize editMoleButton;
-
--(void)receiveData:(NSString *)theData{
-    //Do something..
-    self.label.text = theData;
-}
 
 - (IBAction) doEditMoleButton {
     NSLog(@"edit mole");
@@ -91,8 +85,6 @@
         
         evc.sendMoleLabel = self.sendLabel;
         evc.moleIndex = self.moleRow;
-        
-        evc.delegate = self;
     }
 }
 
