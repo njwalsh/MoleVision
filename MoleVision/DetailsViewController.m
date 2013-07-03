@@ -7,6 +7,7 @@
 //
 
 #import "DetailsViewController.h"
+#import "Mole.h"
 
 @interface DetailsViewController ()
 
@@ -36,6 +37,7 @@
     [super viewDidLoad];
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
+    NSLog(@"%@", self.label.text);
     
     //How many oages do we want
     int pageCount = 3;

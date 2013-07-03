@@ -7,6 +7,7 @@
 //
 
 #import "EditViewController.h"
+#import "ListTableViewController.h"
 #import "Mole.h"
 
 @interface EditViewController ()
@@ -18,6 +19,32 @@
 @synthesize label, comments;
 @synthesize sendMoleLabel;
 @synthesize moleIndex;
+@synthesize moleLabel;
+@synthesize moleComments;
+
+-(IBAction)tapBackground:(id)sender{
+    [label resignFirstResponder];
+    [comments resignFirstResponder];
+    
+    moleLabel = label.text;
+    moleComments = comments.text;
+    
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
+    Mole *tempMole = [[Mole alloc] init];
+    tempMole.name = moleLabel;
+    tempMole.comments = moleComments;
+    [tempArr replaceObjectAtIndex:moleIndex withObject:tempMole];
+    
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+    
+    //update other views
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,20 +60,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    label.text = self.sendMoleLabel;
-    label.text = @"new Name";
-    
+    //get mole comments
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
-    NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
-    Mole *tempMole = [[Mole alloc] init];
-    tempMole.name = label.text;
-    [tempArr replaceObjectAtIndex:moleIndex withObject:tempMole];
-    
-    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
-    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+    Mole *tempMole = [decodedArray objectAtIndex:moleIndex];
+    label.text = tempMole.name;
+    comments.text = tempMole.comments;
 }
 
 - (void)didReceiveMemoryWarning

@@ -237,7 +237,7 @@
         <scene sceneID="jxO-EQ-0Pr">
             <objects>
                 <viewController id="yTm-6a-Jr7" customClass="EditViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QnO-kx-mhc">
+                    <view key="view" contentMode="scaleToFill" id="QnO-kx-mhc" customClass="UIControl">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -279,6 +279,9 @@
                             <constraint firstItem="7lR-gA-KUg" firstAttribute="leading" secondItem="lHj-de-Q2x" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="jWo-m6-S0A"/>
                             <constraint firstItem="3Sv-Wx-B61" firstAttribute="leading" secondItem="QnO-kx-mhc" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sQW-xk-jEb"/>
                         </constraints>
+                        <connections>
+                            <action selector="tapBackground:" destination="yTm-6a-Jr7" eventType="touchDown" id="3J9-F7-CIV"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Edit" id="VID-tD-90R"/>
                     <connections>
@@ -699,6 +702,7 @@
         <class className="EditViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditViewController.h"/>
             <relationships>
+                <relationship kind="action" name="tapBackground:"/>
                 <relationship kind="outlet" name="comments" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="label" candidateClass="UITextField"/>
             </relationships>
