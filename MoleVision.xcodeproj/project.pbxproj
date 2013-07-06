@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3433FBBB1788D1B7000346E6 /* email.m in Sources */ = {isa = PBXBuildFile; fileRef = 3433FBBA1788CFC8000346E6 /* email.m */; };
 		AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3033311777E9990038EEBA /* CameraViewController.m */; };
 		AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333517783E380038EEBA /* FirstViewController.m */; };
 		AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333717783E3A0038EEBA /* SignUpViewController.m */; };
 		AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30333817783E680038EEBA /* loginAndProfile-Info.plist */; };
 		AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30333F177841B40038EEBA /* Storyboard.storyboard */; };
 		AC745F6E1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */; };
+		AC9834951788D4C600E6004A /* email.m in Sources */ = {isa = PBXBuildFile; fileRef = 3433FBBA1788CFC8000346E6 /* email.m */; };
+		ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */; };
 		ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3B177770D000C6CFE9 /* UIKit.framework */; };
 		ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3D177770D000C6CFE9 /* Foundation.framework */; };
 		ACAA0A40177770D000C6CFE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3F177770D000C6CFE9 /* CoreGraphics.framework */; };
@@ -55,6 +56,7 @@
 		AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loginAndProfile-Prefix.pch"; sourceTree = "<group>"; };
 		AC30333F177841B40038EEBA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACAA0A38177770D000C6CFE9 /* MoleVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoleVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAA0A3B177770D000C6CFE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACAA0A3D177770D000C6CFE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */,
 				ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */,
 				ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */,
 				ACAA0A40177770D000C6CFE9 /* CoreGraphics.framework in Frameworks */,
@@ -112,6 +115,7 @@
 		ACAA0A2F177770D000C6CFE9 = {
 			isa = PBXGroup;
 			children = (
+				ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */,
 				ACAA0A41177770D000C6CFE9 /* MoleVision */,
 				ACAA0A3A177770D000C6CFE9 /* Frameworks */,
 				ACAA0A39177770D000C6CFE9 /* Products */,
@@ -273,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3433FBBB1788D1B7000346E6 /* email.m in Sources */,
+				AC9834951788D4C600E6004A /* email.m in Sources */,
 				AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */,
 				AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */,
 				ACAA0A941777727800C6CFE9 /* main.m in Sources */,
