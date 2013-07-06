@@ -8,18 +8,29 @@
 
 #import <UIKit/UIKit.h>
 #import "EditViewController.h"
+#import "Mole.h"
 
-@interface DetailsViewController : UIViewController{
+@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     
     UIBarButtonItem * editMoleButton;
+    int pageCount;
+    
+    UIButton * addPictureButton;
+    UIImagePickerController *picker;
+    UIImage *image;
     
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *comment;
 @property (strong, nonatomic) NSString *sendLabel;
 @property (nonatomic) NSInteger moleRow;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * editMoleButton;
+@property (nonatomic) int pageCount;
+@property (nonatomic, retain) IBOutlet UIButton * addPictureButton;
 
 - (IBAction) doEditMoleButton;
+-(IBAction)ChooseExisting;
+- (void) displayMoleImages:(Mole *)tmpMole;
 
 @end

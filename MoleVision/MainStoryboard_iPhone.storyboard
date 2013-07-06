@@ -168,9 +168,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comments:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48x-24-3UV">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="kN2-TZ-IAe"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -195,16 +192,21 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ChooseExisting" destination="wXn-Yj-jT9" eventType="touchUpInside" id="JBp-R7-x50"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="top" secondItem="ota-g8-Uyx" secondAttribute="top" type="default" id="3vU-jh-NSc"/>
-                            <constraint firstItem="oyo-DZ-ooG" firstAttribute="top" secondItem="Rrt-xe-ou0" secondAttribute="top" constant="209" id="FtM-1J-UEP"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="trailing" secondItem="PpC-Yp-kt6" secondAttribute="trailing" type="default" id="Hby-7a-P3d"/>
+                            <constraint firstItem="OZo-3D-Dih" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HrC-WV-YvW"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Kwx-V5-UD4"/>
+                            <constraint firstItem="oyo-DZ-ooG" firstAttribute="top" secondItem="Rrt-xe-ou0" secondAttribute="top" constant="209" id="OKo-u7-t95"/>
+                            <constraint firstItem="OZo-3D-Dih" firstAttribute="top" secondItem="48x-24-3UV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Oqz-2u-sp6"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="top" secondItem="oyo-DZ-ooG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TVG-tL-KOU"/>
-                            <constraint firstItem="OZo-3D-Dih" firstAttribute="baseline" secondItem="48x-24-3UV" secondAttribute="baseline" type="default" id="WH5-qV-3Wv"/>
+                            <constraint firstItem="OZo-3D-Dih" firstAttribute="centerX" secondItem="48x-24-3UV" secondAttribute="centerX" type="default" id="Unp-aq-y3e"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="oyo-DZ-ooG" secondAttribute="bottom" type="default" id="bWb-cM-xfL"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="f3w-0w-v4o"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="top" secondItem="yog-QD-1Sa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="h80-vx-evo"/>
@@ -213,7 +215,6 @@
                             <constraint firstItem="oyo-DZ-ooG" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jjz-lu-qpa"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ksD-aX-bGd"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="ota-g8-Uyx" secondAttribute="bottom" type="default" id="mUg-Ki-i1E"/>
-                            <constraint firstItem="OZo-3D-Dih" firstAttribute="leading" secondItem="48x-24-3UV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wzV-Wr-ODg"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="centerX" secondItem="Rrt-xe-ou0" secondAttribute="centerX" type="default" id="yXM-nc-k0g"/>
                             <constraint firstAttribute="trailing" secondItem="ota-g8-Uyx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yg2-T6-DfX"/>
                         </constraints>
@@ -226,6 +227,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPictureButton" destination="WIO-Vo-Pax" id="nC0-RY-RNm"/>
+                        <outlet property="comment" destination="OZo-3D-Dih" id="zXP-mM-AHw"/>
                         <outlet property="label" destination="PpC-Yp-kt6" id="1NU-qg-j3H"/>
                     </connections>
                 </viewController>
@@ -694,7 +697,10 @@
         <class className="DetailsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="ChooseExisting"/>
                 <relationship kind="action" name="doEditMoleButton"/>
+                <relationship kind="outlet" name="addPictureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="comment" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="editMoleButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
             </relationships>
@@ -711,7 +717,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListTableViewController.h"/>
             <relationships>
                 <relationship kind="action" name="ChooseExisting"/>
-                <relationship kind="action" name="doMoleButton"/>
                 <relationship kind="outlet" name="moleButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>

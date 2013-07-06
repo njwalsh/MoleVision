@@ -7,20 +7,41 @@
 //
 
 #import "DetailsViewController.h"
-#import "Mole.h"
 
 @interface DetailsViewController ()
 
 @end
 
 @implementation DetailsViewController
-@synthesize label;
+@synthesize label, comment;
 @synthesize moleRow;
-
+@synthesize pageCount;
 @synthesize editMoleButton;
+@synthesize addPictureButton;
 
-- (IBAction) doEditMoleButton {
-    NSLog(@"edit mole");
+-(IBAction)ChooseExisting{
+    picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    //add image to mole imageArray
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    [tempMole.imagesArray addObject:image];
+    NSLog(@"imgpicker %lu", (unsigned long)[tempMole.imagesArray count]);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,10 +58,9 @@
     [super viewDidLoad];
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
-    NSLog(@"%@", self.label.text);
     
-    //How many oages do we want
-    int pageCount = 3;
+    /*//How many pages do we want
+    pageCount = 3;
     
     //set up scroll view
     UIScrollView *scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
@@ -69,6 +89,48 @@
     UIImageView *imgView3 = [[UIImageView alloc] initWithFrame:viewSize];
     [imgView3 setImage:[UIImage imageNamed:@"pic3.jpg"]];
     [scroller addSubview:imgView3];
+    
+    [self.view addSubview:scroller];*/
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    label.text = tempMole.name;
+    comment.text = tempMole.comments;
+    
+    [self displayMoleImages:tempMole];
+    NSLog(@"%lu", (unsigned long)[tempMole.imagesArray count]);
+}
+
+- (void)displayMoleImages:(Mole *)tmpMole{
+    NSArray * tmpImagesArray = [[NSArray alloc] initWithArray:tmpMole.imagesArray];
+    
+    pageCount = [tmpMole.imagesArray count];
+    
+    //set up scroll view
+    UIScrollView *scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    scroller.backgroundColor = [UIColor clearColor];
+    scroller.pagingEnabled = YES;
+    scroller.contentSize = CGSizeMake(pageCount * scroller.bounds.size.width, scroller.bounds.size.height);
+    
+    CGRect viewSize = scroller.bounds;
+    
+    for (int i = 0; i < [tmpImagesArray count]; i++) {
+        if(i != 0){
+            viewSize = CGRectOffset(viewSize, scroller.bounds.size.width, 0);
+        }
+        
+        UIImage * tempImage = [tmpImagesArray objectAtIndex:i];
+        
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
+        [imgView setImage:tempImage];
+        [scroller addSubview:imgView];
+    }
     
     [self.view addSubview:scroller];
 }

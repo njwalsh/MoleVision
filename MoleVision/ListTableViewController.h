@@ -23,7 +23,6 @@
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * moleButton;
 
-- (IBAction) doMoleButton;
 - (void) addMole;
 - (void) saveMoleData;
 

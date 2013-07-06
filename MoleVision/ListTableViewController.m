@@ -44,11 +44,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-//add new mole when plus button is pressed
-- (IBAction) doMoleButton {
-    
-}
-
 - (void) addMole {
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
@@ -60,23 +55,13 @@
     
     [self.dataArray addObject:mole1.name];
     
-    for (NSString *str in dataArray){
-        NSLog(@"%@", str);
-    }
-    NSLog(@"decoded Array-----------------");
-    for (Mole *tempMole in decodedArray){
-        NSLog(@"%@", tempMole.name);
-    }
-    NSLog(@"data Array-----------------");
-    
+    //not sure this is necessary
     for (int i = 0; i < [decodedArray count]; i++) {
         Mole *temp = [decodedArray objectAtIndex:i];
         [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
         
         [moleArray replaceObjectAtIndex:i withObject:temp];
     }
-    
-    [self.tableView reloadData];
     
     //save array
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
@@ -102,6 +87,21 @@
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    for (int i = 0; i < [decodedArray count]; i++) {
+        Mole *temp = [decodedArray objectAtIndex:i];
+        [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
+        
+        [moleArray replaceObjectAtIndex:i withObject:temp];
+    }
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
