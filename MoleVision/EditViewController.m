@@ -34,7 +34,7 @@
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
     NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
-    Mole *tempMole = [[Mole alloc] init];
+    Mole *tempMole = [tempArr objectAtIndex:moleIndex];
     tempMole.name = moleLabel;
     tempMole.comments = moleComments;
     [tempArr replaceObjectAtIndex:moleIndex withObject:tempMole];

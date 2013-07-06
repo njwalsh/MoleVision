@@ -18,6 +18,7 @@
 @synthesize pageCount;
 @synthesize editMoleButton;
 @synthesize addPictureButton;
+@synthesize scroller;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -36,6 +37,13 @@
     Mole *tempMole = [decodedArray objectAtIndex:moleRow];
     [tempMole.imagesArray addObject:image];
     NSLog(@"imgpicker %lu", (unsigned long)[tempMole.imagesArray count]);
+    
+    //save mole
+    NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
+    [tempArr replaceObjectAtIndex:moleRow withObject:tempMole];
+    
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -109,11 +117,11 @@
 
 - (void)displayMoleImages:(Mole *)tmpMole{
     NSArray * tmpImagesArray = [[NSArray alloc] initWithArray:tmpMole.imagesArray];
-    
+    [scroller removeFromSuperview];
     pageCount = [tmpMole.imagesArray count];
     
     //set up scroll view
-    UIScrollView *scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
     scroller.backgroundColor = [UIColor clearColor];
     scroller.pagingEnabled = YES;
     scroller.contentSize = CGSizeMake(pageCount * scroller.bounds.size.width, scroller.bounds.size.height);
@@ -129,6 +137,7 @@
         
         UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
         [imgView setImage:tempImage];
+        
         [scroller addSubview:imgView];
     }
     
