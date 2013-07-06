@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3446C3981780F80D00C9B9B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3446C3971780F80D00C9B9B2 /* MessageUI.framework */; };
 		34FA1188177E3644009AAB5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FA1187177E3644009AAB5F /* UIKit.framework */; };
 		34FA118A177E3644009AAB5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FA1189177E3644009AAB5F /* Foundation.framework */; };
 		34FA118C177E3644009AAB5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FA118B177E3644009AAB5F /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3446C3971780F80D00C9B9B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		34FA1184177E3644009AAB5F /* Email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FA1187177E3644009AAB5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34FA1189177E3644009AAB5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3446C3981780F80D00C9B9B2 /* MessageUI.framework in Frameworks */,
 				34FA1188177E3644009AAB5F /* UIKit.framework in Frameworks */,
 				34FA118A177E3644009AAB5F /* Foundation.framework in Frameworks */,
 				34FA118C177E3644009AAB5F /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		34FA117B177E3644009AAB5F = {
 			isa = PBXGroup;
 			children = (
+				3446C3971780F80D00C9B9B2 /* MessageUI.framework */,
 				34FA118D177E3644009AAB5F /* Email */,
 				34FA1186177E3644009AAB5F /* Frameworks */,
 				34FA1185177E3644009AAB5F /* Products */,
@@ -298,6 +302,7 @@
 				34FA11A9177E3644009AAB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
