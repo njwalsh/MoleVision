@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3433FBB81788CAF9000346E6 /* email.m in Sources */ = {isa = PBXBuildFile; fileRef = 3433FBB71788CAF9000346E6 /* email.m */; };
 		3446C3981780F80D00C9B9B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3446C3971780F80D00C9B9B2 /* MessageUI.framework */; };
 		34FA1188177E3644009AAB5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FA1187177E3644009AAB5F /* UIKit.framework */; };
 		34FA118A177E3644009AAB5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FA1189177E3644009AAB5F /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3433FBB61788CAF9000346E6 /* email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = email.h; sourceTree = "<group>"; };
+		3433FBB71788CAF9000346E6 /* email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = email.m; sourceTree = "<group>"; };
 		3446C3971780F80D00C9B9B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		34FA1184177E3644009AAB5F /* Email.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Email.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FA1187177E3644009AAB5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -92,6 +95,8 @@
 				34FA119F177E3644009AAB5F /* MainStoryboard.storyboard */,
 				34FA11A2177E3644009AAB5F /* ViewController.h */,
 				34FA11A3177E3644009AAB5F /* ViewController.m */,
+				3433FBB61788CAF9000346E6 /* email.h */,
+				3433FBB71788CAF9000346E6 /* email.m */,
 				34FA118E177E3644009AAB5F /* Supporting Files */,
 			);
 			path = Email;
@@ -180,6 +185,7 @@
 				34FA1194177E3644009AAB5F /* main.m in Sources */,
 				34FA1198177E3644009AAB5F /* AppDelegate.m in Sources */,
 				34FA11A4177E3644009AAB5F /* ViewController.m in Sources */,
+				3433FBB81788CAF9000346E6 /* email.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

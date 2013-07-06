@@ -41,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3433FBB91788CFC8000346E6 /* email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = email.h; path = Email/email.h; sourceTree = SOURCE_ROOT; };
+		3433FBBA1788CFC8000346E6 /* email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = email.m; path = Email/email.m; sourceTree = SOURCE_ROOT; };
 		AC3033301777E9990038EEBA /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		AC3033311777E9990038EEBA /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		AC30333317783E370038EEBA /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = "<group>"; };
@@ -143,6 +145,8 @@
 				ACAA0A621777714000C6CFE9 /* AppDelegate.h */,
 				ACAA0A631777714000C6CFE9 /* AppDelegate.m */,
 				ACAA0A641777714000C6CFE9 /* ViewController.h */,
+				3433FBB91788CFC8000346E6 /* email.h */,
+				3433FBBA1788CFC8000346E6 /* email.m */,
 				ACAA0A651777714000C6CFE9 /* ViewController.m */,
 				AC30333317783E370038EEBA /* background2.jpg */,
 				AC30333417783E380038EEBA /* FirstViewController.h */,

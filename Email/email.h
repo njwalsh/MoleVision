@@ -10,8 +10,8 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface ViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@interface email : UIViewController <MFMailComposeViewControllerDelegate>
 
-//- (IBAction)openMail:(id)sender;
+- (IBAction)openMail:(id)sender;
 
 @end

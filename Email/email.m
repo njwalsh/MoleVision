@@ -6,13 +6,9 @@
 //  Copyright (c) 2013 Matthew Chow. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "email.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@implementation email
 
 - (void)viewDidLoad
 {
@@ -25,7 +21,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
+
 - (IBAction)openMail:(id)sender {
     MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
     [composer setMailComposeDelegate:self];
@@ -49,5 +45,5 @@
     else
         [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/    
+
 @end
