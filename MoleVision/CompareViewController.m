@@ -14,6 +14,9 @@
 
 @implementation CompareViewController
 
+@synthesize image1, image2;
+@synthesize imageView1, imageView2;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +30,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSLog(@"compare view");
+    [imageView1 setImage:image1];
+    [imageView2 setImage:image2];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CompareViewController : UIViewController
+@interface CompareViewController : UIViewController{
+
+    UIImage * image1;
+    UIImage * image2;
+    
+}
+
+@property (strong, nonatomic) UIImage * image1;
+@property (strong, nonatomic) UIImage * image2;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView1;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView2;
 
 @end

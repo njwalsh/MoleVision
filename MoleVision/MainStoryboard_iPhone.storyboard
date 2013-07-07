@@ -85,22 +85,22 @@
             </objects>
             <point key="canvasLocation" x="3214" y="643"/>
         </scene>
-        <!--View Controller - Compare-->
+        <!--Compare View Controller - Compare-->
         <scene sceneID="eVe-DH-KlZ">
             <objects>
-                <viewController id="Nkc-UA-QDm" sceneMemberID="viewController">
+                <viewController id="Nkc-UA-QDm" customClass="CompareViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEY-N7-1m8">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-JZ-Es0">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="251" id="ZPx-Mj-OAi"/>
+                                    <constraint firstAttribute="height" constant="184" id="vOM-uZ-Yxu"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPc-fv-So5">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="254" id="Xxl-s0-Bw0"/>
+                                    <constraint firstAttribute="height" constant="183" id="o1X-ie-Obx"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -109,12 +109,16 @@
                             <constraint firstItem="gsd-JZ-Es0" firstAttribute="top" secondItem="yEY-N7-1m8" secondAttribute="top" type="default" id="1LQ-gQ-j3x"/>
                             <constraint firstItem="gsd-JZ-Es0" firstAttribute="trailing" secondItem="yEY-N7-1m8" secondAttribute="trailing" type="default" id="Dx2-cM-M1e"/>
                             <constraint firstItem="BPc-fv-So5" firstAttribute="trailing" secondItem="yEY-N7-1m8" secondAttribute="trailing" type="default" id="TaA-yW-ngl"/>
-                            <constraint firstItem="BPc-fv-So5" firstAttribute="bottom" secondItem="yEY-N7-1m8" secondAttribute="bottom" type="default" id="TgZ-HA-Wpo"/>
                             <constraint firstItem="BPc-fv-So5" firstAttribute="leading" secondItem="yEY-N7-1m8" secondAttribute="leading" type="default" id="ZHc-hd-d5n"/>
+                            <constraint firstItem="BPc-fv-So5" firstAttribute="top" secondItem="yEY-N7-1m8" secondAttribute="top" constant="184" id="c6n-Mk-x9e"/>
                             <constraint firstItem="gsd-JZ-Es0" firstAttribute="leading" secondItem="yEY-N7-1m8" secondAttribute="leading" type="default" id="pSZ-zO-ebF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Compare" id="dbR-xR-HfE"/>
+                    <connections>
+                        <outlet property="imageView1" destination="gsd-JZ-Es0" id="tk6-o7-ccB"/>
+                        <outlet property="imageView2" destination="BPc-fv-So5" id="fN7-YB-Q0p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGe-td-dhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +150,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nkc-UA-QDm" kind="push" id="8Ro-5Z-BRr"/>
+                                    <segue destination="Nkc-UA-QDm" kind="push" identifier="compare" id="TlL-4d-9sr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ota-g8-Uyx">
@@ -685,6 +689,13 @@
                 <relationship kind="outlet" name="label5" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="label6" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="label7" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CompareViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompareViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageView2" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="CustomCell" superclassName="UITableViewCell">

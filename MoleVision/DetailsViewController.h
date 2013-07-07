@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "EditViewController.h"
+#import "CompareViewController.h"
 #import "Mole.h"
 
 @interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {

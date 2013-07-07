@@ -158,6 +158,17 @@
         
         evc.sendMoleLabel = self.sendLabel;
         evc.moleIndex = self.moleRow;
+    }else if ([segue.identifier isEqualToString:@"compare"]){
+        CompareViewController *cvc = segue.destinationViewController;
+        
+        NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+        NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+        NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+        
+        Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+        NSLog(@"goto compare view");
+        cvc.image1 = [tempMole.imagesArray objectAtIndex:0];
+        cvc.image2 = [tempMole.imagesArray objectAtIndex:0];
     }
 }
 
