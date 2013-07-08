@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F66E6A178B821F0053461E /* ab.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F66E69178B821F0053461E /* ab.m */; };
 		AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3033311777E9990038EEBA /* CameraViewController.m */; };
 		AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333517783E380038EEBA /* FirstViewController.m */; };
 		AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333717783E3A0038EEBA /* SignUpViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30F66E68178B821F0053461E /* ab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ab.h; sourceTree = "<group>"; };
+		30F66E69178B821F0053461E /* ab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ab.m; sourceTree = "<group>"; };
 		3433FBB91788CFC8000346E6 /* email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = email.h; path = MoleVision/email.h; sourceTree = SOURCE_ROOT; };
 		3433FBBA1788CFC8000346E6 /* email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = email.m; path = MoleVision/email.m; sourceTree = SOURCE_ROOT; };
 		AC3033301777E9990038EEBA /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				ACAA0A701777714900C6CFE9 /* ABCDEAppDelegate.h */,
 				ACAA0A711777714900C6CFE9 /* ABCDEAppDelegate.m */,
 				ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */,
+				30F66E68178B821F0053461E /* ab.h */,
+				30F66E69178B821F0053461E /* ab.m */,
 				ACAA0A731777714900C6CFE9 /* ABCDEViewController.m */,
 				ACAA0A621777714000C6CFE9 /* AppDelegate.h */,
 				ACAA0A631777714000C6CFE9 /* AppDelegate.m */,
@@ -292,6 +297,7 @@
 				ACAA0A921777725F00C6CFE9 /* CompareViewController.m in Sources */,
 				ACAA0A931777725F00C6CFE9 /* EditViewController.m in Sources */,
 				AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */,
+				30F66E6A178B821F0053461E /* ab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
