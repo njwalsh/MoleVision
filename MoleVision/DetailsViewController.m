@@ -19,6 +19,7 @@
 @synthesize editMoleButton;
 @synthesize addPictureButton;
 @synthesize scroller;
+@synthesize tmpImagesArray;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -116,7 +117,7 @@
 }
 
 - (void)displayMoleImages:(Mole *)tmpMole{
-    NSArray * tmpImagesArray = [[NSArray alloc] initWithArray:tmpMole.imagesArray];
+    tmpImagesArray = [[NSArray alloc] initWithArray:tmpMole.imagesArray];
     [scroller removeFromSuperview];
     pageCount = [tmpMole.imagesArray count];
     
@@ -137,6 +138,7 @@
         
         UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
         [imgView setImage:tempImage];
+        [imgView setUserInteractionEnabled:YES];
         
         [scroller addSubview:imgView];
     }
@@ -148,6 +150,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touch");
+    UITouch * touch = [[event allTouches] anyObject];
+    for (int i = 0; i < [tmpImagesArray count]; i++) {
+        if([touch view] == [tmpImagesArray objectAtIndex:i]){
+            NSLog(@"%@", [tmpImagesArray objectAtIndex:i]);
+        }
+    }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

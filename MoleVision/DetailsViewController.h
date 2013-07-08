@@ -15,6 +15,7 @@
     
     UIBarButtonItem * editMoleButton;
     int pageCount;
+    NSArray * tmpImagesArray;
     
     UIButton * addPictureButton;
     UIImagePickerController *picker;
@@ -31,6 +32,7 @@
 @property (nonatomic) int pageCount;
 @property (nonatomic, retain) IBOutlet UIButton * addPictureButton;
 @property (strong, nonatomic) UIScrollView * scroller;
+@property (nonatomic, retain) NSArray * tmpImagesArray;
 
 - (IBAction) doEditMoleButton;
 -(IBAction)ChooseExisting;
