@@ -53,6 +53,21 @@
     [mole1.imagesArray addObject:image];
     [moleArray addObject:mole1];
     
+    //calculate time stamp and add 
+    NSDate* sourceDate = [NSDate date];
+    
+    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:sourceDate];
+    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:sourceDate];
+    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
+    
+    NSDate* destinationDate = [[NSDate alloc] initWithTimeInterval:interval sinceDate:sourceDate];
+    
+    [mole1.timeStamps addObject:destinationDate];
+    
+    //add mole name so table view can access
     [self.dataArray addObject:mole1.name];
     
     //not sure this is necessary

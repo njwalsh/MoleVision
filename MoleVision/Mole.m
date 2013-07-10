@@ -12,6 +12,7 @@
 
 @synthesize name;
 @synthesize imagesArray;
+@synthesize timeStamps;
 //@synthesize risk;
 @synthesize comments;
 @synthesize countOpen;
@@ -31,6 +32,7 @@
     //Encode properties, other class variables, etc
     [encoder encodeObject:self.name forKey:@"name"];
     [encoder encodeObject:self.imagesArray forKey:@"images"];
+    [encoder encodeObject:self.timeStamps forKey:@"stamps"];
     //[encoder encodeObject:self.risk forKey:@"risk"];
     [encoder encodeObject:self.comments forKey:@"comments"];
     [encoder encodeObject:[NSNumber numberWithInt:self.countOpen] forKey:@"destinationCode"];
@@ -44,6 +46,7 @@
     {
         self.name = [decoder decodeObjectForKey:@"name"];
         self.imagesArray = [decoder decodeObjectForKey:@"images"];
+        self.timeStamps = [decoder decodeObjectForKey:@"stamps"];
         //self.risk = [decoder decodeObjectForKey:@"risk"];
         self.comments = [decoder decodeObjectForKey:@"comments"];
         self.countOpen = [[decoder decodeObjectForKey:@"countOpen"] intValue];

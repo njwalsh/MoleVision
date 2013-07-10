@@ -7,10 +7,30 @@
 //
 
 #import "DetailsViewController.h"
+#import <ImageIO/ImageIO.h>
+
+@interface ImageView : UIImageView
+
+@property (strong, nonatomic) UIImage * imageToCompare;
+
+@end
+
+@implementation ImageView
+@synthesize imageToCompare;
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [[event allTouches] anyObject];
+    
+    imageToCompare = (UIImage *)touch.view;
+    
+    NSLog(@"%@", imageToCompare);
+}
+@end
 
 @interface DetailsViewController ()
 
 @end
+
 
 @implementation DetailsViewController
 @synthesize label, comment;
@@ -37,7 +57,20 @@
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     Mole *tempMole = [decodedArray objectAtIndex:moleRow];
     [tempMole.imagesArray addObject:image];
-    NSLog(@"imgpicker %lu", (unsigned long)[tempMole.imagesArray count]);
+    
+    //calculate time stamp and add
+    NSDate* sourceDate = [NSDate date];
+    
+    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:sourceDate];
+    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:sourceDate];
+    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
+    
+    NSDate* destinationDate = [[NSDate alloc] initWithTimeInterval:interval sinceDate:sourceDate];
+    
+    [tempMole.timeStamps addObject:destinationDate];
     
     //save mole
     NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
@@ -126,6 +159,7 @@
     scroller.backgroundColor = [UIColor clearColor];
     scroller.pagingEnabled = YES;
     scroller.contentSize = CGSizeMake(pageCount * scroller.bounds.size.width, scroller.bounds.size.height);
+    [scroller setDelaysContentTouches:YES];
     
     CGRect viewSize = scroller.bounds;
     
@@ -136,7 +170,28 @@
         
         UIImage * tempImage = [tmpImagesArray objectAtIndex:i];
         
-        UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
+        /*//get timestamp from image if possible
+        NSData *imageData = [NSData dataWithData:UIImageJPEGRepresentation(tempImage, 0.0)];
+        CFDataRef imgDataRef = (__bridge CFDataRef)imageData;
+        CGImageSourceRef *imageSource = CGImageSourceCreateWithData(imgDataRef, NULL);
+        
+        NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:NO], (NSString *)kCGImageSourceShouldCache,nil];
+        CFDictionaryRef imageProperties = CGImageSourceCopyPropertiesAtIndex(imageSource, 0, (CFDictionaryRef)CFBridgingRetain(options));
+        CFDictionaryRef exifDic = CFDictionaryGetValue(imageProperties, kCGImagePropertyExifDictionary);
+        if(exifDic){
+            NSString *timestamp = (NSString *)CFBridgingRelease(CFDictionaryGetValue(exifDic, kCGImagePropertyExifDateTimeOriginal));
+            if(timestamp){
+                NSLog(@"timestamp: %@", timestamp);
+            }else{
+                NSLog(@"timestamp not found in the exif dic %@", exifDic);
+            }
+        }else{
+            NSLog(@"exifDic nil for imageProperties %@", imageProperties);
+        }
+        CFRelease(imageProperties);*/
+        
+        
+        ImageView *imgView = [[ImageView alloc] initWithFrame:viewSize];
         [imgView setImage:tempImage];
         [imgView setUserInteractionEnabled:YES];
         
@@ -153,13 +208,13 @@
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touch");
+    /*NSLog(@"touch");
     UITouch * touch = [[event allTouches] anyObject];
     for (int i = 0; i < [tmpImagesArray count]; i++) {
         if([touch view] == [tmpImagesArray objectAtIndex:i]){
             NSLog(@"%@", [tmpImagesArray objectAtIndex:i]);
         }
-    }
+    }*/
     
 }
 
@@ -179,9 +234,10 @@
         NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
         
         Mole *tempMole = [decodedArray objectAtIndex:moleRow];
-        NSLog(@"goto compare view");
+        
         cvc.image1 = [tempMole.imagesArray objectAtIndex:0];
-        cvc.image2 = [tempMole.imagesArray objectAtIndex:0];
+        //NSLog(@"%@", tmpImageView.imageToCompare);
+        //cvc.image2 = tmpImageView.imageToCompare;
     }
 }
 

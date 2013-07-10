@@ -40,6 +40,7 @@
 		ACAA0AA0177772A600C6CFE9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A791777715B00C6CFE9 /* Default.png */; };
 		ACAA0AA1177772A600C6CFE9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7A1777715B00C6CFE9 /* Default@2x.png */; };
 		ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACAA0A7B1777715B00C6CFE9 /* Default-568h@2x.png */; };
+		ACE00A96178CC789006F33DB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE00A95178CC789006F33DB /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		ACAA0A87177771B300C6CFE9 /* photo(11).JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(11).JPG"; sourceTree = "<group>"; };
 		ACAA0A88177771B300C6CFE9 /* photo(12)-1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo(12)-1.JPG"; sourceTree = "<group>"; };
 		ACAA0A89177771B300C6CFE9 /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
+		ACE00A95178CC789006F33DB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE00A96178CC789006F33DB /* ImageIO.framework in Frameworks */,
 				ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */,
 				ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */,
 				ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		ACAA0A2F177770D000C6CFE9 = {
 			isa = PBXGroup;
 			children = (
+				ACE00A95178CC789006F33DB /* ImageIO.framework */,
 				ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */,
 				ACAA0A41177770D000C6CFE9 /* MoleVision */,
 				ACAA0A3A177770D000C6CFE9 /* Frameworks */,
