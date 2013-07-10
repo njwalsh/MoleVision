@@ -28,7 +28,7 @@
 @end
 
 @interface DetailsViewController ()
-
+@property (strong, nonatomic) ImageView *imgView;
 @end
 
 
@@ -40,6 +40,7 @@
 @synthesize addPictureButton;
 @synthesize scroller;
 @synthesize tmpImagesArray;
+@synthesize imgView;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -190,8 +191,8 @@
         }
         CFRelease(imageProperties);*/
         
-        
-        ImageView *imgView = [[ImageView alloc] initWithFrame:viewSize];
+        //initialize ImageView to pass to ComapreView
+        imgView = [[ImageView alloc] initWithFrame:viewSize];
         [imgView setImage:tempImage];
         [imgView setUserInteractionEnabled:YES];
         
@@ -236,8 +237,8 @@
         Mole *tempMole = [decodedArray objectAtIndex:moleRow];
         
         cvc.image1 = [tempMole.imagesArray objectAtIndex:0];
-        //NSLog(@"%@", tmpImageView.imageToCompare);
-        //cvc.image2 = tmpImageView.imageToCompare;
+        //NSLog(@"%@", imgView.imageToCompare);
+        //cvc.image2 = imgView.imageToCompare;
     }
 }
 
