@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="J94-jV-vt4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="J94-jV-vt4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -315,6 +315,44 @@
         <image name="Default.png" width="320" height="480"/>
         <image name="background2.jpg" width="1920" height="1200"/>
     </resources>
+    <classes>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="signInButton:"/>
+                <relationship kind="action" name="signUpButton:"/>
+                <relationship kind="outlet" name="userNameText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userPasswordText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="signUpButton:"/>
+                <relationship kind="outlet" name="confirmPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="setPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="setUserName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="genderSelect:"/>
+                <relationship kind="action" name="skinTypeSelect:"/>
+                <relationship kind="action" name="submitProfielButton:"/>
+                <relationship kind="outlet" name="segmentGender" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="segmentSkin" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="skinType" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="userAgeTextFiled" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userEyeColorTextFiled" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userGenderTextFiled" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userSkintypeTextFiled" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
