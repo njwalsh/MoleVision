@@ -87,9 +87,12 @@
         
         if ([userNameFromFile isEqualToString:self.userNameText.text] && [userPasswordFromFile isEqualToString:self.userPasswordText.text]) {
             
+            
             //if (!isAccepted) {
-            ViewController *pvc=[[ViewController alloc]init];
-            [self presentViewController:pvc animated:YES completion:nil];
+            
+            [self performSegueWithIdentifier:@"SignInToProfile" sender:self];
+            //ViewController *pvc=[[ViewController alloc]init];
+            //[self presentViewController:pvc animated:YES completion:nil];
             //[standardUserDefaults setBool:YES forKey:@"iHaveAcceptedTheTerms"];
             // }
             //else{
@@ -111,13 +114,21 @@
         
         
     }
-
+    
 }
 
-- (IBAction)signUpButton:(id)sender {SignUpViewController *svc = [[SignUpViewController alloc]init];
-    [self presentViewController:svc animated:YES completion:nil];
-
+- (IBAction)signUpButton:(id)sender {
+    [self performSegueWithIdentifier:@"SignInToSignUp" sender:self];
+    //SignUpViewController *svc = [[SignUpViewController alloc]init];
+    //[self presentViewController:svc animated:YES completion:nil];
 }
+
+
+
+
+
+
 
 
 @end
+
