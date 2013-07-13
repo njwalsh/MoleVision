@@ -20,10 +20,8 @@
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch * touch = [[event allTouches] anyObject];
-    
-    imageToCompare = (UIImage *)touch.view;
-    
-    NSLog(@"%@", imageToCompare);
+    ImageView * tempImgView = (ImageView *)touch.view;
+    imageToCompare = (UIImage *)tempImgView.image;
 }
 @end
 
@@ -147,7 +145,6 @@
     comment.text = tempMole.comments;
     
     [self displayMoleImages:tempMole];
-    NSLog(@"%lu", (unsigned long)[tempMole.imagesArray count]);
 }
 
 - (void)displayMoleImages:(Mole *)tmpMole{
@@ -237,8 +234,9 @@
         Mole *tempMole = [decodedArray objectAtIndex:moleRow];
         
         cvc.image1 = [tempMole.imagesArray objectAtIndex:0];
-        //NSLog(@"%@", imgView.imageToCompare);
-        //cvc.image2 = imgView.imageToCompare;
+        NSLog(@"imageToCompare: %@", cvc.image1);
+        NSLog(@"imageToCompare: %@", imgView.imageToCompare);
+        cvc.image2 = imgView.imageToCompare;
     }
 }
 
