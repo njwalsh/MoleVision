@@ -22,9 +22,10 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * moleButton;
+@property (nonatomic, retain) UIImagePickerController *picker;
+@property (nonatomic, retain) UIImage *image;
 
 - (void) addMole;
-- (void) saveMoleData;
 
 -(IBAction)ChooseExisting;
 

@@ -22,9 +22,12 @@
 
 @implementation ListTableViewController
 
+@synthesize searchResults;
 @synthesize moleButton;
 @synthesize moleArray;
 @synthesize dataArray;
+@synthesize picker;
+@synthesize image;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
