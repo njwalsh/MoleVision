@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269D3D011792059D003A108D /* gray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CF61792059C003A108D /* gray.jpeg */; };
+		269D3D021792059D003A108D /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CF71792059C003A108D /* images.jpeg */; };
+		269D3D031792059D003A108D /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CF81792059C003A108D /* pic1.jpg */; };
+		269D3D041792059D003A108D /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CF91792059C003A108D /* pic2.jpg */; };
+		269D3D051792059D003A108D /* skintype_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFA1792059C003A108D /* skintype_1.jpg */; };
+		269D3D061792059D003A108D /* skintype_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFB1792059C003A108D /* skintype_2.jpg */; };
+		269D3D071792059D003A108D /* skintype_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFC1792059D003A108D /* skintype_3.jpg */; };
+		269D3D081792059D003A108D /* skintype_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFD1792059D003A108D /* skintype_4.jpg */; };
+		269D3D091792059D003A108D /* skintype_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFE1792059D003A108D /* skintype_5.jpg */; };
+		269D3D0A1792059D003A108D /* skintype_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFF1792059D003A108D /* skintype_6.jpg */; };
+		269D3D0B1792059D003A108D /* user.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3D001792059D003A108D /* user.jpeg */; };
 		3492340C178F760D0061FC17 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3492340B178F760D0061FC17 /* AlarmViewController.m */; };
 		AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3033311777E9990038EEBA /* CameraViewController.m */; };
 		AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333517783E380038EEBA /* FirstViewController.m */; };
@@ -45,6 +56,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269D3CF61792059C003A108D /* gray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray.jpeg; sourceTree = "<group>"; };
+		269D3CF71792059C003A108D /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		269D3CF81792059C003A108D /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		269D3CF91792059C003A108D /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		269D3CFA1792059C003A108D /* skintype_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_1.jpg; sourceTree = "<group>"; };
+		269D3CFB1792059C003A108D /* skintype_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_2.jpg; sourceTree = "<group>"; };
+		269D3CFC1792059D003A108D /* skintype_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_3.jpg; sourceTree = "<group>"; };
+		269D3CFD1792059D003A108D /* skintype_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_4.jpg; sourceTree = "<group>"; };
+		269D3CFE1792059D003A108D /* skintype_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_5.jpg; sourceTree = "<group>"; };
+		269D3CFF1792059D003A108D /* skintype_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_6.jpg; sourceTree = "<group>"; };
+		269D3D001792059D003A108D /* user.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user.jpeg; sourceTree = "<group>"; };
 		3433FBB91788CFC8000346E6 /* email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = email.h; path = MoleVision/email.h; sourceTree = SOURCE_ROOT; };
 		3433FBBA1788CFC8000346E6 /* email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = email.m; path = MoleVision/email.m; sourceTree = SOURCE_ROOT; };
 		3492340A178F760D0061FC17 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
@@ -165,6 +187,17 @@
 				AC30333317783E370038EEBA /* background2.jpg */,
 				AC30333417783E380038EEBA /* FirstViewController.h */,
 				AC30333517783E380038EEBA /* FirstViewController.m */,
+				269D3CF61792059C003A108D /* gray.jpeg */,
+				269D3CF71792059C003A108D /* images.jpeg */,
+				269D3CF81792059C003A108D /* pic1.jpg */,
+				269D3CF91792059C003A108D /* pic2.jpg */,
+				269D3CFA1792059C003A108D /* skintype_1.jpg */,
+				269D3CFB1792059C003A108D /* skintype_2.jpg */,
+				269D3CFC1792059D003A108D /* skintype_3.jpg */,
+				269D3CFD1792059D003A108D /* skintype_4.jpg */,
+				269D3CFE1792059D003A108D /* skintype_5.jpg */,
+				269D3CFF1792059D003A108D /* skintype_6.jpg */,
+				269D3D001792059D003A108D /* user.jpeg */,
 				AC30333617783E390038EEBA /* SignUpViewController.h */,
 				AC30333717783E3A0038EEBA /* SignUpViewController.m */,
 				ACAA0A81177771B300C6CFE9 /* Mole.h */,
@@ -276,6 +309,17 @@
 				ACAA0AA2177772A600C6CFE9 /* Default-568h@2x.png in Resources */,
 				AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */,
 				AC745F6E1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard in Resources */,
+				269D3D011792059D003A108D /* gray.jpeg in Resources */,
+				269D3D021792059D003A108D /* images.jpeg in Resources */,
+				269D3D031792059D003A108D /* pic1.jpg in Resources */,
+				269D3D041792059D003A108D /* pic2.jpg in Resources */,
+				269D3D051792059D003A108D /* skintype_1.jpg in Resources */,
+				269D3D061792059D003A108D /* skintype_2.jpg in Resources */,
+				269D3D071792059D003A108D /* skintype_3.jpg in Resources */,
+				269D3D081792059D003A108D /* skintype_4.jpg in Resources */,
+				269D3D091792059D003A108D /* skintype_5.jpg in Resources */,
+				269D3D0A1792059D003A108D /* skintype_6.jpg in Resources */,
+				269D3D0B1792059D003A108D /* user.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
