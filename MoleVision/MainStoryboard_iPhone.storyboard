@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tHP-Qm-uWk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tHP-Qm-uWk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -762,7 +762,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="okf-3i-iuW">
             <objects>
                 <viewController id="tHP-Qm-uWk" customClass="FirstViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KtS-cw-b6z">
+                    <view key="view" contentMode="scaleToFill" id="KtS-cw-b6z" customClass="UIControl">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -860,6 +860,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                         <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                        <connections>
+                            <action selector="tapBackground:" destination="tHP-Qm-uWk" eventType="touchDown" id="2Mc-zu-0GW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="userNameText" destination="37C-XY-L4X" id="Wcc-d1-KUh"/>
@@ -1145,7 +1148,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="ChooseExisting"/>
-                <relationship kind="action" name="doEditMoleButton"/>
                 <relationship kind="outlet" name="addPictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="comment" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="editMoleButton" candidateClass="UIBarButtonItem"/>
@@ -1165,6 +1167,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="action" name="signInButton:"/>
                 <relationship kind="action" name="signUpButton:"/>
+                <relationship kind="action" name="tapBackground:"/>
                 <relationship kind="outlet" name="userNameText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="userPasswordText" candidateClass="UITextField"/>
             </relationships>

@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordText;
 - (IBAction)signInButton:(id)sender;
 - (IBAction)signUpButton:(id)sender;
-
+-(IBAction)tapBackground:(id)sender;
 
 
 

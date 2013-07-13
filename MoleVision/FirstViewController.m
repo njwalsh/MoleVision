@@ -124,6 +124,15 @@
 }
 
 
+-(IBAction)tapBackground:(id)sender{
+    
+    [_userNameText resignFirstResponder];
+    [_userPasswordText resignFirstResponder];
+    
+}
+
+
+
 
 
 
