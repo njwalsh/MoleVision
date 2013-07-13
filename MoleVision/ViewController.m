@@ -22,6 +22,8 @@
 @end
 
 @implementation ViewController
+@synthesize skinType;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -105,41 +107,47 @@
     }
 }
 
-/*- (IBAction)skinSelect:(id)sender {
-    if(segmentGender.selectedSegmentIndex == 0){
+
+- (IBAction)skinTypeSelect:(id)sender {
+    if(segmentSkin.selectedSegmentIndex == 0){
+        UIImage *img1 = [UIImage imageNamed:@"skintype_1.jpg"];
         
+        [skinType setImage:img1];
+        //skinType.image=nil;
         
         
     }
-    if(segmentGender.selectedSegmentIndex == 1){
-        UIImage *img = [UIImage imageNamed:@"user.jpeg"];
+    if(segmentSkin.selectedSegmentIndex == 1){
         
-        [image setImage:img];
-
-    }
-    if(segmentGender.selectedSegmentIndex == 2){
-        UIImage *img = [UIImage imageNamed:@"user.jpeg"];
+        [skinType setImage:[UIImage imageNamed:@"skintype_2.jpg"]];
         
-        [image setImage:img];
         
     }
-    if(segmentGender.selectedSegmentIndex == 3){
-        UIImage *img = [UIImage imageNamed:@"user.jpeg"];
+    if(segmentSkin.selectedSegmentIndex == 2){
         
-        [image setImage:img];
+        [skinType setImage:[UIImage imageNamed:@"skintype_3.jpg"]];
         
-    }
-    if(segmentGender.selectedSegmentIndex == 4){
-        UIImage *img = [UIImage imageNamed:@"user.jpeg"];
-        
-        [image setImage:img];
         
     }
-
-}*/
-
-
-
+    if(segmentSkin.selectedSegmentIndex == 3){
+    
+        [skinType setImage:[UIImage imageNamed:@"skintype_4.jpg"]];
+        
+    }
+    if(segmentSkin.selectedSegmentIndex == 4){
+       
+        [skinType setImage:[UIImage imageNamed:@"skintype_5.jpg"]];
+        
+        
+    }
+    if(segmentSkin.selectedSegmentIndex == 5){
+        
+        [skinType setImage:[UIImage imageNamed:@"skintype_6.jpg"]];
+        
+        
+    }
+    
+}
 @end
 
 

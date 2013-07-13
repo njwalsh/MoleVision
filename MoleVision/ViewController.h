@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController{
 IBOutlet UISegmentedControl *segmentGender;
+    IBOutlet UISegmentedControl *segmentSkin;
 //IBOutlet UIImageView *image;
    
 
@@ -22,6 +23,8 @@ IBOutlet UISegmentedControl *segmentGender;
 
 @property (weak, nonatomic) IBOutlet UITextField *userSkintypeTextFiled;
 @property (weak, nonatomic) IBOutlet UITextField *userEyeColorTextFiled;
+@property (weak, nonatomic) IBOutlet UIImageView *skinType;
+
 
 - (IBAction)submitProfielButton:(id)sender;
 //@property (weak, nonatomic) IBOutlet UIImageView *view111;
@@ -29,6 +32,7 @@ IBOutlet UISegmentedControl *segmentGender;
 
 - (IBAction)genderSelect:(id)sender;
 //- (IBAction)skinSelect:(id)sender;
+- (IBAction)skinTypeSelect:(id)sender;
 
 
 @end
