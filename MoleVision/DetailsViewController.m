@@ -22,6 +22,7 @@
     UITouch * touch = [[event allTouches] anyObject];
     ImageView * tempImgView = (ImageView *)touch.view;
     imageToCompare = (UIImage *)tempImgView.image;
+    NSLog(@"selected image: %@", imageToCompare);
 }
 @end
 

@@ -15,6 +15,7 @@
 		AC303340177841B50038EEBA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30333F177841B40038EEBA /* Storyboard.storyboard */; };
 		AC745F6E1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */; };
 		AC9834951788D4C600E6004A /* email.m in Sources */ = {isa = PBXBuildFile; fileRef = 3433FBBA1788CFC8000346E6 /* email.m */; };
+		AC9AB9361791FF850066B72C /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC30333317783E370038EEBA /* background2.jpg */; };
 		ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */; };
 		ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3B177770D000C6CFE9 /* UIKit.framework */; };
 		ACAA0A3E177770D000C6CFE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA0A3D177770D000C6CFE9 /* Foundation.framework */; };
@@ -262,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9AB9361791FF850066B72C /* background2.jpg in Resources */,
 				AC30333E17783F8F0038EEBA /* loginAndProfile-Info.plist in Resources */,
 				ACAA0A97177772A600C6CFE9 /* photo(11).JPG in Resources */,
 				ACAA0A98177772A600C6CFE9 /* photo(12)-1.JPG in Resources */,
