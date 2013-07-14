@@ -11,7 +11,7 @@
 #import "CompareViewController.h"
 #import "Mole.h"
 
-@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate> {
     
     UIBarButtonItem * editMoleButton;
     int pageCount;
@@ -26,6 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *comment;
+@property (weak, nonatomic) IBOutlet UILabel *timeStamp;
 @property (strong, nonatomic) NSString *sendLabel;
 @property (nonatomic) NSInteger moleRow;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem * editMoleButton;

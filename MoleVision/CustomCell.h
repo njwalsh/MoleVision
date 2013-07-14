@@ -11,6 +11,7 @@
 @interface CustomCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *moleLable;
+@property (weak, nonatomic) IBOutlet UILabel *numOfImages;
 @property (weak, nonatomic) IBOutlet UIImageView *moleImageView;
 
 @end

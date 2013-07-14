@@ -33,6 +33,7 @@
 
 @implementation DetailsViewController
 @synthesize label, comment;
+@synthesize timeStamp;
 @synthesize moleRow;
 @synthesize pageCount;
 @synthesize editMoleButton;
@@ -59,18 +60,9 @@
     [tempMole.imagesArray addObject:image];
     
     //calculate time stamp and add
-    NSDate* sourceDate = [NSDate date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
     
-    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
-    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
-    
-    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:sourceDate];
-    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:sourceDate];
-    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
-    
-    NSDate* destinationDate = [[NSDate alloc] initWithTimeInterval:interval sinceDate:sourceDate];
-    
-    [tempMole.timeStamps addObject:destinationDate];
+    [tempMole.timeStamps addObject:components];
     
     //save mole
     NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
@@ -145,6 +137,12 @@
     label.text = tempMole.name;
     comment.text = tempMole.comments;
     
+    NSString *year = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:0] year]];
+    NSString *month = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:0] month]];
+    NSString *day = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:0] day]];
+    NSString *strFromComponents = [NSString stringWithFormat:@"%@-%@-%@", year, month, day];
+    timeStamp.text = strFromComponents;
+    
     [self displayMoleImages:tempMole];
 }
 
@@ -155,6 +153,7 @@
     
     //set up scroll view
     scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    scroller.delegate = self;
     scroller.backgroundColor = [UIColor clearColor];
     scroller.pagingEnabled = YES;
     scroller.contentSize = CGSizeMake(pageCount * scroller.bounds.size.width, scroller.bounds.size.height);
@@ -198,6 +197,20 @@
     }
     
     [self.view addSubview:scroller];
+}
+
+- (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    int page = scroller.contentOffset.x / scroller.frame.size.width;
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    NSString *year = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:page] year]];
+    NSString *month = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:page] month]];
+    NSString *day = [NSString stringWithFormat:@"%ld", (long)[[tempMole.timeStamps objectAtIndex:page] day]];
+    NSString *strFromComponents = [NSString stringWithFormat:@"%@-%@-%@", year, month, day];
+    timeStamp.text = strFromComponents;
 }
 
 - (void)didReceiveMemoryWarning

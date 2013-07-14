@@ -39,18 +39,26 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbR-Hy-fxj">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="r09-Aj-cB7" firstAttribute="top" secondItem="9uU-lv-hoW" secondAttribute="top" constant="5" id="26q-Zq-i0s"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbR-Hy-fxj" secondAttribute="trailing" constant="85" id="2dD-jf-JcE"/>
                                     <constraint firstItem="r09-Aj-cB7" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="6" id="OyL-7D-M4C"/>
+                                    <constraint firstItem="rbR-Hy-fxj" firstAttribute="baseline" secondItem="ODp-kF-fG6" secondAttribute="baseline" type="default" id="bIG-wu-rIY"/>
                                     <constraint firstItem="ODp-kF-fG6" firstAttribute="centerY" secondItem="r09-Aj-cB7" secondAttribute="centerY" type="default" id="yT4-3g-rwr"/>
                                     <constraint firstItem="ODp-kF-fG6" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="100" id="zhV-gt-1Qy"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="moleImageView" destination="r09-Aj-cB7" id="725-RN-BfK"/>
                                     <outlet property="moleLable" destination="ODp-kF-fG6" id="tvt-Ev-a36"/>
+                                    <outlet property="numOfImages" destination="rbR-Hy-fxj" id="2xI-43-JpE"/>
                                     <segue destination="wXn-Yj-jT9" kind="push" identifier="showDetails" id="zVh-qK-pIO"/>
                                 </connections>
                             </tableViewCell>
@@ -155,7 +163,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ota-g8-Uyx">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="PLf-Bu-uYd"/>
+                                    <constraint firstAttribute="width" constant="90" id="aIl-DL-YVn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Upload">
@@ -186,7 +194,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIO-Vo-Pax">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="98d-BU-LlP"/>
+                                    <constraint firstAttribute="width" constant="90" id="Twj-WI-LJs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Add Picture">
@@ -200,26 +208,36 @@
                                     <action selector="ChooseExisting" destination="wXn-Yj-jT9" eventType="touchUpInside" id="JBp-R7-x50"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGF-fo-OKd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="baseline" secondItem="oyo-DZ-ooG" secondAttribute="baseline" type="default" id="3VK-4M-vaJ"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="top" secondItem="ota-g8-Uyx" secondAttribute="top" type="default" id="3vU-jh-NSc"/>
+                            <constraint firstItem="vGF-fo-OKd" firstAttribute="baseline" secondItem="yog-QD-1Sa" secondAttribute="baseline" type="default" id="7UO-fG-71y"/>
+                            <constraint firstAttribute="bottom" secondItem="vGF-fo-OKd" secondAttribute="bottom" constant="71" id="ECR-vO-rme"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="trailing" secondItem="PpC-Yp-kt6" secondAttribute="trailing" type="default" id="Hby-7a-P3d"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HrC-WV-YvW"/>
+                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="oyo-DZ-ooG" secondAttribute="bottom" type="default" id="J3y-IQ-LwQ"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Kwx-V5-UD4"/>
-                            <constraint firstItem="oyo-DZ-ooG" firstAttribute="top" secondItem="Rrt-xe-ou0" secondAttribute="top" constant="209" id="OKo-u7-t95"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="top" secondItem="48x-24-3UV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Oqz-2u-sp6"/>
+                            <constraint firstItem="ota-g8-Uyx" firstAttribute="bottom" secondItem="WIO-Vo-Pax" secondAttribute="bottom" type="default" id="Pb9-Ig-qw0"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="top" secondItem="oyo-DZ-ooG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="TVG-tL-KOU"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="centerX" secondItem="48x-24-3UV" secondAttribute="centerX" type="default" id="Unp-aq-y3e"/>
-                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="oyo-DZ-ooG" secondAttribute="bottom" type="default" id="bWb-cM-xfL"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="f3w-0w-v4o"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="top" secondItem="yog-QD-1Sa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="h80-vx-evo"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="top" secondItem="oyo-DZ-ooG" secondAttribute="top" type="default" id="hk4-lo-8Gz"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="top" secondItem="PpC-Yp-kt6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hu8-OS-H9g"/>
                             <constraint firstItem="oyo-DZ-ooG" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jjz-lu-qpa"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ksD-aX-bGd"/>
-                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="ota-g8-Uyx" secondAttribute="bottom" type="default" id="mUg-Ki-i1E"/>
-                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="centerX" secondItem="Rrt-xe-ou0" secondAttribute="centerX" type="default" id="yXM-nc-k0g"/>
+                            <constraint firstItem="vGF-fo-OKd" firstAttribute="centerX" secondItem="ota-g8-Uyx" secondAttribute="centerX" type="default" id="oRx-lt-Tx4"/>
+                            <constraint firstItem="ota-g8-Uyx" firstAttribute="baseline" secondItem="WIO-Vo-Pax" secondAttribute="baseline" type="default" id="sXT-TA-OXq"/>
+                            <constraint firstItem="ota-g8-Uyx" firstAttribute="baseline" secondItem="oyo-DZ-ooG" secondAttribute="baseline" type="default" id="sqn-aD-M73"/>
+                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="centerX" secondItem="Rrt-xe-ou0" secondAttribute="centerX" type="default" id="tmi-b5-y3z"/>
                             <constraint firstAttribute="trailing" secondItem="ota-g8-Uyx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yg2-T6-DfX"/>
                         </constraints>
                     </view>
@@ -234,6 +252,7 @@
                         <outlet property="addPictureButton" destination="WIO-Vo-Pax" id="nC0-RY-RNm"/>
                         <outlet property="comment" destination="OZo-3D-Dih" id="zXP-mM-AHw"/>
                         <outlet property="label" destination="PpC-Yp-kt6" id="1NU-qg-j3H"/>
+                        <outlet property="timeStamp" destination="vGF-fo-OKd" id="1Hm-zC-rLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyC-4x-lPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,7 +507,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="psc-5z-Ryk" customClass="ABCDEViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fuo-Ec-Gz7">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ROo-aJ-gBq">
@@ -537,7 +556,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="Gm4-Sh-5wE" customClass="ABCDEViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6dX-Mz-gU4">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UM1-ql-72I">
@@ -1142,6 +1161,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="outlet" name="moleImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="moleLable" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="numOfImages" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="DetailsViewController" superclassName="UIViewController">
@@ -1152,6 +1172,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="comment" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="editMoleButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeStamp" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="EditViewController" superclassName="UIViewController">

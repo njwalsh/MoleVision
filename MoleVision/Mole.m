@@ -21,6 +21,7 @@
     
     self = [super init];
     imagesArray = [[NSMutableArray alloc] init];
+    timeStamps = [[NSMutableArray alloc] init];
     name = [[NSString alloc] init];
     name = @"temp name";
     return self;

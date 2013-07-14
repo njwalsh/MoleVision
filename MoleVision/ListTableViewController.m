@@ -57,27 +57,16 @@
     [moleArray addObject:mole1];
     
     //calculate time stamp and add 
-    NSDate* sourceDate = [NSDate date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
     
-    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
-    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
-    
-    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:sourceDate];
-    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:sourceDate];
-    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
-    
-    NSDate* destinationDate = [[NSDate alloc] initWithTimeInterval:interval sinceDate:sourceDate];
-    
-    [mole1.timeStamps addObject:destinationDate];
+    [mole1.timeStamps addObject:components];
     
     //add mole name so table view can access
     [self.dataArray addObject:mole1.name];
-    
     //not sure this is necessary
     for (int i = 0; i < [decodedArray count]; i++) {
         Mole *temp = [decodedArray objectAtIndex:i];
         [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
-        
         [moleArray replaceObjectAtIndex:i withObject:temp];
     }
     
@@ -164,13 +153,18 @@
     static NSString *CellIdentifier = @"Cell";
     CustomCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
+    NSInteger tempNumOfImages = [tempMole.imagesArray count];
+    NSString *strFromInt = [NSString stringWithFormat:@"(%ld)", (long)tempNumOfImages];
+    
     if (tableView == self.tableView){
+        cell.numOfImages.text = strFromInt;
         cell.moleLable.text = [self.dataArray objectAtIndex:indexPath.row];
-        Mole *tempMole = [moleArray objectAtIndex:indexPath.row];
         if([tempMole.imagesArray count] != 0){//throws outofbounds error without
             cell.moleImageView.image = [tempMole.imagesArray objectAtIndex:0];
         }
     }else{
+        cell.numOfImages.text = strFromInt;
         cell.moleLable.text = [self.searchResults objectAtIndex:indexPath.row];
         cell.moleImageView.image = [UIImage imageNamed:@"photo(11).JPG"];
     }
