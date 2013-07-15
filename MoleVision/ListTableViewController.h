@@ -28,5 +28,6 @@
 - (void) addMole;
 
 -(IBAction)ChooseExisting;
+-(IBAction)showCameraUI;
 
 @end
