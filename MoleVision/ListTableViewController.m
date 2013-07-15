@@ -33,12 +33,24 @@
     picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    
     [self presentViewController:picker animated:YES completion:nil];
 }
 
+
+- (IBAction)showCameraUI {
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.delegate = self;
+    cameraUI.allowsEditing = YES;
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:cameraUI animated:YES completion:NULL];
+}
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    image = (UIImage*)[info objectForKey:UIImagePickerControllerEditedImage];
     //[imageView setImage:image];
+    
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     [self addMole];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -87,6 +99,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) {
+        
+        moleButton.enabled = NO; // '+' button disabled if camera is not available.
+        
+    }
     
     self.dataArray = [[NSMutableArray alloc] init];
     moleArray = [[NSMutableArray alloc] init];
