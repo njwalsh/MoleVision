@@ -18,6 +18,10 @@
 @implementation ImageView
 @synthesize imageToCompare;
 
+- (void)viewDidLoad{
+    imageToCompare = [[UIImage alloc] init];
+}
+
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch * touch = [[event allTouches] anyObject];
     ImageView * tempImgView = (ImageView *)touch.view;
@@ -144,6 +148,8 @@
     timeStamp.text = strFromComponents;
     
     [self displayMoleImages:tempMole];
+    
+    [imgView setImageToCompare:[tempMole.imagesArray objectAtIndex:0]];
 }
 
 - (void)displayMoleImages:(Mole *)tmpMole{
