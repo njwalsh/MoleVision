@@ -18,4 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label6;
 @property (weak, nonatomic) IBOutlet UILabel *label7;
 
+-(IBAction) skinCancerFoundation;
+-(IBAction) webMD;
+-(IBAction) canadianCancerSociety;
+
 @end
