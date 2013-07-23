@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *label5;
 @property (weak, nonatomic) IBOutlet UILabel *label6;
 @property (weak, nonatomic) IBOutlet UILabel *label7;
+@property (weak, nonatomic) IBOutlet UILabel *label7b;
 
 -(IBAction) skinCancerFoundation;
 -(IBAction) webMD;
