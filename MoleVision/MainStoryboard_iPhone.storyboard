@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="gaR-ng-Vzb" customClass="ListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="MhC-y4-8rQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="zse-Ob-XtS">
@@ -75,6 +75,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="moleButton" destination="r00-SE-ELZ" id="jTd-gZ-twk"/>
                         <outlet property="searchDisplayController" destination="DsZ-eD-4Dt" id="NiK-vw-Hi0"/>
@@ -98,7 +99,7 @@
             <objects>
                 <viewController id="Nkc-UA-QDm" customClass="CompareViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEY-N7-1m8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-JZ-Es0">
@@ -123,6 +124,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Compare" id="dbR-xR-HfE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imageView1" destination="gsd-JZ-Es0" id="tk6-o7-ccB"/>
                         <outlet property="imageView2" destination="BPc-fv-So5" id="fN7-YB-Q0p"/>
@@ -137,7 +139,7 @@
             <objects>
                 <viewController id="wXn-Yj-jT9" customClass="DetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rrt-xe-ou0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpC-Yp-kt6">
@@ -218,7 +220,6 @@
                         <constraints>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="centerX" secondItem="Rrt-xe-ou0" secondAttribute="centerX" type="default" id="7nn-3r-H5S"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BGH-uC-fUp"/>
-                            <constraint firstItem="WIO-Vo-Pax" firstAttribute="baseline" secondItem="ota-g8-Uyx" secondAttribute="baseline" type="default" id="Dfy-9R-f5h"/>
                             <constraint firstItem="ota-g8-Uyx" firstAttribute="top" secondItem="WIO-Vo-Pax" secondAttribute="top" type="default" id="E8R-nE-mBd"/>
                             <constraint firstItem="oyo-DZ-ooG" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EHH-9A-fYs"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="trailing" secondItem="yog-QD-1Sa" secondAttribute="trailing" type="default" id="Eak-qv-aVm"/>
@@ -226,13 +227,11 @@
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="top" secondItem="oyo-DZ-ooG" secondAttribute="top" type="default" id="Isw-Vi-3cl"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="leading" secondItem="Rrt-xe-ou0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="JMA-pu-asv"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="trailing" secondItem="48x-24-3UV" secondAttribute="trailing" type="default" id="MhZ-53-j4x"/>
-                            <constraint firstItem="ota-g8-Uyx" firstAttribute="baseline" secondItem="oyo-DZ-ooG" secondAttribute="baseline" type="default" id="NsO-2F-3Ct"/>
                             <constraint firstItem="yog-QD-1Sa" firstAttribute="top" secondItem="PpC-Yp-kt6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WAO-cg-KB5"/>
                             <constraint firstItem="OZo-3D-Dih" firstAttribute="top" secondItem="48x-24-3UV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XnD-rv-lxp"/>
                             <constraint firstItem="PpC-Yp-kt6" firstAttribute="top" secondItem="oyo-DZ-ooG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="YMf-u6-itk"/>
                             <constraint firstItem="ota-g8-Uyx" firstAttribute="centerX" secondItem="vGF-fo-OKd" secondAttribute="centerX" type="default" id="dof-sj-GdC"/>
                             <constraint firstItem="48x-24-3UV" firstAttribute="top" secondItem="yog-QD-1Sa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dqK-Md-VCS"/>
-                            <constraint firstItem="oyo-DZ-ooG" firstAttribute="baseline" secondItem="WIO-Vo-Pax" secondAttribute="baseline" type="default" id="fzu-qr-uQS"/>
                             <constraint firstItem="WIO-Vo-Pax" firstAttribute="bottom" secondItem="ota-g8-Uyx" secondAttribute="bottom" type="default" id="gMP-fr-Vdu"/>
                             <constraint firstAttribute="trailing" secondItem="ota-g8-Uyx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jV1-av-JV5"/>
                             <constraint firstItem="vGF-fo-OKd" firstAttribute="baseline" secondItem="yog-QD-1Sa" secondAttribute="baseline" type="default" id="kSv-dj-g7L"/>
@@ -248,6 +247,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="addPictureButton" destination="WIO-Vo-Pax" id="nC0-RY-RNm"/>
                         <outlet property="comment" destination="OZo-3D-Dih" id="zXP-mM-AHw"/>
@@ -264,7 +264,7 @@
             <objects>
                 <viewController id="yTm-6a-Jr7" customClass="EditViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QnO-kx-mhc" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHj-de-Q2x">
@@ -308,6 +308,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Edit" id="VID-tD-90R"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="comments" destination="3Sv-Wx-B61" id="gAg-ib-mIf"/>
                         <outlet property="label" destination="7lR-gA-KUg" id="h2M-hx-ILD"/>

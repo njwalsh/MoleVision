@@ -112,6 +112,7 @@
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+    
 }
 
 - (void) viewDidAppear:(BOOL)animated{

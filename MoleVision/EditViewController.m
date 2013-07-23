@@ -42,8 +42,26 @@
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
     
-    //update other views
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     
+    moleLabel = label.text;
+    moleComments = comments.text;
+    
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    
+    NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
+    Mole *tempMole = [tempArr objectAtIndex:moleIndex];
+    tempMole.name = moleLabel;
+    tempMole.comments = moleComments;
+    [tempArr replaceObjectAtIndex:moleIndex withObject:tempMole];
+    
+    NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
+    [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
+    return YES;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,6 +77,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    label.delegate = self;
     
     //get mole comments
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];

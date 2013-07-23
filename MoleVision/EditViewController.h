@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailsViewController.h"
 
-@interface EditViewController : UIViewController{
+@interface EditViewController : UIViewController <UITextFieldDelegate> {
     UITextField *label;
     NSString *sendMoleLabel;
     NSString *moleLabel;
