@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSArray *searchResults;
 @property (nonatomic, retain) NSMutableArray *moleArray;
 @property (strong, nonatomic) NSMutableArray *dataArray;
+@property (nonatomic, retain) NSString *folderName;
 
 @end
 
@@ -28,6 +29,7 @@
 @synthesize dataArray;
 @synthesize picker;
 @synthesize image;
+@synthesize folderName;
 
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
@@ -50,7 +52,38 @@
     image = (UIImage*)[info objectForKey:UIImagePickerControllerEditedImage];
     //[imageView setImage:image];
     
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    
+    // Creating date format
+    NSDate *myDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    folderName = [dateFormatter stringFromDate:myDate];                   // Date format is MM/DD/YYYY H/M/S
+    NSString *photoName = [folderName stringByAppendingString:@".jpeg"];    // title of photo
+    //NSLog(@"dateString: %@", dateString);
+    
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:folderName];    // title of folder
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error: nil];   // if folder does not exist already, create folder with dateString as title
+    
+    // Saving photo to folder
+    NSString *savedImagePath = [dataPath stringByAppendingPathComponent:photoName];
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    [imageData writeToFile:savedImagePath atomically:NO];
+    
+    NSError * error = nil;
+    [imageData writeToFile:savedImagePath options:NSDataWritingAtomic error:&error];
+    
+    if (error != nil) {
+        NSLog(@"Error: %@", error);
+        return;
+    }
+    
     [self addMole];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -66,6 +99,7 @@
     
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
+    mole1.folderName = folderName;
     [moleArray addObject:mole1];
     
     //calculate time stamp and add 

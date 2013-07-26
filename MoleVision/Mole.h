@@ -11,6 +11,7 @@
 @interface Mole : NSObject{
     
     NSString *name;
+    NSString *folderName;
     NSMutableArray *imagesArray;
     NSMutableArray *timeStamps;
     //NSInteger *risk;
@@ -20,6 +21,7 @@
 }
 
 @property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *folderName;
 @property (nonatomic, retain) NSMutableArray *imagesArray;
 @property (nonatomic, retain) NSMutableArray *timeStamps;
 @property (nonatomic) NSInteger *risk;

@@ -53,14 +53,53 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
+- (IBAction)showCameraUI {
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.delegate = self;
+    cameraUI.allowsEditing = YES;
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:cameraUI animated:YES completion:NULL];
+}
+
+
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    //add image to mole imageArray
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    
+    // Creating date format
+    NSDate *myDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    NSString *dateString = [dateFormatter stringFromDate:myDate];
+    
+    // Create name of photo using current timestamp
+    NSString *photoName = [dateString stringByAppendingString:@".jpeg"];
+    
+    // Getting folder within Documents
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:tempMole.folderName];
+    
+    // Save picture to existing folder
+    NSString *savedImagePath = [dataPath stringByAppendingPathComponent:photoName];
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    [imageData writeToFile:savedImagePath atomically:NO];
+    
+    NSError * error = nil;
+    [imageData writeToFile:savedImagePath options:NSDataWritingAtomic error:&error];
+    
+    if (error != nil) {
+        NSLog(@"Error: %@", error);
+        return;
+    }
+
+    
+    //add image to mole imageArray
     [tempMole.imagesArray addObject:image];
     
     //calculate time stamp and add
@@ -94,6 +133,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) {
+        
+        addPictureButton.enabled = NO; // 'Add Picture' button disabled if camera is not available.
+        
+    }
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
     
