@@ -22,7 +22,6 @@
 		2683278417A26B7000A267DB /* button selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683277E17A26B6F00A267DB /* button selected.png */; };
 		2683278517A26B7000A267DB /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683277F17A26B6F00A267DB /* wrong.png */; };
 		2683278617A26B7000A267DB /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683278017A26B6F00A267DB /* yes.png */; };
-		2683278817A26E3500A267DB /* 未标题-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2683278717A26E3500A267DB /* 未标题-1.jpg */; };
 		2683278F17A27AC100A267DB /* FirstBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683278917A27AC000A267DB /* FirstBack.png */; };
 		2683279017A27AC100A267DB /* NormalBAck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2683278A17A27AC000A267DB /* NormalBAck.jpg */; };
 		2683279117A27AC100A267DB /* SignInBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2683278B17A27AC000A267DB /* SignInBack.png */; };
@@ -93,7 +92,6 @@
 		2683277E17A26B6F00A267DB /* button selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button selected.png"; sourceTree = "<group>"; };
 		2683277F17A26B6F00A267DB /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.png; sourceTree = "<group>"; };
 		2683278017A26B6F00A267DB /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
-		2683278717A26E3500A267DB /* 未标题-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "未标题-1.jpg"; sourceTree = "<group>"; };
 		2683278917A27AC000A267DB /* FirstBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstBack.png; sourceTree = "<group>"; };
 		2683278A17A27AC000A267DB /* NormalBAck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NormalBAck.jpg; sourceTree = "<group>"; };
 		2683278B17A27AC000A267DB /* SignInBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignInBack.png; sourceTree = "<group>"; };
@@ -283,7 +281,6 @@
 				2683278C17A27AC100A267DB /* SignUpBack.png */,
 				2683278D17A27AC100A267DB /* TextFiledBule.png */,
 				2683278E17A27AC100A267DB /* TextfiledPurple.png */,
-				2683278717A26E3500A267DB /* 未标题-1.jpg */,
 				2683277717A25FB900A267DB /* Skin Type Images */,
 				2683277817A25FF600A267DB /* UI Images */,
 				AC30333F177841B40038EEBA /* Storyboard.storyboard */,
@@ -413,7 +410,6 @@
 				2683278417A26B7000A267DB /* button selected.png in Resources */,
 				2683278517A26B7000A267DB /* wrong.png in Resources */,
 				2683278617A26B7000A267DB /* yes.png in Resources */,
-				2683278817A26E3500A267DB /* 未标题-1.jpg in Resources */,
 				2683278F17A27AC100A267DB /* FirstBack.png in Resources */,
 				2683279017A27AC100A267DB /* NormalBAck.jpg in Resources */,
 				2683279117A27AC100A267DB /* SignInBack.png in Resources */,
