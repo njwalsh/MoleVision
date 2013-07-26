@@ -50,7 +50,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)signInButton:(id)sender {
+
+
+-(IBAction)tapBackground:(id)sender{
+    
+    [_userNameText resignFirstResponder];
+    [_userPasswordText resignFirstResponder];
+    
+}
+
+- (IBAction)FirstSign:(id)sender {
+    [self performSegueWithIdentifier:@"ToLogin" sender:self];
+}
+
+- (IBAction)FirstUp:(id)sender {
+    [self performSegueWithIdentifier:@"ToSignUp" sender:self];
+}
+
+- (IBAction)LoginButton:(id)sender {
     BOOL fileExist = [[NSFileManager defaultManager]fileExistsAtPath:fullPath];
     if (!fileExist) {
         UIAlertView *infor=[[UIAlertView alloc]initWithTitle:@"Vaild username or password" message:@"Please try again or set your username and password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
@@ -114,21 +131,7 @@
         
         
     }
-    
-}
 
-- (IBAction)signUpButton:(id)sender {
-    [self performSegueWithIdentifier:@"SignInToSignUp" sender:self];
-    //SignUpViewController *svc = [[SignUpViewController alloc]init];
-    //[self presentViewController:svc animated:YES completion:nil];
-}
-
-
--(IBAction)tapBackground:(id)sender{
-    
-    [_userNameText resignFirstResponder];
-    [_userPasswordText resignFirstResponder];
-    
 }
 
 

@@ -11,12 +11,14 @@
 @interface FirstViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *userNameText;
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordText;
-- (IBAction)signInButton:(id)sender;
-- (IBAction)signUpButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *checkUserName;
+@property (weak, nonatomic) IBOutlet UIImageView *chechPassWord;
+
 -(IBAction)tapBackground:(id)sender;
 
+- (IBAction)FirstSign:(id)sender;
 
-
-
+- (IBAction)FirstUp:(id)sender;
+- (IBAction)LoginButton:(id)sender;
 
 @end

@@ -24,6 +24,7 @@ IBOutlet UISegmentedControl *segmentGender;
 @property (weak, nonatomic) IBOutlet UITextField *userSkintypeTextFiled;
 @property (weak, nonatomic) IBOutlet UITextField *userEyeColorTextFiled;
 @property (weak, nonatomic) IBOutlet UIImageView *skinType;
+- (IBAction)tap:(id)sender;
 
 
 - (IBAction)submitProfielButton:(id)sender;

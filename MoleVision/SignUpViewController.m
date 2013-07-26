@@ -108,4 +108,12 @@
 }
 
 
+- (IBAction)tapp:(id)sender {
+    [_setUserName resignFirstResponder];
+    [_setPassword resignFirstResponder];
+    [_confirmPassword resignFirstResponder];
+
+}
+
+
 @end
