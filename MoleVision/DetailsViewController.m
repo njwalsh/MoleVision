@@ -48,23 +48,27 @@
 @synthesize imgView;
 
 -(IBAction)emailPhotos{
-    
+    // Zipping files function: begin
+    // Gets temporary mole information
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     Mole *tempMole = [decodedArray objectAtIndex:moleRow];
     
+    // Getting directory paths
     NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentFolder = [documentPath objectAtIndex:0];  // Getting Documents folder
     NSLog(@"documentFolder: %@", documentFolder);
     NSString *filePath = [documentFolder stringByAppendingPathComponent:tempMole.folderName];      // Getting Documents/tempMole.folderName folder
-    NSLog(@"tempMole.folderName: %@", tempMole.folderName); 
+    NSLog(@"tempMole.folderName: %@", tempMole.folderName);
     
+    // Getting all foldters
     NSString *bundleRoot = [[NSBundle bundleWithPath:filePath] bundlePath];
     NSFileManager *fm = [NSFileManager defaultManager];
     NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
     NSLog(@"dirContents: %@", dirContents);    // Shows ALL files in tempMole.folder
     
+    // Finding files with .jpeg extension
     NSPredicate *filter = [NSPredicate predicateWithFormat:@"self ENDSWITH '.jpeg'"];
     NSArray *jpegs = [dirContents filteredArrayUsingPredicate:filter];
     NSLog(@"%@", jpegs);        // Shows ONLY files with .jpeg extension in tempMole.folder
@@ -83,12 +87,69 @@
     }
     
     BOOL success = [za CloseZipFile2];
-    
     NSLog(@"Zipped file with result %d",success);
-    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Zipped." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
     [alert show];
-     
+    
+    // Zipping files function: end
+    
+    
+    // Emailing files
+    MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
+    [composer setMailComposeDelegate:self];
+    if ([MFMailComposeViewController canSendMail])
+    {
+        // Basic email fields
+        [composer setToRecipients: [NSArray arrayWithObjects:@"abc@123.com", nil]];
+        [composer setSubject:@"Subject here"];
+        [composer setMessageBody:@"Message here" isHTML:NO];
+        [composer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+        [self presentViewController:composer animated:YES completion:nil];
+        
+        // Attaching .zip file to email
+        NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentFolder = [documentPath objectAtIndex:0];      // Documents folder
+        NSString *filePath = [documentFolder stringByAppendingPathComponent:tempMole.folderName];       // Documents/folderName folder
+        NSString *zipName = [filePath stringByAppendingPathComponent:@".zip"];                          // folderName.zip
+        [composer addAttachmentData:[NSData dataWithContentsOfFile:filePath] mimeType:@"application/zip" fileName:zipName]; // Writes folderName.zip to folderName folder
+    }
+    
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    if (error) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message: [NSString stringWithFormat:@"error %@", [error description]] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        [alert show];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else{
+        if (result == MFMailComposeResultSent) {    // If email is sent successfully, notify the user
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Message sent!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    // Notifies users about errors associated with the interface
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Result: canceled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Result: saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Result: sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Result: failed");
+            break;
+        default:
+            NSLog(@"Result: not sent");
+            break;
+    }
 }
 
 -(IBAction)ChooseExisting{

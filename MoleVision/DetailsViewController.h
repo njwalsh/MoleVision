@@ -13,7 +13,7 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate> {
+@interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate, MFMailComposeViewControllerDelegate> {
     
     UIBarButtonItem * editMoleButton;
     int pageCount;
