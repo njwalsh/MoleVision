@@ -10,6 +10,8 @@
 #import "EditViewController.h"
 #import "CompareViewController.h"
 #import "Mole.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
 @interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate> {
     
