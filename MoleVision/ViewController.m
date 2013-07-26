@@ -57,6 +57,10 @@
 
 
 
+- (IBAction)tap:(id)sender {
+    [_userAgeTextFiled resignFirstResponder];
+}
+
 - (IBAction)submitProfielButton:(id)sender {
     
     

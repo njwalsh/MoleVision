@@ -8,6 +8,7 @@
 
 #import "DetailsViewController.h"
 #import <ImageIO/ImageIO.h>
+#import "ZipArchive.h"
 
 @interface ImageView : UIImageView
 
@@ -46,6 +47,50 @@
 @synthesize tmpImagesArray;
 @synthesize imgView;
 
+-(IBAction)emailPhotos{
+    
+    NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
+    NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
+    NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
+    Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    
+    NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentFolder = [documentPath objectAtIndex:0];  // Getting Documents folder
+    NSLog(@"documentFolder: %@", documentFolder);
+    NSString *filePath = [documentFolder stringByAppendingPathComponent:tempMole.folderName];      // Getting Documents/tempMole.folderName folder
+    NSLog(@"tempMole.folderName: %@", tempMole.folderName); 
+    
+    NSString *bundleRoot = [[NSBundle bundleWithPath:filePath] bundlePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    NSLog(@"dirContents: %@", dirContents);    // Shows ALL files in tempMole.folder
+    
+    NSPredicate *filter = [NSPredicate predicateWithFormat:@"self ENDSWITH '.jpeg'"];
+    NSArray *jpegs = [dirContents filteredArrayUsingPredicate:filter];
+    NSLog(@"%@", jpegs);        // Shows ONLY files with .jpeg extension in tempMole.folder
+    
+    NSString *folderTitle = [filePath stringByAppendingPathComponent:tempMole.folderName];
+    NSString *zipFile = [folderTitle stringByAppendingPathComponent:@".zip"];
+    
+    ZipArchive *za = [[ZipArchive alloc] init];
+    [za CreateZipFile2:zipFile];
+    
+    for (int i = 0; i < [jpegs count]; i++) {
+        NSString *data = [jpegs objectAtIndex:i];
+        NSString *imagePath = [filePath stringByAppendingPathComponent:data];
+        //NSLog(@"%d", i);
+        [za addFileToZip:imagePath newname:data];
+    }
+    
+    BOOL success = [za CloseZipFile2];
+    
+    NSLog(@"Zipped file with result %d",success);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Zipped." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alert show];
+     
+}
+
 -(IBAction)ChooseExisting{
     picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
@@ -53,14 +98,53 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
+- (IBAction)showCameraUI {
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.delegate = self;
+    cameraUI.allowsEditing = YES;
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:cameraUI animated:YES completion:NULL];
+}
+
+
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    //add image to mole imageArray
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     Mole *tempMole = [decodedArray objectAtIndex:moleRow];
+    
+    // Creating date format
+    NSDate *myDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    NSString *dateString = [dateFormatter stringFromDate:myDate];
+    
+    // Create name of photo using current timestamp
+    NSString *photoName = [dateString stringByAppendingString:@".jpeg"];
+    
+    // Getting folder within Documents
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:tempMole.folderName];
+    
+    // Save picture to existing folder
+    NSString *savedImagePath = [dataPath stringByAppendingPathComponent:photoName];
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    [imageData writeToFile:savedImagePath atomically:NO];
+    
+    NSError * error = nil;
+    [imageData writeToFile:savedImagePath options:NSDataWritingAtomic error:&error];
+    
+    if (error != nil) {
+        NSLog(@"Error: %@", error);
+        return;
+    }
+
+    
+    //add image to mole imageArray
     [tempMole.imagesArray addObject:image];
     
     //calculate time stamp and add
@@ -94,6 +178,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO) {
+        
+        addPictureButton.enabled = NO; // 'Add Picture' button disabled if camera is not available.
+        
+    }
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
     

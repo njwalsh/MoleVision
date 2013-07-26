@@ -15,6 +15,8 @@
 
 - (IBAction)signUpButton:(id)sender;
 
+- (IBAction)tapp:(id)sender;
+
 
 
 @end

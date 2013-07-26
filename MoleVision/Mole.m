@@ -11,6 +11,7 @@
 @implementation Mole
 
 @synthesize name;
+@synthesize folderName;
 @synthesize imagesArray;
 @synthesize timeStamps;
 //@synthesize risk;
@@ -32,6 +33,7 @@
     
     //Encode properties, other class variables, etc
     [encoder encodeObject:self.name forKey:@"name"];
+    [encoder encodeObject:self.folderName forKey:@"folderName"];
     [encoder encodeObject:self.imagesArray forKey:@"images"];
     [encoder encodeObject:self.timeStamps forKey:@"stamps"];
     //[encoder encodeObject:self.risk forKey:@"risk"];
@@ -46,6 +48,7 @@
     if( self != nil )
     {
         self.name = [decoder decodeObjectForKey:@"name"];
+        self.name = [decoder decodeObjectForKey:@"folderName"];
         self.imagesArray = [decoder decodeObjectForKey:@"images"];
         self.timeStamps = [decoder decodeObjectForKey:@"stamps"];
         //self.risk = [decoder decodeObjectForKey:@"risk"];

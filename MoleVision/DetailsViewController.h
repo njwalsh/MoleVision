@@ -37,6 +37,8 @@
 
 //- (IBAction) doEditMoleButton;
 -(IBAction)ChooseExisting;
+-(IBAction)showCameraUI;
 - (void) displayMoleImages:(Mole *)tmpMole;
+-(IBAction)emailPhotos;
 
 @end
