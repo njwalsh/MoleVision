@@ -39,6 +39,12 @@
 		269D3D091792059D003A108D /* skintype_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFE1792059D003A108D /* skintype_5.jpg */; };
 		269D3D0A1792059D003A108D /* skintype_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFF1792059D003A108D /* skintype_6.jpg */; };
 		269D3D0B1792059D003A108D /* user.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3D001792059D003A108D /* user.jpeg */; };
+		346AE37517A31A32001B5103 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 346AE37417A31A32001B5103 /* libz.1.2.5.dylib */; };
+		346AE38417A3217B001B5103 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37917A32129001B5103 /* ioapi.c */; };
+		346AE38517A3217B001B5103 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37B17A32129001B5103 /* mztools.c */; };
+		346AE38617A3217B001B5103 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37D17A32129001B5103 /* unzip.c */; };
+		346AE38717A3217B001B5103 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37F17A32129001B5103 /* zip.c */; };
+		346AE38817A3217B001B5103 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 346AE38217A32129001B5103 /* ZipArchive.mm */; };
 		3492340C178F760D0061FC17 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3492340B178F760D0061FC17 /* AlarmViewController.m */; };
 		AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3033311777E9990038EEBA /* CameraViewController.m */; };
 		AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30333517783E380038EEBA /* FirstViewController.m */; };
@@ -111,6 +117,18 @@
 		269D3D001792059D003A108D /* user.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user.jpeg; sourceTree = "<group>"; };
 		3433FBB91788CFC8000346E6 /* email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = email.h; path = MoleVision/email.h; sourceTree = SOURCE_ROOT; };
 		3433FBBA1788CFC8000346E6 /* email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = email.m; path = MoleVision/email.m; sourceTree = SOURCE_ROOT; };
+		346AE37417A31A32001B5103 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		346AE37817A32129001B5103 /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		346AE37917A32129001B5103 /* ioapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		346AE37A17A32129001B5103 /* ioapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		346AE37B17A32129001B5103 /* mztools.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		346AE37C17A32129001B5103 /* mztools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		346AE37D17A32129001B5103 /* unzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		346AE37E17A32129001B5103 /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		346AE37F17A32129001B5103 /* zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		346AE38017A32129001B5103 /* zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		346AE38117A32129001B5103 /* ZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = ZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		346AE38217A32129001B5103 /* ZipArchive.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ZipArchive.mm; path = ZipArchive/ZipArchive.mm; sourceTree = "<group>"; };
 		3492340A178F760D0061FC17 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		3492340B178F760D0061FC17 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		AC3033301777E9990038EEBA /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -170,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346AE37517A31A32001B5103 /* libz.1.2.5.dylib in Frameworks */,
 				ACE00A96178CC789006F33DB /* ImageIO.framework in Frameworks */,
 				ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */,
 				ACAA0A3C177770D000C6CFE9 /* UIKit.framework in Frameworks */,
@@ -222,9 +241,30 @@
 			name = "UI Images";
 			sourceTree = "<group>";
 		};
+		346AE37717A32129001B5103 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				346AE37817A32129001B5103 /* crypt.h */,
+				346AE37917A32129001B5103 /* ioapi.c */,
+				346AE37A17A32129001B5103 /* ioapi.h */,
+				346AE37B17A32129001B5103 /* mztools.c */,
+				346AE37C17A32129001B5103 /* mztools.h */,
+				346AE37D17A32129001B5103 /* unzip.c */,
+				346AE37E17A32129001B5103 /* unzip.h */,
+				346AE37F17A32129001B5103 /* zip.c */,
+				346AE38017A32129001B5103 /* zip.h */,
+			);
+			name = minizip;
+			path = ZipArchive/minizip;
+			sourceTree = "<group>";
+		};
 		ACAA0A2F177770D000C6CFE9 = {
 			isa = PBXGroup;
 			children = (
+				346AE37717A32129001B5103 /* minizip */,
+				346AE38117A32129001B5103 /* ZipArchive.h */,
+				346AE38217A32129001B5103 /* ZipArchive.mm */,
+				346AE37417A31A32001B5103 /* libz.1.2.5.dylib */,
 				ACE00A95178CC789006F33DB /* ImageIO.framework */,
 				ACA0C4BC1788D8CE00186C26 /* MessageUI.framework */,
 				ACAA0A41177770D000C6CFE9 /* MoleVision */,
@@ -428,6 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346AE38417A3217B001B5103 /* ioapi.c in Sources */,
+				346AE38517A3217B001B5103 /* mztools.c in Sources */,
+				346AE38617A3217B001B5103 /* unzip.c in Sources */,
+				346AE38717A3217B001B5103 /* zip.c in Sources */,
+				346AE38817A3217B001B5103 /* ZipArchive.mm in Sources */,
 				AC9834951788D4C600E6004A /* email.m in Sources */,
 				AC30333A17783F5F0038EEBA /* FirstViewController.m in Sources */,
 				AC30333B17783F5F0038EEBA /* SignUpViewController.m in Sources */,
