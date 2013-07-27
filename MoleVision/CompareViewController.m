@@ -11,7 +11,7 @@
 //
 //
 //  Bugs:
-//
+//  first compare works but then second comapres most recent image against itself
 //
 //
 
