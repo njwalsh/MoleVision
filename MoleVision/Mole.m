@@ -3,7 +3,16 @@
 //  Mole Vision
 //
 //  Created by Nick Walsh on 2013-06-22.
+//  Modified by
 //  Copyright (c) 2013 Team Up. All rights reserved.
+//
+//  Changes made
+//
+//
+//
+//  Bugs:
+//
+//
 //
 
 #import "Mole.h"
@@ -20,6 +29,7 @@
 
 - (id) init{
     
+    //initialize member variables
     self = [super init];
     imagesArray = [[NSMutableArray alloc] init];
     timeStamps = [[NSMutableArray alloc] init];
@@ -44,6 +54,7 @@
 
 - (id)initWithCoder:(NSCoder *)decoder
 {
+    //Decode properties, other class variables, etc
     self = [super init];
     if( self != nil )
     {

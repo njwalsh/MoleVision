@@ -3,7 +3,16 @@
 //  Mole Vision
 //
 //  Created by Nick Walsh on 2013-06-22.
+//  Modified by
 //  Copyright (c) 2013 Team Up. All rights reserved.
+//
+//  Changes made
+//
+//
+//
+//  Bugs:
+//
+//
 //
 
 #import "CompareViewController.h"
@@ -31,7 +40,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSLog(@"compare view");
     [imageView1 setImage:image1];
     [imageView2 setImage:image2];
 }

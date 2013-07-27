@@ -3,7 +3,16 @@
 //  SearchBarTutorial
 //
 //  Created by Nick Walsh on 2013-06-21.
+//  Modified by
 //  Copyright (c) 2013 Team Up. All rights reserved.
+//
+//  Changes made
+//
+//
+//
+//  Bugs:
+//
+//
 //
 
 #import <UIKit/UIKit.h>
@@ -37,7 +46,6 @@
 @property (strong, nonatomic) UIScrollView * scroller;
 @property (nonatomic, retain) NSArray * tmpImagesArray;
 
-//- (IBAction) doEditMoleButton;
 -(IBAction)ChooseExisting;
 -(IBAction)showCameraUI;
 - (void) displayMoleImages:(Mole *)tmpMole;

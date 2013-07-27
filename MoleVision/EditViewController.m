@@ -3,7 +3,16 @@
 //  Mole Vision
 //
 //  Created by Nick Walsh on 2013-06-22.
+//  Modified by
 //  Copyright (c) 2013 Team Up. All rights reserved.
+//
+//  Changes made
+//
+//
+//
+//  Bugs:
+//  - fields might not save when user changes comment field (it is not a textfield)
+//
 //
 
 #import "EditViewController.h"
@@ -23,6 +32,7 @@
 @synthesize moleComments;
 
 -(IBAction)tapBackground:(id)sender{
+    // save fields when users taps background and remove keyboard
     [label resignFirstResponder];
     [comments resignFirstResponder];
     
@@ -45,7 +55,7 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
+    // save fields when user changes a textfield
     moleLabel = label.text;
     moleComments = comments.text;
     
