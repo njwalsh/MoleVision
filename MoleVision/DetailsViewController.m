@@ -98,8 +98,8 @@
     
     BOOL success = [za CloseZipFile2];
     NSLog(@"Zipped file with result %d",success);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Zipped." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [alert show];
+    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Zipped." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    //[alert show];
     
     // Zipping files function: end
     
@@ -110,9 +110,9 @@
     if ([MFMailComposeViewController canSendMail])
     {
         // Basic email fields
-        [composer setToRecipients: [NSArray arrayWithObjects:@"abc@123.com", nil]];
-        [composer setSubject:@"Subject here"];
-        [composer setMessageBody:@"Message here" isHTML:NO];
+        //[composer setToRecipients: [NSArray arrayWithObjects:@"abc@123.com", nil]];
+        //[composer setSubject:@"Subject here"];
+        //[composer setMessageBody:@"Message here" isHTML:NO];
         [composer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
         [self presentViewController:composer animated:YES completion:nil];
         
