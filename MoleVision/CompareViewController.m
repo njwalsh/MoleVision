@@ -3,7 +3,16 @@
 //  Mole Vision
 //
 //  Created by Nick Walsh on 2013-06-22.
+//  Modified by
 //  Copyright (c) 2013 Team Up. All rights reserved.
+//
+//  Changes made
+//
+//
+//
+//  Bugs:
+//
+//
 //
 
 #import "CompareViewController.h"
