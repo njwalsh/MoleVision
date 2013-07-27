@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,10 +9,10 @@
             <objects>
                 <tableViewController id="gaR-ng-Vzb" customClass="ListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="MhC-y4-8rQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" patternImage="58DBEAF2-C51E-4DD9-B48F-D54D141990E9" colorSpace="pattern"/>
+                        <color key="separatorColor" patternImage="B6278890-66C1-41F9-A3D5-BAEBD811BCE0" colorSpace="pattern"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" barStyle="blackTranslucent" id="zse-Ob-XtS">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -48,7 +48,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" patternImage="5E245969-5C91-4FA5-AB98-14121C021864" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="AD1F376B-2807-4D33-8F3E-7968091DB4FB" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstItem="ODp-kF-fG6" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="100" id="3kv-QV-vP2"/>
                                     <constraint firstItem="r09-Aj-cB7" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="6" id="BCR-rh-VLF"/>
@@ -101,7 +101,7 @@
             <objects>
                 <viewController id="Nkc-UA-QDm" customClass="CompareViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEY-N7-1m8">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-JZ-Es0">
@@ -141,7 +141,7 @@
             <objects>
                 <viewController id="wXn-Yj-jT9" customClass="DetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rrt-xe-ou0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpC-Yp-kt6">
@@ -268,7 +268,7 @@
             <objects>
                 <viewController id="yTm-6a-Jr7" customClass="EditViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QnO-kx-mhc" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHj-de-Q2x">
@@ -465,7 +465,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="KXo-vy-xrO" customClass="ABCDEViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BWq-RX-XAV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome to the ABCDE Skin Self Examination Tutorial!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="278" translatesAutoresizingMaskIntoConstraints="NO" id="db1-f5-Wkb">
@@ -550,6 +550,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rhI-WE-vk5" appends="YES" id="l5S-0t-7gx"/>
+                            <outletCollection property="gestureRecognizers" destination="LAS-D5-kuq" appends="YES" id="58e-bp-xUQ"/>
                         </connections>
                     </view>
                     <connections>
@@ -560,6 +561,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="rhI-WE-vk5">
                     <connections>
                         <segue destination="Gm4-Sh-5wE" kind="modal" id="vZF-ej-zox"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="LAS-D5-kuq">
+                    <connections>
+                        <segue destination="KXo-vy-xrO" kind="modal" id="xJ6-SR-cH8"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -600,6 +606,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hCq-LK-x3g" appends="YES" id="K8H-TM-Zhw"/>
+                            <outletCollection property="gestureRecognizers" destination="X6n-mm-Bf7" appends="YES" id="Ygw-V4-f6v"/>
                         </connections>
                     </view>
                     <connections>
@@ -610,6 +617,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="hCq-LK-x3g">
                     <connections>
                         <segue destination="B5I-yM-Z5Z" kind="modal" id="Pla-p8-ge5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="X6n-mm-Bf7">
+                    <connections>
+                        <segue destination="psc-5z-Ryk" kind="modal" id="KKn-L9-yaD"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -650,6 +662,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="MGx-Mv-8wV" appends="YES" id="r1g-qz-Mjd"/>
+                            <outletCollection property="gestureRecognizers" destination="aug-Xm-c9X" appends="YES" id="g9h-X9-bHL"/>
                         </connections>
                     </view>
                     <connections>
@@ -660,6 +673,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="MGx-Mv-8wV">
                     <connections>
                         <segue destination="3Pe-VD-KLu" kind="modal" id="TUb-yY-zjk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="aug-Xm-c9X">
+                    <connections>
+                        <segue destination="Gm4-Sh-5wE" kind="modal" id="BQL-Jq-WOu"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -692,6 +710,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ohv-1n-RoU" appends="YES" id="XJZ-dK-1aC"/>
+                            <outletCollection property="gestureRecognizers" destination="wGU-jb-E97" appends="YES" id="FM5-HT-nFd"/>
                         </connections>
                     </view>
                     <connections>
@@ -702,6 +721,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="ohv-1n-RoU">
                     <connections>
                         <segue destination="F5J-jV-xa7" kind="modal" id="QJ2-MU-SX2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="wGU-jb-E97">
+                    <connections>
+                        <segue destination="B5I-yM-Z5Z" kind="modal" id="5Lz-be-zke"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -734,6 +758,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="szW-8h-ioB" appends="YES" id="9zE-kB-YdA"/>
+                            <outletCollection property="gestureRecognizers" destination="ESp-T2-x8N" appends="YES" id="0qT-we-NH1"/>
                         </connections>
                     </view>
                     <connections>
@@ -744,6 +769,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="szW-8h-ioB">
                     <connections>
                         <segue destination="E8b-8L-Qb4" kind="modal" id="61o-Al-OZS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ESp-T2-x8N">
+                    <connections>
+                        <segue destination="3Pe-VD-KLu" kind="modal" id="glM-Aw-y1V"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -844,6 +874,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="h8X-yS-NGF" appends="YES" id="3pr-CR-x2m"/>
+                            <outletCollection property="gestureRecognizers" destination="NrE-ch-HjN" appends="YES" id="ofv-zs-kmA"/>
                         </connections>
                     </view>
                     <connections>
@@ -855,6 +886,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <swipeGestureRecognizer direction="left" id="h8X-yS-NGF">
                     <connections>
                         <segue destination="VfU-aS-zQh" kind="modal" id="XVM-Kj-GUo"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="NrE-ch-HjN">
+                    <connections>
+                        <segue destination="F5J-jV-xa7" kind="modal" id="rfK-7D-f0u"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -1468,7 +1504,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="171-sun.png" width="28" height="28"/>
         <image name="22.jpg" width="52" height="51"/>
         <image name="43-film-roll.png" width="26" height="22"/>
-        <image name="58DBEAF2-C51E-4DD9-B48F-D54D141990E9" width="256" height="256">
+        <image name="AD1F376B-2807-4D33-8F3E-7968091DB4FB" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -5857,7 +5893,7 @@ BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
 BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
 </mutableData>
         </image>
-        <image name="5E245969-5C91-4FA5-AB98-14121C021864" width="256" height="256">
+        <image name="B6278890-66C1-41F9-A3D5-BAEBD811BCE0" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -10376,6 +10412,12 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="QJ2-MU-SX2"/>
+        <segue reference="TUb-yY-zjk"/>
+        <segue reference="Pla-p8-ge5"/>
+        <segue reference="vZF-ej-zox"/>
+        <segue reference="KKn-L9-yaD"/>
         <segue reference="XVM-Kj-GUo"/>
+        <segue reference="xJ6-SR-cH8"/>
     </inferredMetricsTieBreakers>
 </document>
