@@ -11,7 +11,7 @@
 //
 //
 //  Bugs:
-//
+//  - view doesn't scroll when fields are edited so information can remain hidden
 //
 //
 
@@ -33,6 +33,7 @@
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    // set image to compare against most recent by touch it
     UITouch * touch = [[event allTouches] anyObject];
     ImageView * tempImgView = (ImageView *)touch.view;
     imageToCompare = (UIImage *)tempImgView.image;
@@ -162,6 +163,7 @@
 }
 
 -(IBAction)ChooseExisting{
+    //  take user to photo library to select image
     picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
@@ -225,7 +227,6 @@
     //save mole
     NSMutableArray * tempArr = [[NSMutableArray alloc] initWithArray:decodedArray];
     [tempArr replaceObjectAtIndex:moleRow withObject:tempMole];
-    
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:tempArr];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
     
@@ -256,39 +257,6 @@
     }
 	
     self.label.text = [NSString stringWithFormat:@"%@", self.sendLabel];
-    
-    /*//How many pages do we want
-    pageCount = 3;
-    
-    //set up scroll view
-    UIScrollView *scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
-    scroller.backgroundColor = [UIColor clearColor];
-    scroller.pagingEnabled = YES;
-    scroller.contentSize = CGSizeMake(pageCount * scroller.bounds.size.width, scroller.bounds.size.height);
-    
-    //set up each view size
-    CGRect viewSize = scroller.bounds;
-    
-    //set up and add images
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:viewSize];
-    [imgView setImage:[UIImage imageNamed:@"photo(11).JPG"]];
-    [scroller addSubview:imgView];
-    
-    //offset view size
-    viewSize = CGRectOffset(viewSize, scroller.bounds.size.width, 0);
-    
-    UIImageView *imgView2 = [[UIImageView alloc] initWithFrame:viewSize];
-    [imgView2 setImage:[UIImage imageNamed:@"pic2.jpg"]];
-    [scroller addSubview:imgView2];
-    
-    //offset view size
-    viewSize = CGRectOffset(viewSize, scroller.bounds.size.width, 0);
-    
-    UIImageView *imgView3 = [[UIImageView alloc] initWithFrame:viewSize];
-    [imgView3 setImage:[UIImage imageNamed:@"pic3.jpg"]];
-    [scroller addSubview:imgView3];
-    
-    [self.view addSubview:scroller];*/
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -334,6 +302,7 @@
         
         UIImage * tempImage = [tmpImagesArray objectAtIndex:i];
         
+        //  code to grab time stamp from image if time stamp exists
         /*//get timestamp from image if possible
         NSData *imageData = [NSData dataWithData:UIImageJPEGRepresentation(tempImage, 0.0)];
         CFDataRef imgDataRef = (__bridge CFDataRef)imageData;
@@ -354,7 +323,7 @@
         }
         CFRelease(imageProperties);*/
         
-        //initialize ImageView to pass to ComapreView
+        //  initialize ImageView to pass to ComapreView
         imgView = [[ImageView alloc] initWithFrame:viewSize];
         [imgView setImage:tempImage];
         [imgView setUserInteractionEnabled:YES];
@@ -366,6 +335,7 @@
 }
 
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    // change mole information being display in DetailsViewController when users scrolls through mole images 
     int page = scroller.contentOffset.x / scroller.frame.size.width;
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
@@ -385,22 +355,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    /*NSLog(@"touch");
-    UITouch * touch = [[event allTouches] anyObject];
-    for (int i = 0; i < [tmpImagesArray count]; i++) {
-        if([touch view] == [tmpImagesArray objectAtIndex:i]){
-            NSLog(@"%@", [tmpImagesArray objectAtIndex:i]);
-        }
-    }*/
-    
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"edit"]){
         EditViewController *evc = segue.destinationViewController;
-        //NSIndexPath *indexPath = nil;
         
         evc.sendMoleLabel = self.sendLabel;
         evc.moleIndex = self.moleRow;

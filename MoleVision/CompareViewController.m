@@ -40,7 +40,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSLog(@"compare view");
     [imageView1 setImage:image1];
     [imageView2 setImage:image2];
 }

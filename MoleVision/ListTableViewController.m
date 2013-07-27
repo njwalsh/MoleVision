@@ -41,6 +41,7 @@
 @synthesize folderName;
 
 -(IBAction)ChooseExisting{
+    //  take user to photo library to select image
     picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
@@ -102,30 +103,32 @@
 }
 
 - (void) addMole {
+    //  decode saved mole array and assign to NSArray variable
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
+    //  create temporary mole to add first image and folderName
     Mole *mole1 = [[Mole alloc] init];
     [mole1.imagesArray addObject:image];
     mole1.folderName = folderName;
     [moleArray addObject:mole1];
     
-    //calculate time stamp and add 
+    //  calculate time stamp and add for first image
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
     
     [mole1.timeStamps addObject:components];
     
-    //add mole name so table view can access
+    //  add mole name so table view can access
     [self.dataArray addObject:mole1.name];
-    //not sure this is necessary
+    //  not sure this is necessary (consider deletion)
     for (int i = 0; i < [decodedArray count]; i++) {
         Mole *temp = [decodedArray objectAtIndex:i];
         [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
         [moleArray replaceObjectAtIndex:i withObject:temp];
     }
     
-    //save array
+    //  save mole array
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
 }
@@ -149,9 +152,11 @@
         
     }
     
+    //  initialize or reset class arrays
     self.dataArray = [[NSMutableArray alloc] init];
     moleArray = [[NSMutableArray alloc] init];
     
+    // save empty moleArray over existing 
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myEncodedObject = [NSKeyedArchiver archivedDataWithRootObject:moleArray];
     [userDefault setObject:myEncodedObject forKey:[NSString stringWithFormat:@"moleArray"]];
@@ -159,10 +164,12 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated{
+    //  decode saved mole array and assign to NSArray variable
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
     NSArray *decodedArray =[NSKeyedUnarchiver unarchiveObjectWithData: myDecodedObject];
     
+    // fill dataArray with names of mole classes for tableView
     for (int i = 0; i < [decodedArray count]; i++) {
         Mole *temp = [decodedArray objectAtIndex:i];
         [self.dataArray replaceObjectAtIndex:i withObject:temp.name];
@@ -170,6 +177,7 @@
         [moleArray replaceObjectAtIndex:i withObject:temp];
     }
     
+    //update tableView in gallery
     [self.tableView reloadData];
 }
 
@@ -181,13 +189,14 @@
 
 - (void) filterContentFprSearchText: (NSString *) searchText
 {
+    // for table search functionality
     NSPredicate *resultsPredicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS [cd] %@", searchText];
     self.searchResults = [self.dataArray filteredArrayUsingPredicate:resultsPredicate];
 }
 
 - (BOOL) searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    //[self filterContentForSearchText:searchString];
+    //  for table search functionality
     [self filterContentFprSearchText:searchString];
     return YES;
 }
@@ -212,6 +221,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // assign cell variables information from mole array
     static NSString *CellIdentifier = @"Cell";
     CustomCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     

@@ -11,7 +11,7 @@
 //
 //
 //  Bugs:
-//
+//  - fields might not save when user changes comment field (it is not a textfield)
 //
 //
 
@@ -32,6 +32,7 @@
 @synthesize moleComments;
 
 -(IBAction)tapBackground:(id)sender{
+    // save fields when users taps background and remove keyboard
     [label resignFirstResponder];
     [comments resignFirstResponder];
     
@@ -54,7 +55,7 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
+    // save fields when user changes a textfield
     moleLabel = label.text;
     moleComments = comments.text;
     

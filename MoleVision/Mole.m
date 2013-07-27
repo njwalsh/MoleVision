@@ -29,6 +29,7 @@
 
 - (id) init{
     
+    //initialize member variables
     self = [super init];
     imagesArray = [[NSMutableArray alloc] init];
     timeStamps = [[NSMutableArray alloc] init];
@@ -53,6 +54,7 @@
 
 - (id)initWithCoder:(NSCoder *)decoder
 {
+    //Decode properties, other class variables, etc
     self = [super init];
     if( self != nil )
     {

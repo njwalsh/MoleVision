@@ -46,7 +46,6 @@
 @property (strong, nonatomic) UIScrollView * scroller;
 @property (nonatomic, retain) NSArray * tmpImagesArray;
 
-//- (IBAction) doEditMoleButton;
 -(IBAction)ChooseExisting;
 -(IBAction)showCameraUI;
 - (void) displayMoleImages:(Mole *)tmpMole;
