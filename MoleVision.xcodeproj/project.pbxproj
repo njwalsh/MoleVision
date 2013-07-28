@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1996CF4817A4EA930003B6A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1996CF4717A4EA930003B6A6 /* CoreLocation.framework */; };
 		1996CF4B17A4EB090003B6A6 /* UVIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */; };
+		26430D4617A53FD600524631 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 26430D4517A53FD600524631 /* 57.png */; };
+		26430D4817A53FDB00524631 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 26430D4717A53FDB00524631 /* 114.png */; };
 		2681C57617A4970E008B68F3 /* backto.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57117A4970E008B68F3 /* backto.png */; };
 		2681C57717A4970E008B68F3 /* skip.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57217A4970E008B68F3 /* skip.png */; };
 		2681C57817A4970E008B68F3 /* xxx.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57317A4970E008B68F3 /* xxx.png */; };
@@ -97,6 +99,8 @@
 		1996CF4717A4EA930003B6A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1996CF4917A4EAF80003B6A6 /* UVIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVIndexViewController.h; sourceTree = "<group>"; };
 		1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVIndexViewController.m; sourceTree = "<group>"; };
+		26430D4517A53FD600524631 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
+		26430D4717A53FDB00524631 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		2681C57117A4970E008B68F3 /* backto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backto.png; sourceTree = "<group>"; };
 		2681C57217A4970E008B68F3 /* skip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip.png; sourceTree = "<group>"; };
 		2681C57317A4970E008B68F3 /* xxx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xxx.png; sourceTree = "<group>"; };
@@ -300,6 +304,8 @@
 		ACAA0A2F177770D000C6CFE9 = {
 			isa = PBXGroup;
 			children = (
+				26430D4717A53FDB00524631 /* 114.png */,
+				26430D4517A53FD600524631 /* 57.png */,
 				1996CF4717A4EA930003B6A6 /* CoreLocation.framework */,
 				34CF71B317A343C90051F750 /* Settings.bundle */,
 				346AE37717A32129001B5103 /* minizip */,
@@ -503,6 +509,8 @@
 				2681C57E17A4A0A9008B68F3 /* refresh16.png in Resources */,
 				2681C57F17A4A0A9008B68F3 /* skipp.png in Resources */,
 				2681C58117A4A13B008B68F3 /* 20130728084514831_easyicon_net_48.png in Resources */,
+				26430D4617A53FD600524631 /* 57.png in Resources */,
+				26430D4817A53FDB00524631 /* 114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
