@@ -68,11 +68,14 @@
     // Getting directory paths
     NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentFolder = [documentPath objectAtIndex:0];  // Getting Documents folder
+    NSLog(@"DetailsViewController.m");
     NSLog(@"documentFolder: %@", documentFolder);
     NSString *filePath = [documentFolder stringByAppendingPathComponent:tempMole.folderName];      // Getting Documents/tempMole.folderName folder
+    //NSString *filePath = [documentFolder stringByAppendingPathComponent:@"MyFolder"];
+    NSLog(@"filePath: %@", filePath);
     NSLog(@"tempMole.folderName: %@", tempMole.folderName);
     
-    // Getting all foldters
+    // Getting all folders
     NSString *bundleRoot = [[NSBundle bundleWithPath:filePath] bundlePath];
     NSFileManager *fm = [NSFileManager defaultManager];
     NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
@@ -84,7 +87,10 @@
     NSLog(@"%@", jpegs);        // Shows ONLY files with .jpeg extension in tempMole.folder
     
     NSString *folderTitle = [filePath stringByAppendingPathComponent:tempMole.folderName];
-    NSString *zipFile = [folderTitle stringByAppendingPathComponent:@".zip"];
+    NSLog(@"folderTitle: %@", folderTitle);
+    //NSString *folderTitle = [filePath stringByAppendingPathComponent:@"test"];
+    NSString *zipFile = [folderTitle stringByAppendingString:@".zip"];
+    NSLog(@"zipFile: %@", zipFile);
     
     ZipArchive *za = [[ZipArchive alloc] init];
     [za CreateZipFile2:zipFile];
@@ -92,7 +98,7 @@
     for (int i = 0; i < [jpegs count]; i++) {
         NSString *data = [jpegs objectAtIndex:i];
         NSString *imagePath = [filePath stringByAppendingPathComponent:data];
-        //NSLog(@"%d", i);
+        NSLog(@"i: %d", i);
         [za addFileToZip:imagePath newname:data];
     }
     
@@ -111,19 +117,25 @@
     {
         // Basic email fields
         //[composer setToRecipients: [NSArray arrayWithObjects:@"abc@123.com", nil]];
-        //[composer setSubject:@"Subject here"];
+        NSString * subject = [tempMole.name stringByAppendingString:@".zip"];
+        [composer setSubject:subject];
         //[composer setMessageBody:@"Message here" isHTML:NO];
         [composer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
         [self presentViewController:composer animated:YES completion:nil];
         
         // Attaching .zip file to email
+        NSLog(@"ATTACHING .ZIP FILE TO EMAIL");
         NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentFolder = [documentPath objectAtIndex:0];      // Documents folder
         NSString *filePath = [documentFolder stringByAppendingPathComponent:tempMole.folderName];       // Documents/folderName folder
-        NSString *zipName = [filePath stringByAppendingPathComponent:@".zip"];                          // folderName.zip
-        [composer addAttachmentData:[NSData dataWithContentsOfFile:filePath] mimeType:@"application/zip" fileName:zipName]; // Writes folderName.zip to folderName folder
+        NSLog(@"filePath: %@", filePath);
+        NSString *filePath2 = [filePath stringByAppendingPathComponent:tempMole.folderName];
+        NSString *filePath3 = [filePath2 stringByAppendingString:@".zip"];
+        NSLog(@"filePath3: %@", filePath3);
+        NSString *zipName = [tempMole.folderName stringByAppendingString:@".zip"];                          // folderName.zip
+        NSLog(@"zipName: %@", zipName);
+        [composer addAttachmentData:[NSData dataWithContentsOfFile:filePath3] mimeType:@"application/zip" fileName:zipName];
     }
-    
 }
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
@@ -204,7 +216,7 @@
     
     // Save picture to existing folder
     NSString *savedImagePath = [dataPath stringByAppendingPathComponent:photoName];
-    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.7);
     [imageData writeToFile:savedImagePath atomically:NO];
     
     NSError * error = nil;
