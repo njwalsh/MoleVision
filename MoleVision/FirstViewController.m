@@ -19,6 +19,8 @@
 @end
 
 @implementation FirstViewController
+@synthesize chechPassWord;
+@synthesize checkUserName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -90,7 +92,7 @@
             {
                 userNameFromFile = [userNameFromFile stringByAppendingString:[NSString stringWithFormat:@"%c",charsFromFile[i]]];
             }
-            else
+            else if(count ==1)
             {
                 userPasswordFromFile = [userPasswordFromFile stringByAppendingString:[NSString stringWithFormat:@"%c",charsFromFile[i]]];
                 
@@ -108,6 +110,8 @@
             //if (!isAccepted) {
             
             [self performSegueWithIdentifier:@"SignInToProfile" sender:self];
+            UIAlertView *infor = [[UIAlertView alloc]initWithTitle:@"Hello" message:@"Welcome Back!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
+            [infor show];
             //ViewController *pvc=[[ViewController alloc]init];
             //[self presentViewController:pvc animated:YES completion:nil];
             //[standardUserDefaults setBool:YES forKey:@"iHaveAcceptedTheTerms"];
@@ -124,8 +128,12 @@
         {
             UIAlertView *infor = [[UIAlertView alloc]initWithTitle:@"Sorry" message:@"Username or password is incorrect" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
             [infor show];
+            UIImage * no = [UIImage imageNamed:@"xxx.png"];
+            [checkUserName setImage:no];
+            [chechPassWord setImage:no];
             _userNameText.text = @"";
             _userPasswordText.text = @"";
+            
             
         }
         

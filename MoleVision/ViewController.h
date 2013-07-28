@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NSString *profileAlarm;
 @interface ViewController : UIViewController{
 IBOutlet UISegmentedControl *segmentGender;
     IBOutlet UISegmentedControl *segmentSkin;
@@ -18,11 +18,14 @@ IBOutlet UISegmentedControl *segmentGender;
    
     
 }
-@property (weak, nonatomic) IBOutlet UITextField *userGenderTextFiled;
-@property (weak, nonatomic) IBOutlet UITextField *userAgeTextFiled;
+- (IBAction)refresh:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *startDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfPhotoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *alarmDateLabel;
 
-@property (weak, nonatomic) IBOutlet UITextField *userSkintypeTextFiled;
-@property (weak, nonatomic) IBOutlet UITextField *userEyeColorTextFiled;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *userAgeTextFiled;
 @property (weak, nonatomic) IBOutlet UIImageView *skinType;
 - (IBAction)tap:(id)sender;
 

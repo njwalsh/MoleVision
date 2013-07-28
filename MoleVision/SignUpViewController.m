@@ -18,6 +18,9 @@
 @end
 
 @implementation SignUpViewController
+@synthesize checkConfirm;
+@synthesize checkSetPass;
+@synthesize checkSetUser;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,14 +70,26 @@
     if(![self validateEmail:userName]){
         UIAlertView *noUserName = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Please enter Correct Email Address" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [noUserName show];
+        UIImage * no = [UIImage imageNamed:@"xxx.png"];
+        [checkSetUser setImage:no];
         _setUserName.text = @"";
         _setPassword.text = @"";
         _confirmPassword.text = @"";
         
     }else{
+        UIImage * yes = [UIImage imageNamed:@"yyy.png"];
+        [checkSetUser setImage:yes];
         if([password isEqualToString:self.confirmPassword.text]&&([password length]>=7)){
-            
-            NSString *userNameAndPasswordString = [NSString stringWithFormat:@"%@\n%@",self.setUserName.text,self.setPassword.text];
+            NSDate *now = [NSDate date];
+            NSLog(@"now: %@", now); // now: 2011-02-28 09:57:49 +0000
+            NSString *strDate = [[NSString alloc] initWithFormat:@"%@",now];
+            NSArray *arr = [strDate componentsSeparatedByString:@" "];
+            NSString *str;
+            str = [arr objectAtIndex:0];
+            alarmData111 = [[NSString alloc]initWithString:str];
+            NSLog(@"Set Start date :%@",alarmData111);
+
+            NSString *userNameAndPasswordString = [NSString stringWithFormat:@"%@\n%@\n%@",self.setUserName.text,self.setPassword.text,alarmData111];
             filehandle = [NSFileHandle fileHandleForUpdatingAtPath:fullpath];
             NSData *data;
             const char *bytesOfUserNameAndPassword = [userNameAndPasswordString UTF8String];
@@ -89,6 +104,11 @@
         else if ([password length]<7){
             UIAlertView *infor1 = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Password must have a length greater than 7" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [infor1 show];
+            UIImage * yes = [UIImage imageNamed:@"yyy.png"];
+            UIImage * no = [UIImage imageNamed:@"xxx.png"];
+            [checkSetUser setImage:yes];
+            [checkSetPass setImage:no];
+            [checkConfirm setImage:no];
             _setPassword.text = @"";
             _confirmPassword.text = @"";
         
@@ -97,6 +117,12 @@
             
             UIAlertView *warning = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Password doesn't match,Please enter again!" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [warning show];
+            UIImage * yes = [UIImage imageNamed:@"yyy.png"];
+            UIImage * no = [UIImage imageNamed:@"xxx.png"];
+            [checkSetUser setImage:yes];
+            [checkSetPass setImage:no];
+            [checkConfirm setImage:no];
+
             
             _setPassword.text = @"";
             _confirmPassword.text = @"";

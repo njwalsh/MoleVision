@@ -9,12 +9,18 @@
 #import "ViewController.h"
 #import "EditViewController.h"
 #import "FirstViewController.h"
+#import "AlarmViewController.h"
+#import "SignUpViewController.h"
 
 @interface ViewController (){
     NSFileManager *fileManager;
     NSString *fullpath;
     NSFileHandle *filehandle;
+    NSFileManager *fileManager1;
+    NSString *fullPath1;
+    NSFileHandle *fileHandle1;
     NSString *userGender;
+    NSString *userSkin;
     }
 
 
@@ -46,6 +52,46 @@
     
     [fileManager changeCurrentDirectoryPath:filePath];
     fullpath = [NSString stringWithFormat:@"%@",[filePath stringByAppendingPathComponent:@"userProfile.txt"]];
+    self.startDateLabel.text = alarmData111;
+    //NSLog(@"start date :%@",alarmData111);
+    
+    self.alarmDateLabel.text = AlarmTime;
+    //NSLog(@"alarm time :%@",AlarmTime);
+    
+    
+    NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath1=[paths objectAtIndex:0];
+    fileManager1 =[NSFileManager defaultManager];
+    fileHandle1 =[NSFileHandle fileHandleForUpdatingAtPath:[filePath1 stringByAppendingPathComponent:@"userLogin.txt"]];
+    
+    [fileManager1 changeCurrentDirectoryPath:filePath];
+    fullPath1 = [NSString stringWithFormat:@"%@",[filePath stringByAppendingPathComponent:@"userLogin.txt"]];
+    
+    fileHandle1 = [NSFileHandle fileHandleForUpdatingAtPath:fullPath1];
+    NSString *stringFromFile = [NSString stringWithContentsOfFile:fullPath1 encoding:NSASCIIStringEncoding error:nil];
+    const char *charsFromFile = [stringFromFile UTF8String];
+    
+    
+    NSString *userDate = [[NSString alloc]init];
+    
+    int count=0;
+    for (int i = 0; i< strlen(charsFromFile); i++) {
+        if (charsFromFile[i]=='\n') {
+            count++;
+        }
+        else if (count==2)
+        {
+            
+            userDate = [userDate stringByAppendingString:[NSString stringWithFormat:@"%c",charsFromFile[i]]];
+        }
+        
+        
+    }
+    NSLog(@"Data is : %@",userDate);
+    self.startDateLabel.text = userDate;
+    self.alarmDateLabel.text = AlarmTime;
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,8 +112,8 @@
     
     BOOL fileExist = [[NSFileManager defaultManager]fileExistsAtPath:fullpath];
     NSString *userAge = self.userAgeTextFiled.text;
-    NSString *userSkinType = self.userSkintypeTextFiled.text;
-    if ([userAge isEqualToString:@""]||[userSkinType isEqualToString:@""]) {
+  
+    if ([userAge isEqualToString:@""]) {
         UIAlertView *noUserName = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"There is at least a blank" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [noUserName show];
         
@@ -76,7 +122,7 @@
         if (!fileExist) {
             [fileManager createFileAtPath:fullpath contents:nil attributes:nil];
         }
-        NSString *userProfile = [NSString stringWithFormat:@"%@\n%@\n%@",userGender,self.userAgeTextFiled.text,self.userSkintypeTextFiled.text];
+        NSString *userProfile = [NSString stringWithFormat:@"%@\n%@\n%@",userGender,self.userAgeTextFiled.text,userSkin];
         filehandle = [NSFileHandle fileHandleForUpdatingAtPath:fullpath];
         NSData * data;
         const char *bytesofUserProfile = [userProfile UTF8String];
@@ -117,6 +163,7 @@
         UIImage *img1 = [UIImage imageNamed:@"skintype_1.jpg"];
         
         [skinType setImage:img1];
+        userSkin = @"Type 1";
         //skinType.image=nil;
         
         
@@ -124,33 +171,42 @@
     if(segmentSkin.selectedSegmentIndex == 1){
         
         [skinType setImage:[UIImage imageNamed:@"skintype_2.jpg"]];
+        userSkin = @"Type 2";
         
         
     }
     if(segmentSkin.selectedSegmentIndex == 2){
         
         [skinType setImage:[UIImage imageNamed:@"skintype_3.jpg"]];
+        userSkin = @"Type 3";
         
         
     }
     if(segmentSkin.selectedSegmentIndex == 3){
     
         [skinType setImage:[UIImage imageNamed:@"skintype_4.jpg"]];
+        userSkin = @"Type 4";
         
     }
     if(segmentSkin.selectedSegmentIndex == 4){
        
         [skinType setImage:[UIImage imageNamed:@"skintype_5.jpg"]];
+        userSkin = @"Type 5";
         
         
     }
     if(segmentSkin.selectedSegmentIndex == 5){
         
         [skinType setImage:[UIImage imageNamed:@"skintype_6.jpg"]];
+        userSkin = @"Type 6";
         
         
     }
     
+}
+- (IBAction)refresh:(id)sender {
+    self.alarmDateLabel.text = AlarmTime;
+
 }
 @end
 

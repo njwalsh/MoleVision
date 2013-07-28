@@ -7,6 +7,7 @@
 //
 
 #import "AlarmViewController.h"
+#import "ViewController.h"
 
 @interface AlarmViewController ()
 
@@ -29,6 +30,10 @@
     
     NSString *dateTimeString = [dateFormatter stringFromDate: dateTimePicker.date];
     NSLog(@"Alarm set : %@", dateTimeString);
+    
+    AlarmTime = dateTimeString;
+    NSLog(@"Time is :%@",AlarmTime);
+    profileAlarm = dateTimeString;
     
     [self scheduleLocalNotificationsWithDate: dateTimePicker.date];
     

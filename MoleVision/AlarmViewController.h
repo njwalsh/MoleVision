@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+NSString *AlarmTime;
 
 @interface AlarmViewController : UIViewController
 {
