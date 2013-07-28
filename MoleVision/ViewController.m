@@ -208,6 +208,11 @@
     self.alarmDateLabel.text = AlarmTime;
 
 }
+- (IBAction)featuresButton:(id)sender {
+}
+
+- (IBAction)walkthroughButton:(id)sender {
+}
 @end
 
 

@@ -38,5 +38,10 @@ IBOutlet UISegmentedControl *segmentGender;
 //- (IBAction)skinSelect:(id)sender;
 - (IBAction)skinTypeSelect:(id)sender;
 
+//buttons for the user tutoriasl
+- (IBAction)featuresButton:(id)sender;
+- (IBAction)walkthroughButton:(id)sender;
+
+
 
 @end
