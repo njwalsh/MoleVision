@@ -34,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[NSThread sleepForTimeInterval:2.0];
     // Do any additional setup after loading the view from its nib.
     self.userPasswordText.secureTextEntry = YES;
     NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
