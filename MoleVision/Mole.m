@@ -35,6 +35,7 @@
     timeStamps = [[NSMutableArray alloc] init];
     name = [[NSString alloc] init];
     name = @"temp name";
+    folderName = [[NSString alloc] init];
     return self;
 }
 
@@ -59,7 +60,7 @@
     if( self != nil )
     {
         self.name = [decoder decodeObjectForKey:@"name"];
-        self.name = [decoder decodeObjectForKey:@"folderName"];
+        self.folderName = [decoder decodeObjectForKey:@"folderName"];
         self.imagesArray = [decoder decodeObjectForKey:@"images"];
         self.timeStamps = [decoder decodeObjectForKey:@"stamps"];
         //self.risk = [decoder decodeObjectForKey:@"risk"];
