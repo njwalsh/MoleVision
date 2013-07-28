@@ -21,6 +21,9 @@
 #import "Mole.h"
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import "ListTableViewController.h"
+
+int photosTaken;
 
 @interface DetailsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate, MFMailComposeViewControllerDelegate> {
     

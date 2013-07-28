@@ -21,6 +21,8 @@
 #import "Mole.h"
 #import "CameraViewController.h"
 
+int photosTaken;
+
 @interface ListTableViewController () <UISearchDisplayDelegate>
 
 @property (strong, nonatomic) NSArray *searchResults;
@@ -60,6 +62,7 @@
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     image = (UIImage*)[info objectForKey:UIImagePickerControllerEditedImage];
+    photosTaken = photosTaken + 1;  // User takes and wants to use photo, increment
     //[imageView setImage:image];
     
     //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
@@ -93,7 +96,7 @@
         NSLog(@"Error: %@", error);
         return;
     }
-    
+    NSLog(@"photosTaken: %d", photosTaken);
     [self addMole];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

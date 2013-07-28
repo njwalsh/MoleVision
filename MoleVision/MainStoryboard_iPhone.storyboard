@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" patternImage="BE561DDD-D585-4D5B-90BC-DC67816F6F18" colorSpace="pattern"/>
+                        <color key="separatorColor" patternImage="148D54B7-1504-4556-A91D-88CE6F9BDDCF" colorSpace="pattern"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" barStyle="blackTranslucent" id="zse-Ob-XtS">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -48,7 +48,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" patternImage="934CFF63-7BDB-4E4C-9529-FAA10BC40C97" colorSpace="pattern"/>
+                                <color key="backgroundColor" patternImage="7A1B329A-7404-4704-BE32-A66C16D41DF7" colorSpace="pattern"/>
                                 <constraints>
                                     <constraint firstItem="ODp-kF-fG6" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="100" id="3kv-QV-vP2"/>
                                     <constraint firstItem="r09-Aj-cB7" firstAttribute="leading" secondItem="9uU-lv-hoW" secondAttribute="leading" constant="6" id="BCR-rh-VLF"/>
@@ -2207,12 +2207,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="11-clock.png" width="25" height="25"/>
         <image name="11.jpg" width="44" height="52"/>
-        <image name="16-line-chart.png" width="30" height="24"/>
-        <image name="171-sun.png" width="28" height="28"/>
-        <image name="20130728084514831_easyicon_net_48.png" width="48" height="48"/>
-        <image name="22.jpg" width="52" height="51"/>
-        <image name="43-film-roll.png" width="26" height="22"/>
-        <image name="934CFF63-7BDB-4E4C-9529-FAA10BC40C97" width="256" height="256">
+        <image name="148D54B7-1504-4556-A91D-88CE6F9BDDCF" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -6601,7 +6596,12 @@ BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
 BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
 </mutableData>
         </image>
-        <image name="BE561DDD-D585-4D5B-90BC-DC67816F6F18" width="256" height="256">
+        <image name="16-line-chart.png" width="30" height="24"/>
+        <image name="171-sun.png" width="28" height="28"/>
+        <image name="20130728084514831_easyicon_net_48.png" width="48" height="48"/>
+        <image name="22.jpg" width="52" height="51"/>
+        <image name="43-film-roll.png" width="26" height="22"/>
+        <image name="7A1B329A-7404-4704-BE32-A66C16D41DF7" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
