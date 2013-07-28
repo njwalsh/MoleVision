@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1996CF4817A4EA930003B6A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1996CF4717A4EA930003B6A6 /* CoreLocation.framework */; };
+		1996CF4B17A4EB090003B6A6 /* UVIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */; };
 		2681C57617A4970E008B68F3 /* backto.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57117A4970E008B68F3 /* backto.png */; };
 		2681C57717A4970E008B68F3 /* skip.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57217A4970E008B68F3 /* skip.png */; };
 		2681C57817A4970E008B68F3 /* xxx.png in Resources */ = {isa = PBXBuildFile; fileRef = 2681C57317A4970E008B68F3 /* xxx.png */; };
@@ -92,6 +94,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1996CF4717A4EA930003B6A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1996CF4917A4EAF80003B6A6 /* UVIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVIndexViewController.h; sourceTree = "<group>"; };
+		1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVIndexViewController.m; sourceTree = "<group>"; };
 		2681C57117A4970E008B68F3 /* backto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backto.png; sourceTree = "<group>"; };
 		2681C57217A4970E008B68F3 /* skip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip.png; sourceTree = "<group>"; };
 		2681C57317A4970E008B68F3 /* xxx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xxx.png; sourceTree = "<group>"; };
@@ -206,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1996CF4817A4EA930003B6A6 /* CoreLocation.framework in Frameworks */,
 				346AE37517A31A32001B5103 /* libz.1.2.5.dylib in Frameworks */,
 				ACE00A96178CC789006F33DB /* ImageIO.framework in Frameworks */,
 				ACA0C4BD1788D8CE00186C26 /* MessageUI.framework in Frameworks */,
@@ -294,6 +300,7 @@
 		ACAA0A2F177770D000C6CFE9 = {
 			isa = PBXGroup;
 			children = (
+				1996CF4717A4EA930003B6A6 /* CoreLocation.framework */,
 				34CF71B317A343C90051F750 /* Settings.bundle */,
 				346AE37717A32129001B5103 /* minizip */,
 				346AE38117A32129001B5103 /* ZipArchive.h */,
@@ -332,6 +339,8 @@
 				ACAA0A711777714900C6CFE9 /* ABCDEAppDelegate.m */,
 				ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */,
 				ACAA0A731777714900C6CFE9 /* ABCDEViewController.m */,
+				1996CF4917A4EAF80003B6A6 /* UVIndexViewController.h */,
+				1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */,
 				3492340A178F760D0061FC17 /* AlarmViewController.h */,
 				3492340B178F760D0061FC17 /* AlarmViewController.m */,
 				ACAA0A621777714000C6CFE9 /* AppDelegate.h */,
@@ -525,6 +534,7 @@
 				ACAA0A931777725F00C6CFE9 /* EditViewController.m in Sources */,
 				AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */,
 				3492340C178F760D0061FC17 /* AlarmViewController.m in Sources */,
+				1996CF4B17A4EB090003B6A6 /* UVIndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
