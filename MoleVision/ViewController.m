@@ -226,6 +226,22 @@
         [self presentViewController:composer animated:YES completion:nil];
     }
 }
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    if (error) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message: [NSString stringWithFormat:@"error %@", [error description]] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+        [alert show];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else{
+        if (result == MFMailComposeResultSent) {    // If email is sent successfully, notify the user
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Message sent!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 @end
 
 
