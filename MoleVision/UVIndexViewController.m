@@ -30,7 +30,7 @@
     
     miniLocationsArray = [[NSArray alloc] initWithObjects: @"Vancouver", @"Victoria", @"Yellowknife", @"Kamloops", @"Banff",nil];
     
-    miniWeatherArray = [[NSArray alloc] initWithObjects: @"http://www.theweathernetwork.com/forecasts/uv/canada/british-columbia/vancouver", @"http://www.theweathernetwork.com/forecasts/uv/canada/british-columbia/victoria", @"http://www.theweathernetwork.com/forecasts/uv/canada/northwest-territories/yellowknife" @"http://www.theweathernetwork.com/forecasts/uv/canada/british-columbia/kamloops", @"http://www.theweathernetwork.com/forecasts/uv/canada/alberta/banff", nil];
+    miniWeatherArray = [[NSArray alloc] initWithObjects: @"http://weather.gc.ca/city/pages/bc-74_metric_e.html", @"http://weather.gc.ca/city/pages/bc-85_metric_e.html", @"http://www.theweathernetwork.com/forecasts/uv/canada/northwest-territories/yellowknife" @"http://www.theweathernetwork.com/forecasts/uv/canada/british-columbia/kamloops", @"http://www.theweathernetwork.com/forecasts/uv/canada/alberta/banff", nil];
     
     /*
     //works!
