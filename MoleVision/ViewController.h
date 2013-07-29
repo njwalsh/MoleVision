@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListTableViewController.h"
+
 NSString *profileAlarm;
+int photosTaken;
 @interface ViewController : UIViewController{
 IBOutlet UISegmentedControl *segmentGender;
     IBOutlet UISegmentedControl *segmentSkin;

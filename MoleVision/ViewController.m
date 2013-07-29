@@ -206,7 +206,8 @@
 }
 - (IBAction)refresh:(id)sender {
     self.alarmDateLabel.text = AlarmTime;
-
+    NSString *numberOfPhotos = [NSString stringWithFormat:@"%d", photosTaken];
+    self.numberOfPhotoLabel.text = numberOfPhotos;
 }
 - (IBAction)featuresButton:(id)sender {
 }
