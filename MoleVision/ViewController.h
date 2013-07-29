@@ -45,6 +45,6 @@ IBOutlet UISegmentedControl *segmentGender;
 - (IBAction)featuresButton:(id)sender;
 - (IBAction)walkthroughButton:(id)sender;
 
-
+- (IBAction)feedbackEmail:(id)sender;
 
 @end

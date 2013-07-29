@@ -214,6 +214,18 @@
 
 - (IBAction)walkthroughButton:(id)sender {
 }
+
+- (IBAction)feedbackEmail:(id)sender {
+    // Email
+    MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
+    [composer setMailComposeDelegate:self];
+    if ([MFMailComposeViewController canSendMail])
+    {
+        [composer setToRecipients: [NSArray arrayWithObjects:@"molevision.sfu@gmail.com", nil]];
+        [composer setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+        [self presentViewController:composer animated:YES completion:nil];
+    }
+}
 @end
 
 

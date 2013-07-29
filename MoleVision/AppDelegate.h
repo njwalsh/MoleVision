@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CrashReporter.h"
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
