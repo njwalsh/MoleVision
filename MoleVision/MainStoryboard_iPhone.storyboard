@@ -377,6 +377,7 @@
                         <segue destination="1Ua-qD-6zt" kind="relationship" relationship="viewControllers" id="rz0-7r-7sG"/>
                         <segue destination="LGN-vq-ylT" kind="relationship" relationship="viewControllers" id="3KZ-c2-zXU"/>
                         <segue destination="g0e-Ga-3Bs" kind="relationship" relationship="viewControllers" id="Nl7-aB-vaz"/>
+                        <segue destination="NUi-PK-2V0" kind="relationship" relationship="viewControllers" id="pff-Gz-BBO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLs-vz-QkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -852,80 +853,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Follow the links below to find out more about skin cancer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="271" translatesAutoresizingMaskIntoConstraints="NO" id="2y0-qB-yfM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkmole.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QB6-nB-TqT">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="271" id="1lM-9s-nZO"/>
-                                    <constraint firstAttribute="height" constant="104" id="WH9-QD-tUZ"/>
+                                    <constraint firstAttribute="width" constant="266" id="UKa-iy-NqV"/>
+                                    <constraint firstAttribute="height" constant="168" id="iRH-GH-Sbp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piI-sW-ZAi">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="3Am-3Y-1We"/>
-                                    <constraint firstAttribute="width" constant="249" id="Noq-JS-rd7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
-                                <state key="normal" title="The Skin Cancer Foundation" backgroundImage="TextFiledBule.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="skinCancerFoundation" destination="E8b-8L-Qb4" eventType="touchUpInside" id="VhK-cE-SRg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCo-ii-bft">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="OSv-YN-diq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
-                                <state key="normal" title="Web MD" backgroundImage="TextFiledBule.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="webMD" destination="E8b-8L-Qb4" eventType="touchUpInside" id="iJ1-4r-RD1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-PC-GxW">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="0ye-2o-p02"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
-                                <state key="normal" title="The Canadian Cancer Society" backgroundImage="TextFiledBule.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="canadianCancerSociety" destination="E8b-8L-Qb4" eventType="touchUpInside" id="jMk-ba-6QM"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="MLy-PC-GxW" firstAttribute="centerX" secondItem="hdt-VE-6IJ" secondAttribute="centerX" type="default" id="3Pp-2Q-1D8"/>
-                            <constraint firstAttribute="bottom" secondItem="piI-sW-ZAi" secondAttribute="bottom" constant="159" id="5at-sK-zcO"/>
-                            <constraint firstItem="piI-sW-ZAi" firstAttribute="leading" secondItem="DCo-ii-bft" secondAttribute="leading" type="default" id="9qM-sx-sXf"/>
-                            <constraint firstAttribute="bottom" secondItem="MLy-PC-GxW" secondAttribute="bottom" constant="68" id="IaM-Gc-3GL"/>
-                            <constraint firstItem="2y0-qB-yfM" firstAttribute="top" secondItem="hdt-VE-6IJ" secondAttribute="top" constant="150" id="SaO-O3-6au"/>
-                            <constraint firstItem="hem-XA-F8f" firstAttribute="leading" secondItem="hdt-VE-6IJ" secondAttribute="leading" constant="25" id="VF1-f7-HI1"/>
-                            <constraint firstItem="MLy-PC-GxW" firstAttribute="trailing" secondItem="DCo-ii-bft" secondAttribute="trailing" type="default" id="aKZ-dM-Pp8"/>
-                            <constraint firstItem="hem-XA-F8f" firstAttribute="top" secondItem="hdt-VE-6IJ" secondAttribute="top" constant="6" id="bzv-Po-bNN"/>
-                            <constraint firstItem="piI-sW-ZAi" firstAttribute="trailing" secondItem="DCo-ii-bft" secondAttribute="trailing" type="default" id="d4E-RL-dEF"/>
-                            <constraint firstAttribute="bottom" secondItem="DCo-ii-bft" secondAttribute="bottom" constant="112" id="gY3-uH-dtR"/>
-                            <constraint firstAttribute="trailing" secondItem="2y0-qB-yfM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sdc-iD-1BC"/>
-                            <constraint firstItem="MLy-PC-GxW" firstAttribute="leading" secondItem="DCo-ii-bft" secondAttribute="leading" type="default" id="ugg-dW-dRo"/>
+                            <constraint firstItem="QB6-nB-TqT" firstAttribute="leading" secondItem="hem-XA-F8f" secondAttribute="leading" type="default" id="AWF-WB-qgf"/>
+                            <constraint firstItem="hem-XA-F8f" firstAttribute="top" secondItem="hdt-VE-6IJ" secondAttribute="top" constant="213" id="R80-kv-g2X"/>
+                            <constraint firstItem="QB6-nB-TqT" firstAttribute="top" secondItem="hdt-VE-6IJ" secondAttribute="top" constant="43" id="Svo-Qf-tu6"/>
+                            <constraint firstItem="QB6-nB-TqT" firstAttribute="centerX" secondItem="hdt-VE-6IJ" secondAttribute="centerX" type="default" id="ih6-tf-vp5"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="h8X-yS-NGF" appends="YES" id="3pr-CR-x2m"/>
@@ -934,7 +875,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <connections>
                         <outlet property="label7" destination="hem-XA-F8f" id="eHF-2i-mYp"/>
-                        <outlet property="label7b" destination="2y0-qB-yfM" id="pb6-es-azl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2F-Td-FAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2146,6 +2086,102 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1529" y="338"/>
+        </scene>
+        <!--Link View Controller - Links-->
+        <scene sceneID="ZaI-zo-icc">
+            <objects>
+                <viewController id="NUi-PK-2V0" customClass="LinkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="27P-Gv-z8o">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZS-gd-A5I">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="cLI-Mk-pxi"/>
+                                    <constraint firstAttribute="width" constant="115" id="trP-LS-Maq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="scan cancer fundation 2.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="canadianCancerSociety" destination="NUi-PK-2V0" eventType="touchUpInside" id="Q2Q-bG-urH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijS-nC-B8e">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4y3-SF-h3e"/>
+                                    <constraint firstAttribute="width" constant="113" id="eEz-aM-RBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="canadiancancer.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="canadianCancerSociety" destination="NUi-PK-2V0" eventType="touchUpInside" id="xve-S8-a1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-1h-OzD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="dZs-lR-YbU"/>
+                                    <constraint firstAttribute="height" constant="44" id="p6y-St-fPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="webmd.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="webMD" destination="NUi-PK-2V0" eventType="touchUpInside" id="k7u-b8-w8V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Follow the links below to find out more about skin cancer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="271" translatesAutoresizingMaskIntoConstraints="NO" id="lab-ec-fBj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="Vq2-xj-RAW"/>
+                                    <constraint firstAttribute="height" constant="104" id="tBj-Lk-pKj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kid.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vha-Kp-egr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="DyV-ZF-anq"/>
+                                    <constraint firstAttribute="height" constant="190" id="gcu-6d-u6Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BUO-1h-OzD" firstAttribute="leading" secondItem="27P-Gv-z8o" secondAttribute="leading" constant="28" id="4bW-TP-K4W"/>
+                            <constraint firstItem="lab-ec-fBj" firstAttribute="top" secondItem="27P-Gv-z8o" secondAttribute="top" type="default" id="Ncl-Tt-FPQ"/>
+                            <constraint firstItem="lab-ec-fBj" firstAttribute="centerX" secondItem="27P-Gv-z8o" secondAttribute="centerX" type="default" id="TgW-FR-glD"/>
+                            <constraint firstAttribute="trailing" secondItem="Vha-Kp-egr" secondAttribute="trailing" constant="13" id="UAG-ED-uwu"/>
+                            <constraint firstItem="Vha-Kp-egr" firstAttribute="bottom" secondItem="wZS-gd-A5I" secondAttribute="bottom" type="default" id="bAR-ic-D1h"/>
+                            <constraint firstItem="BUO-1h-OzD" firstAttribute="top" secondItem="Vha-Kp-egr" secondAttribute="top" type="default" id="fFd-FJ-FwD"/>
+                            <constraint firstItem="wZS-gd-A5I" firstAttribute="trailing" secondItem="ijS-nC-B8e" secondAttribute="trailing" type="default" id="flx-jW-pbh"/>
+                            <constraint firstItem="ijS-nC-B8e" firstAttribute="centerY" secondItem="Vha-Kp-egr" secondAttribute="centerY" type="default" id="hVV-z2-owc"/>
+                            <constraint firstItem="wZS-gd-A5I" firstAttribute="leading" secondItem="27P-Gv-z8o" secondAttribute="leading" constant="29" id="k3m-ln-7rx"/>
+                            <constraint firstItem="BUO-1h-OzD" firstAttribute="top" secondItem="27P-Gv-z8o" secondAttribute="top" constant="145" id="vqx-35-B8b"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Links" id="kRY-21-XtG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7L-y0-eL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="-343"/>
         </scene>
         <!--Index View Controller - UV Index-->
         <scene sceneID="JoO-ce-IWI">
@@ -11091,17 +11127,19 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <image name="backk.png" width="24" height="24"/>
         <image name="button normal.png" width="300" height="200"/>
         <image name="button selected.png" width="300" height="200"/>
+        <image name="canadiancancer.png" width="172" height="60"/>
+        <image name="checkmole.jpg" width="600" height="480"/>
         <image name="confirm.png" width="1200" height="954"/>
         <image name="email.png" width="1200" height="954"/>
+        <image name="kid.png" width="335" height="404"/>
+        <image name="scan cancer fundation 2.png" width="204" height="97"/>
         <image name="skipp.png" width="24" height="24"/>
+        <image name="webmd.png" width="162" height="49"/>
     </resources>
     <classes>
         <class className="ABCDEViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ABCDEViewController.h"/>
             <relationships>
-                <relationship kind="action" name="canadianCancerSociety"/>
-                <relationship kind="action" name="skinCancerFoundation"/>
-                <relationship kind="action" name="webMD"/>
                 <relationship kind="outlet" name="label1a" candidateClass="UIView"/>
                 <relationship kind="outlet" name="label1b" candidateClass="UIView"/>
                 <relationship kind="outlet" name="label2" candidateClass="UILabel"/>
@@ -11168,6 +11206,14 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
                 <relationship kind="outlet" name="checkUserName" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="userNameText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="userPasswordText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LinkViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LinkViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="canadianCancerSociety"/>
+                <relationship kind="action" name="skinCancerFoundation"/>
+                <relationship kind="action" name="webMD"/>
             </relationships>
         </class>
         <class className="ListTableViewController" superclassName="UITableViewController">

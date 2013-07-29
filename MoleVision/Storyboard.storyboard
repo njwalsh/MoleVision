@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="J94-jV-vt4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="J94-jV-vt4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -71,9 +71,9 @@
                         <constraints>
                             <constraint firstItem="6cP-vV-1O1" firstAttribute="trailing" secondItem="Dc3-HP-iff" secondAttribute="trailing" type="default" id="2tD-Dv-b0e"/>
                             <constraint firstItem="6cP-vV-1O1" firstAttribute="top" secondItem="Dc3-HP-iff" secondAttribute="top" type="default" id="4DP-KS-JvD"/>
-                            <constraint firstItem="35P-u2-TBJ" firstAttribute="leading" secondItem="Dc3-HP-iff" secondAttribute="leading" constant="82" id="5Ke-7g-tcq"/>
                             <constraint firstItem="J6b-Sf-7ZO" firstAttribute="trailing" secondItem="35P-u2-TBJ" secondAttribute="trailing" type="default" id="ELr-6H-AFs"/>
                             <constraint firstItem="Gkm-eC-ypF" firstAttribute="leading" secondItem="35P-u2-TBJ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Hzn-0P-cGq"/>
+                            <constraint firstItem="35P-u2-TBJ" firstAttribute="leading" secondItem="Dc3-HP-iff" secondAttribute="leading" constant="82" id="IgF-Y4-ebS"/>
                             <constraint firstItem="J6b-Sf-7ZO" firstAttribute="top" secondItem="vpk-9d-vbY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Osh-zx-YVt"/>
                             <constraint firstItem="6cP-vV-1O1" firstAttribute="leading" secondItem="Dc3-HP-iff" secondAttribute="leading" type="default" id="SlQ-Km-Yxs"/>
                             <constraint firstItem="I5P-uX-HqF" firstAttribute="top" secondItem="Dc3-HP-iff" secondAttribute="top" constant="219" id="UqX-Sm-LgR"/>

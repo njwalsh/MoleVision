@@ -26,17 +26,5 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)skinCancerFoundation {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.skincancer.org"]];
-}
-
--(IBAction)canadianCancerSociety {
-    [[UIApplication sharedApplication] openURL:
-     [NSURL URLWithString:@"http://www.webmd.com/melanoma-skin-cancer/default.htm"]];
-}
-
--(IBAction)webMD {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.webmd.com/melanoma-skin-cancer/default.htm"]];
-}
 
 @end

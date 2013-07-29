@@ -120,7 +120,7 @@
 		2681C57A17A4A0A9008B68F3 /* backk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backk.png; sourceTree = "<group>"; };
 		2681C57B17A4A0A9008B68F3 /* refresh16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh16.png; sourceTree = "<group>"; };
 		2681C57C17A4A0A9008B68F3 /* skipp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skipp.png; sourceTree = "<group>"; };
-		2681C58017A4A13B008B68F3 /* 20130728084514831_easyicon_net_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20130728084514831_easyicon_net_48.png; sourceTree = "<group>"; };
+		2681C58017A4A13B008B68F3 /* 20130728084514831_easyicon_net_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 20130728084514831_easyicon_net_48.png; path = MoleVision/20130728084514831_easyicon_net_48.png; sourceTree = "<group>"; };
 		2683274517A2567B00A267DB /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
 		2683274617A2567B00A267DB /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
 		2683275517A2593300A267DB /* 11-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-clock.png"; sourceTree = "<group>"; };
@@ -338,6 +338,14 @@
 				26430D4917A5408700524631 /* Default.png */,
 				26430D4717A53FDB00524631 /* 114.png */,
 				26430D4517A53FD600524631 /* 57.png */,
+				30D0230917A6F53A0000A08F /* canadiancancer.png */,
+				30D0230A17A6F53A0000A08F /* checkmole.jpg */,
+				30D0230B17A6F53B0000A08F /* kid.png */,
+				30D0230C17A6F53B0000A08F /* scan cancer fundation 2.png */,
+				30D0230D17A6F53B0000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png */,
+				30D0230E17A6F53B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png */,
+				30D0230F17A6F53C0000A08F /* webmd.png */,
+				2681C58017A4A13B008B68F3 /* 20130728084514831_easyicon_net_48.png */,
 				1996CF4717A4EA930003B6A6 /* CoreLocation.framework */,
 				34CF71B317A343C90051F750 /* Settings.bundle */,
 				346AE37717A32129001B5103 /* minizip */,
@@ -376,6 +384,8 @@
 			children = (
 				ACAA0A701777714900C6CFE9 /* ABCDEAppDelegate.h */,
 				ACAA0A711777714900C6CFE9 /* ABCDEAppDelegate.m */,
+				30D022F517A65C240000A08F /* LinkViewController.h */,
+				30D022F617A65C240000A08F /* LinkViewController.m */,
 				ACAA0A721777714900C6CFE9 /* ABCDEViewController.h */,
 				ACAA0A731777714900C6CFE9 /* ABCDEViewController.m */,
 				1996CF4917A4EAF80003B6A6 /* UVIndexViewController.h */,
@@ -583,6 +593,7 @@
 				AC3033321777E99A0038EEBA /* CameraViewController.m in Sources */,
 				3492340C178F760D0061FC17 /* AlarmViewController.m in Sources */,
 				1996CF4B17A4EB090003B6A6 /* UVIndexViewController.m in Sources */,
+				30D022F717A65C240000A08F /* LinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
