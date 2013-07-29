@@ -59,7 +59,7 @@
     //NSLog(@"alarm time :%@",AlarmTime);
     
     
-    NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+   // NSArray *paths1=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *filePath1=[paths objectAtIndex:0];
     fileManager1 =[NSFileManager defaultManager];
     fileHandle1 =[NSFileHandle fileHandleForUpdatingAtPath:[filePath1 stringByAppendingPathComponent:@"userLogin.txt"]];
@@ -90,6 +90,10 @@
     NSLog(@"Data is : %@",userDate);
     self.startDateLabel.text = userDate;
     self.alarmDateLabel.text = AlarmTime;
+    NSString *numberOfPhotos = [NSString stringWithFormat:@"%d", photosTaken];
+    self.numberOfPhotoLabel.text = numberOfPhotos;
+
+
     
 
 }
