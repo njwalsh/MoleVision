@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1928B03817A71CF8007EFE17 /* Photo 2013-07-28 10 01 25 PM.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1928B03717A71CF8007EFE17 /* Photo 2013-07-28 10 01 25 PM.jpeg */; };
+		1928B03A17A71E26007EFE17 /* Compare.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1928B03917A71E26007EFE17 /* Compare.jpeg */; };
+		1928B03C17A71E96007EFE17 /* comments.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1928B03B17A71E96007EFE17 /* comments.jpeg */; };
+		1928B03E17A71F1B007EFE17 /* emailTutorial.png in Resources */ = {isa = PBXBuildFile; fileRef = 1928B03D17A71F1B007EFE17 /* emailTutorial.png */; };
+		1928B04017A71FC8007EFE17 /* newPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 1928B03F17A71FC8007EFE17 /* newPic.png */; };
 		1996CF4817A4EA930003B6A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1996CF4717A4EA930003B6A6 /* CoreLocation.framework */; };
 		1996CF4B17A4EB090003B6A6 /* UVIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */; };
 		26430D4617A53FD600524631 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 26430D4517A53FD600524631 /* 57.png */; };
@@ -108,6 +113,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1928B03717A71CF8007EFE17 /* Photo 2013-07-28 10 01 25 PM.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo 2013-07-28 10 01 25 PM.jpeg"; sourceTree = "<group>"; };
+		1928B03917A71E26007EFE17 /* Compare.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Compare.jpeg; sourceTree = "<group>"; };
+		1928B03B17A71E96007EFE17 /* comments.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comments.jpeg; sourceTree = "<group>"; };
+		1928B03D17A71F1B007EFE17 /* emailTutorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emailTutorial.png; sourceTree = "<group>"; };
+		1928B03F17A71FC8007EFE17 /* newPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newPic.png; sourceTree = "<group>"; };
 		1996CF4717A4EA930003B6A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1996CF4917A4EAF80003B6A6 /* UVIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UVIndexViewController.h; sourceTree = "<group>"; };
 		1996CF4A17A4EB090003B6A6 /* UVIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVIndexViewController.m; sourceTree = "<group>"; };
@@ -444,8 +454,13 @@
 		ACAA0A42177770D000C6CFE9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1928B03F17A71FC8007EFE17 /* newPic.png */,
+				1928B03D17A71F1B007EFE17 /* emailTutorial.png */,
+				1928B03B17A71E96007EFE17 /* comments.jpeg */,
+				1928B03917A71E26007EFE17 /* Compare.jpeg */,
 				ACAA0A7C1777718C00C6CFE9 /* MelanomaA.jpg */,
 				ACAA0A7D1777718C00C6CFE9 /* Melanoma6.jpg */,
+				1928B03717A71CF8007EFE17 /* Photo 2013-07-28 10 01 25 PM.jpeg */,
 				ACAA0A7E1777718C00C6CFE9 /* MelanomaA4.jpg */,
 				AC30333817783E680038EEBA /* loginAndProfile-Info.plist */,
 				AC30333917783E690038EEBA /* loginAndProfile-Prefix.pch */,
@@ -578,6 +593,11 @@
 				30D0232217A6FE000000A08F /* canadiancancer.png in Resources */,
 				30D0232317A6FE000000A08F /* scan cancer fundation 2.png in Resources */,
 				30D0232417A6FE000000A08F /* checkmole.jpg in Resources */,
+				1928B03817A71CF8007EFE17 /* Photo 2013-07-28 10 01 25 PM.jpeg in Resources */,
+				1928B03A17A71E26007EFE17 /* Compare.jpeg in Resources */,
+				1928B03C17A71E96007EFE17 /* comments.jpeg in Resources */,
+				1928B03E17A71F1B007EFE17 /* emailTutorial.png in Resources */,
+				1928B04017A71FC8007EFE17 /* newPic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

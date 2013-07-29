@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lW4-hu-7sH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -589,15 +589,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="h2Z-PF-DyS" firstAttribute="top" secondItem="fuo-Ec-Gz7" secondAttribute="top" constant="41" id="7Kk-jd-pXH"/>
                             <constraint firstItem="h2Z-PF-DyS" firstAttribute="leading" secondItem="fuo-Ec-Gz7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="80F-l6-REV"/>
-                            <constraint firstItem="ROo-aJ-gBq" firstAttribute="top" secondItem="fuo-Ec-Gz7" secondAttribute="top" constant="216" id="AGY-Vr-D06"/>
                             <constraint firstItem="wSI-0X-0pb" firstAttribute="top" secondItem="fuo-Ec-Gz7" secondAttribute="top" type="default" id="GV7-7F-BKP"/>
+                            <constraint firstItem="h2Z-PF-DyS" firstAttribute="top" secondItem="fuo-Ec-Gz7" secondAttribute="top" constant="40" id="Jhd-JZ-HtT"/>
                             <constraint firstItem="wSI-0X-0pb" firstAttribute="leading" secondItem="fuo-Ec-Gz7" secondAttribute="leading" type="default" id="Xrj-ea-Y0O"/>
                             <constraint firstAttribute="trailing" secondItem="h2Z-PF-DyS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Yst-TP-L3F"/>
                             <constraint firstItem="wSI-0X-0pb" firstAttribute="trailing" secondItem="fuo-Ec-Gz7" secondAttribute="trailing" type="default" id="beY-y9-mvD"/>
                             <constraint firstItem="ROo-aJ-gBq" firstAttribute="leading" secondItem="fuo-Ec-Gz7" secondAttribute="leading" constant="25" id="cDo-3A-x0H"/>
                             <constraint firstItem="wSI-0X-0pb" firstAttribute="bottom" secondItem="fuo-Ec-Gz7" secondAttribute="bottom" type="default" id="n7K-mq-68L"/>
+                            <constraint firstItem="ROo-aJ-gBq" firstAttribute="top" secondItem="h2Z-PF-DyS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rE2-qb-b50"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rhI-WE-vk5" appends="YES" id="l5S-0t-7gx"/>
@@ -1743,27 +1743,34 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hit the + symbol to take a new picture. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-jo-8Sx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hit the + symbol to take a new picture. Select &quot;Use&quot; save the picture." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-jo-8Sx">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="DAa-JR-qLa"/>
                                     <constraint firstAttribute="width" constant="237" id="qZP-Yc-f8l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Photo 2013-07-28 10 01 25 PM.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="tUS-pC-gzk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="K0K-WI-Bl1"/>
+                                    <constraint firstAttribute="height" constant="263" id="U9Y-EW-J8s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vaz-cd-PiF" firstAttribute="bottom" secondItem="S0I-bm-pgo" secondAttribute="bottom" type="default" id="3b9-ut-G7e"/>
+                            <constraint firstItem="tUS-pC-gzk" firstAttribute="top" secondItem="S0I-bm-pgo" secondAttribute="top" constant="79" id="4jS-hE-0f7"/>
                             <constraint firstItem="fEn-t7-wgK" firstAttribute="top" secondItem="S0I-bm-pgo" secondAttribute="top" constant="28" id="5c7-FF-hN6"/>
+                            <constraint firstAttribute="bottom" secondItem="qLb-jo-8Sx" secondAttribute="bottom" constant="51" id="5qW-Fl-HbL"/>
                             <constraint firstItem="vaz-cd-PiF" firstAttribute="top" secondItem="S0I-bm-pgo" secondAttribute="top" type="default" id="BSp-mb-ItL"/>
                             <constraint firstItem="vaz-cd-PiF" firstAttribute="leading" secondItem="S0I-bm-pgo" secondAttribute="leading" type="default" id="D5X-xM-a3f"/>
+                            <constraint firstItem="tUS-pC-gzk" firstAttribute="leading" secondItem="S0I-bm-pgo" secondAttribute="leading" constant="74" id="GGg-vl-V8p"/>
+                            <constraint firstItem="qLb-jo-8Sx" firstAttribute="centerX" secondItem="vaz-cd-PiF" secondAttribute="centerX" type="default" id="Rjp-eD-sSo"/>
                             <constraint firstItem="vaz-cd-PiF" firstAttribute="trailing" secondItem="S0I-bm-pgo" secondAttribute="trailing" type="default" id="TfY-lD-Too"/>
-                            <constraint firstItem="qLb-jo-8Sx" firstAttribute="top" secondItem="S0I-bm-pgo" secondAttribute="top" constant="106" id="lf4-lX-YOB"/>
-                            <constraint firstItem="vaz-cd-PiF" firstAttribute="centerX" secondItem="fEn-t7-wgK" secondAttribute="centerX" type="default" id="oGv-7K-Gbk"/>
-                            <constraint firstItem="fEn-t7-wgK" firstAttribute="centerX" secondItem="qLb-jo-8Sx" secondAttribute="centerX" type="default" id="sNO-or-2Vn"/>
+                            <constraint firstItem="fEn-t7-wgK" firstAttribute="centerX" secondItem="qLb-jo-8Sx" secondAttribute="centerX" type="default" id="hMI-i4-FvH"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6ZI-Au-YYb" appends="YES" id="Deo-n0-CNZ"/>
@@ -1803,16 +1810,35 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap the photo you want to compare to select, then hit &quot;Compare.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Ggm-VX-TKl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="sRs-Ja-B7k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Compare.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="mgJ-Rf-0KS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="6zg-NA-gQi"/>
+                                    <constraint firstAttribute="height" constant="273" id="gpb-sc-5cC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="7h5-s7-eth" firstAttribute="trailing" secondItem="O57-Os-naR" secondAttribute="trailing" type="default" id="2Em-lr-RXa"/>
-                            <constraint firstItem="7h5-s7-eth" firstAttribute="centerX" secondItem="27c-RE-ksR" secondAttribute="centerX" type="default" id="ENa-3F-lYq"/>
-                            <constraint firstItem="27c-RE-ksR" firstAttribute="top" secondItem="O57-Os-naR" secondAttribute="top" constant="48" id="SfL-qB-N1C"/>
+                            <constraint firstAttribute="trailing" secondItem="Ggm-VX-TKl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SXz-vM-WWK"/>
                             <constraint firstItem="7h5-s7-eth" firstAttribute="leading" secondItem="O57-Os-naR" secondAttribute="leading" type="default" id="YsL-oO-x28"/>
+                            <constraint firstItem="27c-RE-ksR" firstAttribute="top" secondItem="O57-Os-naR" secondAttribute="top" constant="32" id="bMj-eY-qfu"/>
+                            <constraint firstItem="mgJ-Rf-0KS" firstAttribute="top" secondItem="O57-Os-naR" secondAttribute="top" constant="77" id="enC-9N-a17"/>
+                            <constraint firstAttribute="bottom" secondItem="Ggm-VX-TKl" secondAttribute="bottom" constant="54" id="o7N-CN-YFh"/>
+                            <constraint firstItem="Ggm-VX-TKl" firstAttribute="centerX" secondItem="27c-RE-ksR" secondAttribute="centerX" type="default" id="tYY-uD-MBj"/>
                             <constraint firstItem="7h5-s7-eth" firstAttribute="bottom" secondItem="O57-Os-naR" secondAttribute="bottom" type="default" id="uHo-AM-NIe"/>
+                            <constraint firstItem="Ggm-VX-TKl" firstAttribute="leading" secondItem="O57-Os-naR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ulx-iW-aLr"/>
                             <constraint firstItem="7h5-s7-eth" firstAttribute="top" secondItem="O57-Os-naR" secondAttribute="top" type="default" id="wv2-ne-Uee"/>
+                            <constraint firstItem="27c-RE-ksR" firstAttribute="trailing" secondItem="mgJ-Rf-0KS" secondAttribute="trailing" type="default" id="xFa-hJ-XTy"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hVZ-xv-xE9" appends="YES" id="FhJ-nH-YBo"/>
@@ -1843,7 +1869,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="NormalBAck.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-HK-kjV"/>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Entering information about your mole" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="API-PG-Ce5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Entering comments about your mole" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="255" translatesAutoresizingMaskIntoConstraints="NO" id="API-PG-Ce5">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="p64-iL-YqV"/>
                                     <constraint firstAttribute="height" constant="52" id="rNf-do-uMp"/>
@@ -1852,28 +1878,36 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="ItQ-yz-aFV">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="ItQ-yz-aFV">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="KbV-h2-UtN"/>
-                                    <constraint firstAttribute="width" constant="247" id="YOh-nW-8w6"/>
+                                    <constraint firstAttribute="height" constant="88" id="145-vi-IbF"/>
+                                    <constraint firstAttribute="width" constant="247" id="inI-p0-Zma"/>
                                 </constraints>
-                                <string key="text">Once you return to the gallery, describe the asymmetry, boarders, colouration, diameter, and elevation of your mole.  Compare the new photo to older photos of the same mole and note any changes.</string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <string key="text">From the gallery, select the mole you want to comment on and hit the "edit" button. Describe the ABCDE properties of your mole. Compare the new photo to older photos and note any changes.</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="comments.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="NkY-0u-ebh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="vv1-tv-P8u"/>
+                                    <constraint firstAttribute="height" constant="236" id="xys-g6-xW6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ItQ-yz-aFV" firstAttribute="top" secondItem="s2O-HI-2mM" secondAttribute="top" constant="214" id="Asb-WC-1nI"/>
-                            <constraint firstItem="API-PG-Ce5" firstAttribute="top" secondItem="s2O-HI-2mM" secondAttribute="top" constant="50" id="B5b-kY-pp6"/>
-                            <constraint firstItem="u0s-HK-kjV" firstAttribute="trailing" secondItem="s2O-HI-2mM" secondAttribute="trailing" type="default" id="Lxa-JM-FBF"/>
+                            <constraint firstAttribute="bottom" secondItem="ItQ-yz-aFV" secondAttribute="bottom" constant="38" id="2GJ-EG-Uwr"/>
                             <constraint firstItem="u0s-HK-kjV" firstAttribute="leading" secondItem="s2O-HI-2mM" secondAttribute="leading" type="default" id="YhL-sW-c5X"/>
-                            <constraint firstItem="API-PG-Ce5" firstAttribute="trailing" secondItem="ItQ-yz-aFV" secondAttribute="trailing" type="default" id="b4w-2K-rt2"/>
+                            <constraint firstItem="API-PG-Ce5" firstAttribute="centerX" secondItem="s2O-HI-2mM" secondAttribute="centerX" type="default" id="eVA-wf-Biv"/>
                             <constraint firstItem="u0s-HK-kjV" firstAttribute="bottom" secondItem="s2O-HI-2mM" secondAttribute="bottom" type="default" id="f7h-Wl-rbd"/>
+                            <constraint firstItem="NkY-0u-ebh" firstAttribute="top" secondItem="API-PG-Ce5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gnw-pv-0ZL"/>
+                            <constraint firstItem="API-PG-Ce5" firstAttribute="centerX" secondItem="ItQ-yz-aFV" secondAttribute="centerX" type="default" id="gsE-Wc-1kP"/>
                             <constraint firstItem="u0s-HK-kjV" firstAttribute="top" secondItem="s2O-HI-2mM" secondAttribute="top" type="default" id="iJg-cp-zh4"/>
-                            <constraint firstItem="u0s-HK-kjV" firstAttribute="centerX" secondItem="API-PG-Ce5" secondAttribute="centerX" type="default" id="xj2-92-dSA"/>
+                            <constraint firstItem="NkY-0u-ebh" firstAttribute="leading" secondItem="s2O-HI-2mM" secondAttribute="leading" constant="79" id="kw7-lq-oQw"/>
+                            <constraint firstItem="API-PG-Ce5" firstAttribute="centerX" secondItem="u0s-HK-kjV" secondAttribute="centerX" type="default" id="teZ-1e-Ibn"/>
+                            <constraint firstItem="API-PG-Ce5" firstAttribute="top" secondItem="s2O-HI-2mM" secondAttribute="top" constant="35" id="xsi-Qb-g7V"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="7G0-WI-JxI" appends="YES" id="XDD-dN-rOh"/>
@@ -1904,13 +1938,43 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="NormalBAck.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q44-sj-bde"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Adding new Photos of an Exisiting Mole in the Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OVJ-ZN-30Q">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="e3g-sv-VOk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Select the mole, then hit the &quot;Add pictures&quot; button at the bottom of the screen to take a new picture. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="uEU-Gr-Yc8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Lp8-qZ-kjU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="newPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-dz-Xe6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="naC-Cs-GXb"/>
+                                    <constraint firstAttribute="height" constant="278" id="xCa-x0-KYe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="q44-sj-bde" firstAttribute="trailing" secondItem="NeV-iF-MlC" secondAttribute="trailing" type="default" id="8Gs-nY-ubw"/>
+                            <constraint firstItem="g9L-dz-Xe6" firstAttribute="leading" secondItem="NeV-iF-MlC" secondAttribute="leading" constant="71" id="KAz-Ue-ObX"/>
                             <constraint firstItem="q44-sj-bde" firstAttribute="leading" secondItem="NeV-iF-MlC" secondAttribute="leading" type="default" id="KYA-MQ-1dg"/>
+                            <constraint firstItem="g9L-dz-Xe6" firstAttribute="top" secondItem="NeV-iF-MlC" secondAttribute="top" constant="78" id="L10-FI-JWO"/>
+                            <constraint firstAttribute="trailing" secondItem="OVJ-ZN-30Q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qld-Vu-EPE"/>
+                            <constraint firstAttribute="trailing" secondItem="uEU-Gr-Yc8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TZ0-u5-G07"/>
+                            <constraint firstItem="OVJ-ZN-30Q" firstAttribute="top" secondItem="NeV-iF-MlC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Tul-IV-pYK"/>
                             <constraint firstItem="q44-sj-bde" firstAttribute="bottom" secondItem="NeV-iF-MlC" secondAttribute="bottom" type="default" id="cHO-J4-B61"/>
+                            <constraint firstItem="OVJ-ZN-30Q" firstAttribute="leading" secondItem="NeV-iF-MlC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dWL-KW-G6i"/>
+                            <constraint firstItem="uEU-Gr-Yc8" firstAttribute="leading" secondItem="NeV-iF-MlC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gc3-Pu-g46"/>
+                            <constraint firstItem="uEU-Gr-Yc8" firstAttribute="top" secondItem="g9L-dz-Xe6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qKX-K4-n4P"/>
                             <constraint firstItem="q44-sj-bde" firstAttribute="top" secondItem="NeV-iF-MlC" secondAttribute="top" type="default" id="xO7-lz-9Xl"/>
                         </constraints>
                         <connections>
@@ -1951,16 +2015,35 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Navigate to the mole you want to email.  Scroll to the bottm of the picture and hit &quot;email.&quot;  Then send your email normally." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="642-hZ-YHW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="dlH-oT-h2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="emailTutorial.png" translatesAutoresizingMaskIntoConstraints="NO" id="XiI-dK-oUT">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="dGa-Mq-C4L"/>
+                                    <constraint firstAttribute="height" constant="269" id="tJx-a5-eiW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="kHQ-nz-2Dr" firstAttribute="leading" secondItem="yfi-fp-3Dh" secondAttribute="leading" type="default" id="8DP-Kr-Xdm"/>
                             <constraint firstItem="kHQ-nz-2Dr" firstAttribute="bottom" secondItem="yfi-fp-3Dh" secondAttribute="bottom" type="default" id="BZQ-yt-Qww"/>
-                            <constraint firstItem="kz0-4a-ggT" firstAttribute="top" secondItem="yfi-fp-3Dh" secondAttribute="top" constant="58" id="Emd-cl-irs"/>
+                            <constraint firstItem="642-hZ-YHW" firstAttribute="leading" secondItem="yfi-fp-3Dh" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BvF-Qb-r6V"/>
+                            <constraint firstItem="kz0-4a-ggT" firstAttribute="top" secondItem="yfi-fp-3Dh" secondAttribute="top" constant="44" id="KlU-aT-st5"/>
+                            <constraint firstItem="kz0-4a-ggT" firstAttribute="leading" secondItem="XiI-dK-oUT" secondAttribute="leading" type="default" id="LXx-cX-ztS"/>
                             <constraint firstItem="kHQ-nz-2Dr" firstAttribute="trailing" secondItem="yfi-fp-3Dh" secondAttribute="trailing" type="default" id="OAN-mC-p2h"/>
-                            <constraint firstItem="kz0-4a-ggT" firstAttribute="leading" secondItem="yfi-fp-3Dh" secondAttribute="leading" constant="67" id="YvV-wA-zSO"/>
+                            <constraint firstItem="kz0-4a-ggT" firstAttribute="leading" secondItem="yfi-fp-3Dh" secondAttribute="leading" constant="66" id="WZn-Eo-evd"/>
                             <constraint firstItem="kHQ-nz-2Dr" firstAttribute="top" secondItem="yfi-fp-3Dh" secondAttribute="top" type="default" id="ac3-sW-OJN"/>
+                            <constraint firstItem="XiI-dK-oUT" firstAttribute="top" secondItem="yfi-fp-3Dh" secondAttribute="top" constant="79" id="iGp-mm-Qc9"/>
+                            <constraint firstItem="642-hZ-YHW" firstAttribute="top" secondItem="XiI-dK-oUT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uKr-ZE-2Va"/>
+                            <constraint firstAttribute="trailing" secondItem="642-hZ-YHW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wwH-YQ-JzR"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4JY-pQ-TPY" appends="YES" id="84F-VO-mpQ"/>
@@ -2496,9 +2579,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="08DD9476-F704-4C47-801D-ABBE491C222D" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
-GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6
-ZVdOU0NvbG9ygA2AAxIgwAAAgAKAC1p7MjU2LCAyNTZ90gkVFhdaTlMub2JqZWN0c4AKoRiABNIJFRob
-gAmiHB2ABYAGEADSCSAhIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAiAB08SAAQAyk1NACoABAAIdXiB
+GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1p7MjU2LCAyNTZ90hUKFhhaTlMub2JqZWN0c6EXgASACtIVChod
+ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQAyk1NACoABAAIdXiB
 /3Byef9wc33/b3F1/25wd/9wcnn/b3F1/2xudf9sbnX/bnB3/3Bzff9nanT/bnF7/3Byef9wc33/amxz
 /29xdf9zdXz/bG51/2ptd/9qbXf/bG51/2ptd/95e4H/dXd9/2xvef9sbnX/bG95/2xvef9nanT/am13
 /3N1fP9wc33/d3qD/2xudf9wc33/bG51/3V3ff9nanT/amxz/2xudf9qbHP/bG95/2ptd/9qbXf/bG95
@@ -6873,12 +6956,12 @@ AgAAAREABAAAAAIABACyARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAgAAAARcABAAAAAIA
 BAC6ARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQABADCAAAAAAAIAAgACAAIAAAACAACAAgA
 AgAAAAIAAAABAAEAAQAB0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCj
 KSorXxAQTlNCaXRtYXBJbWFnZVJlcFpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLS5XTlNBcnJheaItK9Il
-JjAxXk5TTXV0YWJsZUFycmF5ozAtK9MJMzQ1NjdcTlNDb2xvclNwYWNlV05TV2hpdGWADBADRDAgMADS
+JjAxXk5TTXV0YWJsZUFycmF5ozAtK9MzNAo1NjdXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzS
 JSY5OldOU0NvbG9yojkr0iUmPD1XTlNJbWFnZaI8K18QD05TS2V5ZWRBcmNoaXZlctFAQVRyb290gAEA
 AAAIAAAAEQAAABoAAAAjAAAALQAAADIAAAA3AAAARgAAAEwAAABXAAAAXgAAAGUAAAByAAAAeQAAAIEA
-AACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC2AAAAuQAAALsA
+AACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC3AAAAuQAAALsA
 AAC9AAAAvwAAAMQAAADbAAAA3QAAAN8ABAGvAAQBtAAEAb8ABAHIAAQB2wAEAd8ABAHyAAQB/QAEAgYA
-BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCQgAEAkoABAJMAAQCTgAEAlMABAJYAAQCYAAEAmMA
+BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
 BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
 </mutableData>
         </image>
@@ -6896,9 +6979,9 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <image name="DFE28AE2-AC14-48BC-9822-1BE69D4C6C46" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
-GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESViRjbGFzc1ZOU1JlcHNcTlNJbWFnZUZsYWdzVk5TU2l6
-ZVdOU0NvbG9ygA2AAxIgwAAAgAKAC1p7MjU2LCAyNTZ90gkVFhdaTlMub2JqZWN0c4AKoRiABNIJFRob
-gAmiHB2ABYAGEADSCSAhIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAiAB08SAAQAyk1NACoABAAIdXiB
+GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1p7MjU2LCAyNTZ90hUKFhhaTlMub2JqZWN0c6EXgASACtIVChod
+ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQAyk1NACoABAAIdXiB
 /3Byef9wc33/b3F1/25wd/9wcnn/b3F1/2xudf9sbnX/bnB3/3Bzff9nanT/bnF7/3Byef9wc33/amxz
 /29xdf9zdXz/bG51/2ptd/9qbXf/bG51/2ptd/95e4H/dXd9/2xvef9sbnX/bG95/2xvef9nanT/am13
 /3N1fP9wc33/d3qD/2xudf9wc33/bG51/3V3ff9nanT/amxz/2xudf9qbHP/bG95/2ptd/9qbXf/bG95
@@ -11273,20 +11356,22 @@ AgAAAREABAAAAAIABACyARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAgAAAARcABAAAAAIA
 BAC6ARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQABADCAAAAAAAIAAgACAAIAAAACAACAAgA
 AgAAAAIAAAABAAEAAQAB0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCj
 KSorXxAQTlNCaXRtYXBJbWFnZVJlcFpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLS5XTlNBcnJheaItK9Il
-JjAxXk5TTXV0YWJsZUFycmF5ozAtK9MJMzQ1NjdcTlNDb2xvclNwYWNlV05TV2hpdGWADBADRDAgMADS
+JjAxXk5TTXV0YWJsZUFycmF5ozAtK9MzNAo1NjdXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzS
 JSY5OldOU0NvbG9yojkr0iUmPD1XTlNJbWFnZaI8K18QD05TS2V5ZWRBcmNoaXZlctFAQVRyb290gAEA
 AAAIAAAAEQAAABoAAAAjAAAALQAAADIAAAA3AAAARgAAAEwAAABXAAAAXgAAAGUAAAByAAAAeQAAAIEA
-AACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC2AAAAuQAAALsA
+AACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC3AAAAuQAAALsA
 AAC9AAAAvwAAAMQAAADbAAAA3QAAAN8ABAGvAAQBtAAEAb8ABAHIAAQB2wAEAd8ABAHyAAQB/QAEAgYA
-BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCQgAEAkoABAJMAAQCTgAEAlMABAJYAAQCYAAEAmMA
+BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
 BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
 </mutableData>
         </image>
+        <image name="Compare.jpeg" width="640" height="1136"/>
         <image name="FirstBack.png" width="640" height="960"/>
         <image name="Melanoma6.jpg" width="2450" height="1705"/>
         <image name="MelanomaA.jpg" width="1600" height="1071"/>
         <image name="MelanomaA4.jpg" width="600" height="401"/>
         <image name="NormalBAck.jpg" width="640" height="960"/>
+        <image name="Photo 2013-07-28 10 01 25 PM.jpeg" width="640" height="1136"/>
         <image name="Screen Shot 2013-07-28 at 11.49.38 PM.png" width="539" height="404"/>
         <image name="Screen Shot 2013-07-28 at 11.51.33 PM.png" width="561" height="408"/>
         <image name="TextFiledBule.png" width="400" height="100"/>
@@ -11296,9 +11381,12 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <image name="button selected.png" width="300" height="200"/>
         <image name="canadiancancer.png" width="172" height="60"/>
         <image name="checkmole.jpg" width="600" height="480"/>
+        <image name="comments.jpeg" width="640" height="1136"/>
         <image name="confirm.png" width="1200" height="954"/>
         <image name="email.png" width="1200" height="954"/>
+        <image name="emailTutorial.png" width="640" height="1136"/>
         <image name="kid.png" width="335" height="404"/>
+        <image name="newPic.png" width="640" height="1136"/>
         <image name="scan cancer fundation 2.png" width="204" height="97"/>
         <image name="skipp.png" width="24" height="24"/>
         <image name="webmd.png" width="162" height="49"/>
@@ -11461,5 +11549,9 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <segue reference="BQL-Jq-WOu"/>
         <segue reference="KKn-L9-yaD"/>
         <segue reference="kNO-9A-rLc"/>
+        <segue reference="Rdf-GK-wOC"/>
+        <segue reference="xJ6-SR-cH8"/>
+        <segue reference="Dtb-dz-WXm"/>
+        <segue reference="vZF-ej-zox"/>
     </inferredMetricsTieBreakers>
 </document>
