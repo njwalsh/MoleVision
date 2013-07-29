@@ -192,7 +192,7 @@
 
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    image = [info objectForKey:UIImagePickerControllerEditedImage];
     photosTaken = photosTaken + 1;
     NSUserDefaults *userDefault=[NSUserDefaults standardUserDefaults];
     NSData *myDecodedObject = [userDefault objectForKey: [NSString stringWithFormat:@"moleArray"]];
