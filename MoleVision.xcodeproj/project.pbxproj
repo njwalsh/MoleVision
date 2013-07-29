@@ -54,6 +54,8 @@
 		269D3D091792059D003A108D /* skintype_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFE1792059D003A108D /* skintype_5.jpg */; };
 		269D3D0A1792059D003A108D /* skintype_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3CFF1792059D003A108D /* skintype_6.jpg */; };
 		269D3D0B1792059D003A108D /* user.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 269D3D001792059D003A108D /* user.jpeg */; };
+		30D022EC17A64D710000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D022EB17A64D710000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png */; };
+		30D022EE17A64D7B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D022ED17A64D7B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png */; };
 		346AE37517A31A32001B5103 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 346AE37417A31A32001B5103 /* libz.1.2.5.dylib */; };
 		346AE38417A3217B001B5103 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37917A32129001B5103 /* ioapi.c */; };
 		346AE38517A3217B001B5103 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 346AE37B17A32129001B5103 /* mztools.c */; };
@@ -147,6 +149,8 @@
 		269D3CFE1792059D003A108D /* skintype_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_5.jpg; sourceTree = "<group>"; };
 		269D3CFF1792059D003A108D /* skintype_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skintype_6.jpg; sourceTree = "<group>"; };
 		269D3D001792059D003A108D /* user.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user.jpeg; sourceTree = "<group>"; };
+		30D022EB17A64D710000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2013-07-28 at 11.49.38 PM.png"; path = "../../Screen Shot 2013-07-28 at 11.49.38 PM.png"; sourceTree = "<group>"; };
+		30D022ED17A64D7B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2013-07-28 at 11.51.33 PM.png"; path = "../../Screen Shot 2013-07-28 at 11.51.33 PM.png"; sourceTree = "<group>"; };
 		3433FBB91788CFC8000346E6 /* email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = email.h; path = MoleVision/email.h; sourceTree = SOURCE_ROOT; };
 		3433FBBA1788CFC8000346E6 /* email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = email.m; path = MoleVision/email.m; sourceTree = SOURCE_ROOT; };
 		346AE37417A31A32001B5103 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -376,6 +380,8 @@
 				ACAA0A81177771B300C6CFE9 /* Mole.h */,
 				ACAA0A82177771B300C6CFE9 /* Mole.m */,
 				AC745F6D1778E4ED00A60001 /* MainStoryboard_iPhone.storyboard */,
+				30D022ED17A64D7B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png */,
+				30D022EB17A64D710000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png */,
 				2681C58017A4A13B008B68F3 /* 20130728084514831_easyicon_net_48.png */,
 				2683277717A25FB900A267DB /* Skin Type Images */,
 				2683277817A25FF600A267DB /* UI Images */,
@@ -527,6 +533,8 @@
 				26430D4A17A5408700524631 /* Default.png in Resources */,
 				26430D4C17A5408F00524631 /* Default@2x.png in Resources */,
 				26430D4E17A5409A00524631 /* Default-568h@2x.png in Resources */,
+				30D022EC17A64D710000A08F /* Screen Shot 2013-07-28 at 11.49.38 PM.png in Resources */,
+				30D022EE17A64D7B0000A08F /* Screen Shot 2013-07-28 at 11.51.33 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
